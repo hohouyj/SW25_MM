@@ -1,12 +1,14 @@
 import { useState } from "react";
-import MonsterSkills from "./MonsterSkills";
-// import monsterData from "./data/monsters.json";
+import MonsterCard from "./Monster.tsx";
+import monsterData from "./data/monsters.json";
 import spellData from "./data/spells.json";
-import { Monster } from "./types.ts";
 
 function App() {
-  const [count, setCount] = useState(0);
-  let monsterData = {
+  const [monster_id, setMonsterId] = useState(1);
+  const [monster, setMonster] = useState(
+    monsterData.allmonsters.filter((x) => parseInt(x.monster_id) == 1)[0]
+  );
+  let abyssMinion = {
     monster_id: "1",
     monstername: "Abyss Minions",
     level: "4",
@@ -86,14 +88,23 @@ function App() {
       },
     ],
   };
+  const handleNewMonsterId = (event) => {
+    let val = event?.target.value;
+    if (monsterData.allmonsters.find((x) => parseInt(x.monster_id) == val)) {
+      setMonsterId(val);
+      setMonster(
+        monsterData.allmonsters.filter((x) => parseInt(x.monster_id) == val)[0]
+      );
+    } else {
+      setMonsterId(val);
+    }
+  };
+
   return (
     <>
-      <MonsterSkills monster={monsterData} />
-      <h1>Vite + React</h1>
-      <button onClick={() => setCount((count) => count + 1)}>
-        count is {count}
-      </button>
-      <pre>{JSON.stringify(monsterData, null, 2)}</pre>
+      <label>Monster Id </label>
+      <input type="number" value={monster_id} onChange={handleNewMonsterId} />
+      <MonsterCard monster={monster} />
     </>
   );
 }
