@@ -18,12 +18,7 @@ function MonsterSkillCard({ skills }: MonsterSkillPropType) {
             {skill.abilities.map((abilities) => {
               return (
                 <div>
-                  {abilities.title}:{" "}
-                  <div
-                    dangerouslySetInnerHTML={{
-                      __html: abilities.description,
-                    }}
-                  />
+                  {abilities.title}: {abilities.description}
                 </div>
               );
             })}
@@ -37,30 +32,37 @@ function MonsterSkillCard({ skills }: MonsterSkillPropType) {
 function MonsterCard({ monster }: MonsterPropType) {
   return (
     <>
-      <div>
-        <div>
-          <div>
-            {monster.level} {monster.monstername}
-          </div>
+      <div className="monster">
+        <div className="monster-card-title">
+          <div className="level">{monster.level}</div>
+          <div className="name">{monster.monstername}</div>
         </div>
-        <div>
-          <div>
-            Intelligence: {monster.intelligence} Perception:{" "}
-            {monster.perception} Disposition: {monster.disposition} Soulscars:{" "}
-            {monster.soulscars}
+        <div className="monster-card-details">
+          <div className="row">
+            <div>Intelligence: {monster.intelligence}</div>
+            <div>Perception: {monster.perception}</div>
+            <div>Disposition: {monster.disposition}</div>
+            <div>Soulscars: {monster.soulscars}</div>
           </div>
-          <div>
-            Language: {monster.language} Habitat: {monster.habitat}
+          <div className="row">
+            <div>Language: {monster.language}</div>
+            <div>Habitat: {monster.habitat}</div>
           </div>
-          <div>
-            Rep/Weakness: {monster.reputation}/{monster.weakness} Weak Point:{" "}
-            {monster.weakpoint}
+          <div className="row">
+            <div>
+              Rep/Weakness: {monster.reputation}/{monster.weakness}
+            </div>
+            <div>Weak Point: {monster.weakpoint}</div>
           </div>
-          <div>
-            Initiative: {monster.initiative} Movement Speed:{" "}
-            {monster.movementspeed} Fortitude: {monster.fortitude} (
-            {7 + parseInt(monster.fortitude)}) Willpower: {monster.fortitude} (
-            {7 + parseInt(monster.willpower)})
+          <div className="row">
+            <div>Initiative: {monster.initiative}</div>
+            <div>Movement Speed: {monster.movementspeed}</div>
+            <div>
+              Fortitude: {monster.fortitude} ({7 + parseInt(monster.fortitude)})
+            </div>
+            <div>
+              Willpower: {monster.fortitude} ({7 + parseInt(monster.willpower)})
+            </div>
           </div>
         </div>
         <div>

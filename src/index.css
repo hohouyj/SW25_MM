@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    line-height: 1.2;
+}
+
+.monster {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+    width: clamp(50rem, 50%, 100rem);
+    border: 0.1rem solid black;
+    padding: 0.3rem 0.5rem;
+}
+
+.monster * {
+    /* border: 0.1rem solid red; */
+}
+
+.monster-card-title {
+    /* border: 0.1rem solid red; */
+    display: grid;
+    grid-template-columns: 5% auto;
+    font-size: 1.6rem;
+
+}
+
+.monster-card-title .level {
+    text-align: center;
+    vertical-align: middle;
+    border: 0.1rem solid black;
+}
+
+.monster-card-title .name {
+    vertical-align: middle;
+    padding-left: 0.8rem;
+    border: 0.1rem solid black;
+    border-style: solid solid solid none;
+}
+
+.monster-card-details {
+    border: 0.1rem solid black;
+    border-style: none solid solid solid;
+    padding: 0.5rem;
+}
+
+.monster-card-details .row {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
