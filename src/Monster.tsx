@@ -11,13 +11,13 @@ type MonsterSkillPropType = {
 function MonsterSkillCard({ skills }: MonsterSkillPropType) {
   return (
     <div className="monster-card-skills">
-      {skills.map((skill) => {
+      {skills.map((skill, idx) => {
         return (
-          <div className="monster-card-skill-section">
+          <div className="monster-card-skill-section" key={idx}>
             <div>{skill.section}</div>
-            {skill.abilities.map((abilities) => {
+            {skill.abilities.map((abilities, idx) => {
               return (
-                <div className="monster-card-skill">
+                <div className="monster-card-skill" key={idx}>
                   <strong>{abilities.title}</strong>
                   <div
                     dangerouslySetInnerHTML={{ __html: abilities.description }}
@@ -101,9 +101,9 @@ function MonsterCard({ monster }: MonsterPropType) {
             </tr>
           </thead>
           <tbody className="monster-card-combat-style-body">
-            {monster.combatstyles.map((style) => {
+            {monster.combatstyles.map((style, idx) => {
               return (
-                <tr key={style.style}>
+                <tr key={idx}>
                   <td>{style.style}</td>
                   <td>
                     {style.accuracy} ({7 + parseInt(style.accuracy)})
@@ -127,9 +127,9 @@ function MonsterCard({ monster }: MonsterPropType) {
         <div className="monster-card-loot">
           <div className="monster-card-loot-title">Loot</div>
           <div className="monster-card-loot-items">
-            {monster.loottable.map((loot) => {
+            {monster.loottable.map((loot, idx) => {
               return (
-                <div className="monster-card-loot-item">
+                <div className="monster-card-loot-item" key={idx}>
                   <div className="roll">{loot.roll}</div>
                   <div className="loot">{loot.loot}</div>
                 </div>

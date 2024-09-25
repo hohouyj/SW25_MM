@@ -120,7 +120,7 @@ body {
 .monster-card-loot-item {
     display: grid;
     grid-template-columns: 20% auto;
-    flex: 1 1 50%;
+    width: 50%;
 }
 
 .monster-card-loot-item * {
