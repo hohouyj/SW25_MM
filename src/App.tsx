@@ -1,5 +1,5 @@
 import { FormEvent, useState } from "react";
-import MonsterCard from "./Monster.tsx";
+import { MonsterCard } from "./components/MonsterCard";
 import monsterData from "./data/monsters.json";
 // import spellData from "./data/spells.json";
 
@@ -11,7 +11,6 @@ function App() {
   });
 
   const handleNewMonsterName = (event: FormEvent<HTMLInputElement>) => {
-    console.log(event.type);
     let val = event.currentTarget.value;
     setMonsterName(val);
   };

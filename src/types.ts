@@ -49,3 +49,12 @@ export interface Monster {
   combatstyles: CombatStyle[];
   loottable: LootResult[];
 }
+
+export interface EncounterMonster extends Monster {
+  hitPoints: 
+}
+
+export interface Encounter {
+  monsters: Monster[];
+
+}
