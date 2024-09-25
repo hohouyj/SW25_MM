@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react";
+import { ChangeEvent, useState } from "react";
 import { MonsterCard } from "./components/MonsterCard";
 import monsterData from "./data/monsters.json";
 import { Container, MantineProvider } from "@mantine/core";
@@ -11,7 +11,8 @@ function App() {
     return x.monstername.toLowerCase().includes(monsterName.toLowerCase());
   });
 
-  const handleNewMonsterName = (event: FormEvent<HTMLInputElement>) => {
+  const handleNewMonsterName = (event: ChangeEvent<HTMLInputElement>) => {
+    console.log(event.type);
     let val = event.currentTarget.value;
     setMonsterName(val);
   };
