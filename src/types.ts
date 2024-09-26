@@ -51,10 +51,9 @@ export interface Monster {
 }
 
 export interface EncounterMonster extends Monster {
-  hitPoints: 
+  hitPoints: number;
 }
 
 export interface Encounter {
   monsters: Monster[];
-
 }
