@@ -1,6 +1,10 @@
 import "./styles.css";
-import { Monster, MonsterPropType } from "../../types.ts";
-import { MonsterCardDetails, MonsterSkillCard } from ".";
+import { MonsterPropType } from "../../types.ts";
+import {
+  MonsterCardDetails,
+  MonsterSkillCard,
+  MonsterCombatStyleTable,
+} from ".";
 import Paper from "@mui/material/Paper";
 
 function MonsterCard({ monster }: MonsterPropType) {
@@ -8,39 +12,7 @@ function MonsterCard({ monster }: MonsterPropType) {
     <Paper className="monster">
       <MonsterCardDetails monster={monster} />
       <br />
-      <table className="monster-card-combat-style-table">
-        <thead>
-          <tr>
-            <th>Fight Style (section)</th>
-            <th>Accuracy</th>
-            <th>Damage</th>
-            <th>Evasion</th>
-            <th>Defense</th>
-            <th>HP</th>
-            <th>MP</th>
-          </tr>
-        </thead>
-        <tbody className="monster-card-combat-style-body">
-          {monster.combatstyles.map((style, idx) => {
-            return (
-              <tr key={idx}>
-                <td>{style.style}</td>
-                <td>
-                  {style.accuracy} ({7 + parseInt(style.accuracy)})
-                </td>
-                <td>{style.damage}</td>
-                <td>
-                  {style.evasion} ({7 + parseInt(style.evasion)})
-                </td>
-                <td>{style.defense}</td>
-                <td>{style.hp}</td>
-                <td>{style.mp}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-
+      <MonsterCombatStyleTable combatstyles={monster.combatstyles} />
       <br />
       <MonsterSkillCard skills={monster.uniqueskills} />
       <br />
