@@ -57,3 +57,7 @@ export interface EncounterMonster extends Monster {
 export interface Encounter {
   monsters: Monster[];
 }
+
+export type MonsterPropType = {
+  monster: Monster;
+};

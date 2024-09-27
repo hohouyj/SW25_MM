@@ -1,8 +1,4 @@
-import { Monster } from "../../types";
-
-type MonsterPropType = {
-  monster: Monster;
-};
+import { Monster, MonsterPropType } from "../../types";
 
 export default function MonsterCardDetails({ monster }: MonsterPropType) {
   return (

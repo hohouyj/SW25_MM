@@ -1,11 +1,7 @@
 import "./styles.css";
-import { Monster } from "../../types.ts";
+import { Monster, MonsterPropType } from "../../types.ts";
 import { MonsterCardDetails, MonsterSkillCard } from ".";
 import Paper from "@mui/material/Paper";
-
-type MonsterPropType = {
-  monster: Monster;
-};
 
 function MonsterCard({ monster }: MonsterPropType) {
   return (
