@@ -4,6 +4,7 @@ import {
   MonsterCardDetails,
   MonsterSkillCard,
   MonsterCombatStyleTable,
+  MonsterLootTable,
 } from ".";
 import Paper from "@mui/material/Paper";
 
@@ -16,19 +17,7 @@ function MonsterCard({ monster }: MonsterPropType) {
       <br />
       <MonsterSkillCard skills={monster.uniqueskills} />
       <br />
-      <div className="monster-card-loot">
-        <div className="monster-card-loot-title">Loot</div>
-        <div className="monster-card-loot-items">
-          {monster.loottable.map((loot, idx) => {
-            return (
-              <div className="monster-card-loot-item" key={idx}>
-                <div className="roll">{loot.roll}</div>
-                <div className="loot">{loot.loot}</div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      <MonsterLootTable loottable={monster.loottable} />
       <br />
       <div
         className="monster-card-description"
