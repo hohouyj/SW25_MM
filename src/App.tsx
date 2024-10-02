@@ -1,6 +1,7 @@
 import { ChangeEvent, useState } from "react";
 import { MonsterCard } from "./components/MonsterCard";
 import monsterData from "./data/monsters.json";
+import { Container, MantineProvider } from "@mantine/core";
 // import spellData from "./data/spells.json";
 
 function App() {
@@ -17,13 +18,15 @@ function App() {
   };
 
   return (
-    <>
+    <MantineProvider>
       <label>Monster Name </label>
       <input type="text" value={monsterName} onChange={handleNewMonsterName} />
-      {foundMonster.map((monster) => {
-        return <MonsterCard monster={monster} key={monster.monster_id} />;
-      })}
-    </>
+      <Container>
+        {foundMonster.map((monster) => {
+          return <MonsterCard monster={monster} key={monster.monster_id} />;
+        })}
+      </Container>
+    </MantineProvider>
   );
 }
 
