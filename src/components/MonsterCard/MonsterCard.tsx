@@ -6,11 +6,11 @@ import {
   MonsterCombatStyleTable,
   MonsterLootTable,
 } from ".";
-import { Paper } from "@mantine/core";
+import { Container } from "@mantine/core";
 
 function MonsterCard({ monster }: MonsterPropType) {
   return (
-    <Paper className="monster">
+    <Container className="monster">
       <MonsterCardDetails monster={monster} />
       <br />
       <MonsterCombatStyleTable combatstyles={monster.combatstyles} />
@@ -23,7 +23,7 @@ function MonsterCard({ monster }: MonsterPropType) {
         className="monster-card-description"
         dangerouslySetInnerHTML={{ __html: monster.description }}
       />
-    </Paper>
+    </Container>
   );
 }
 

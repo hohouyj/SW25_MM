@@ -1,7 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App.tsx";
-import "./index.css";
+import "@mantine/core/styles.css";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 import MonsterView from "./components/MonstersView/MonsterView.tsx";
 

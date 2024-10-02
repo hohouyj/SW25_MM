@@ -1,10 +1,8 @@
-import { List, ListItemButton, ListItemText, TextField } from "@mui/material";
-import Grid from "@mui/material/Grid2";
+import { SimpleGrid, List, TagsInput, MantineProvider } from "@mantine/core";
 import MonsterCard from "../MonsterCard";
 import monstersJSON from "../../data/monsters.json";
 import { Monster } from "../../types";
 import { useState } from "react";
-import "./styles.css";
 
 export default function () {
   const Monsters = monstersJSON.allmonsters.sort(
@@ -14,30 +12,25 @@ export default function () {
   const [monsterSelected, setMonsterSelected] = useState<Monster>(Monsters[0]);
 
   return (
-    <>
-      <Grid container spacing={2}>
-        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-        <TextField id="filled-basic" label="Filled" variant="filled" />
-        <TextField id="standard-basic" label="Standard" variant="standard" />
-      </Grid>
-      <Grid container spacing={2}>
-        <Grid size={3}>
-          <List sx={{ height: "90vh", overflow: "auto" }}>
+    <MantineProvider>
+      <TagsInput />
+
+      <SimpleGrid cols={2}>
+        <div>
+          <List>
             {Monsters.map((monster: Monster) => {
               return (
-                <ListItemButton onClick={() => setMonsterSelected(monster)}>
-                  <ListItemText
-                    primary={`${monster.level} ${monster.monstertype} ${monster.monstername} (${monster.source})`}
-                  />
-                </ListItemButton>
+                <List.Item onClick={() => setMonsterSelected(monster)}>
+                  {`${monster.level} ${monster.monstertype} ${monster.monstername} (${monster.source})`}
+                </List.Item>
               );
             })}
           </List>
-        </Grid>
-        <Grid size={9}>
+        </div>
+        <div>
           <MonsterCard monster={monsterSelected} />
-        </Grid>
-      </Grid>
-    </>
+        </div>
+      </SimpleGrid>
+    </MantineProvider>
   );
 }
