@@ -6,7 +6,7 @@ import {
   MonsterCombatStyleTable,
   MonsterLootTable,
 } from ".";
-import Paper from "@mui/material/Paper";
+import { Paper } from "@mantine/core";
 
 function MonsterCard({ monster }: MonsterPropType) {
   return (
