@@ -15,7 +15,7 @@ type QueryType = {
 };
 
 const useMonsterSearch = () => {
-  const [keys, setKeys] = useState<string[]>([
+  const [keys, _] = useState<string[]>([
     "monstername",
     "habitat",
     "level",
@@ -24,15 +24,17 @@ const useMonsterSearch = () => {
     "uniqueskills.abilities.description",
   ]);
   const [query, setQuery] = useState<string>("Abyss Minions");
-  const [debounced] = useDebouncedValue(query, 300);
+  // const [debounced] = useDebouncedValue(query, 300);
   const [queryTags, setQueryTags] = useState<QueryType[]>([
     {
-      monstername: "Abyss Minions",
-      habitat: "Abyss Minions",
-      level: "Abyss Minions",
-      monstertype: "Abyss Minions",
-      "uniqueskills.abilities.title": "Abyss Minions",
-      "uniqueskills.abilities.description": "Abyss Minions",
+      $or: [
+        { monstername: "Abyss Minions" },
+        { habitat: "Abyss Minions" },
+        { level: "Abyss Minions" },
+        { monstertype: "Abyss Minions" },
+        { "uniqueskills.abilities.title": "Abyss Minions" },
+        { "uniqueskills.abilities.description": "Abyss Minions" },
+      ],
     },
   ]);
   const [debouncedTags] = useDebouncedValue(queryTags, 300);
@@ -45,16 +47,13 @@ const useMonsterSearch = () => {
       findAllMatches: true,
       // minMatchCharLength: 1,
       // location: 0,
-      threshold: 0.1,
+      threshold: 0.2,
       distance: 10000,
       // useExtendedSearch: false,
       // ignoreLocation: false,
       // ignoreFieldNorm: false,
       // fieldNormWeight: 1,
-      // useExtendedSearch: true,
-      sortFn: (a, b) => {
-        return parseInt(a.item[2].v) - parseInt(b.item[2].v);
-      },
+      // useExtendedSearch: true,1
       keys,
     };
     return new Fuse(monsterData.allmonsters, fuseOptions);
@@ -100,7 +99,6 @@ const useMonsterSearch = () => {
     .search({ $and: debouncedTags })
     .map((result) => result.item);
 
-  console.log(results);
   return {
     query,
     setQuery,
