@@ -1,28 +1,19 @@
-import { FormEvent, useState } from "react";
 import { MonsterCard } from "./components/MonsterCard";
-import monsterData from "./data/monsters.json";
+import useMonsterSearch from "./hooks/useMonsterSearch";
+import { MantineProvider } from "@mantine/core";
 // import spellData from "./data/spells.json";
 
 function App() {
-  const [monsterName, setMonsterName] = useState<string>("Abyss Minions");
-
-  const foundMonster = monsterData.allmonsters.filter((x) => {
-    return x.monstername.toLowerCase().includes(monsterName.toLowerCase());
-  });
-
-  const handleNewMonsterName = (event: FormEvent<HTMLInputElement>) => {
-    let val = event.currentTarget.value;
-    setMonsterName(val);
-  };
+  const { query, handleQueryChange, results } = useMonsterSearch();
 
   return (
-    <>
+    <MantineProvider>
       <label>Monster Name </label>
-      <input type="text" value={monsterName} onChange={handleNewMonsterName} />
-      {foundMonster.map((monster) => {
+      <input type="text" value={query} onChange={handleQueryChange} />
+      {results.map((monster) => {
         return <MonsterCard monster={monster} key={monster.monster_id} />;
       })}
-    </>
+    </MantineProvider>
   );
 }
 

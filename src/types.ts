@@ -50,6 +50,10 @@ export interface Monster {
   loottable: LootResult[];
 }
 
+export interface MonsterData {
+  allmonsters: Monster[];
+}
+
 export interface EncounterMonster extends Monster {
   hitPoints: number;
 }

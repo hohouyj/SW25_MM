@@ -356,9 +356,7 @@
       "uniqueskills": [
         {
           "section": "All Sections",
-          "abilities": [
-            { "title": "◯Underwater Aptitude", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Underwater Aptitude", "description": "" }]
         },
         {
           "section": "Head",
@@ -983,9 +981,7 @@
       "uniqueskills": [
         {
           "section": "All Sections",
-          "abilities": [
-            { "title": "◯Poison Immunity", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Poison Immunity", "description": "" }]
         },
         {
           "section": "Head",
@@ -1807,9 +1803,8 @@
         },
         {
           "roll": "10+",
-          "loot": "Fragment of Explosive Reactant Crystal (1600G / Red"
-        },
-        { "roll": "Black S)", "loot": "VALUE NOT SET" }
+          "loot": "Fragment of Explosive Reactant Crystal (1600G / RedBlack S)"
+        }
       ]
     },
     {
@@ -6348,9 +6343,7 @@
       "uniqueskills": [
         {
           "section": "",
-          "abilities": [
-            { "title": "◯Underwater Aptitude", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Underwater Aptitude", "description": "" }]
         }
       ],
       "combatstyles": [
@@ -7232,9 +7225,7 @@
       "uniqueskills": [
         {
           "section": "",
-          "abilities": [
-            { "title": "◯Underwater Aptitude", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Underwater Aptitude", "description": "" }]
         }
       ],
       "combatstyles": [
@@ -7630,9 +7621,7 @@
       "uniqueskills": [
         {
           "section": "",
-          "abilities": [
-            { "title": "◯Underwater Aptitude", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Underwater Aptitude", "description": "" }]
         }
       ],
       "combatstyles": [
@@ -11137,9 +11126,7 @@
       "uniqueskills": [
         {
           "section": "All Sections",
-          "abilities": [
-            { "title": "◯Energy Immunity", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Energy Immunity", "description": "" }]
         },
         {
           "section": "Body",
@@ -16261,9 +16248,7 @@
       "uniqueskills": [
         {
           "section": "All Sections",
-          "abilities": [
-            { "title": "◯Psychic Immunity", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Psychic Immunity", "description": "" }]
         },
         {
           "section": "Vine",
@@ -17798,9 +17783,7 @@
       "uniqueskills": [
         {
           "section": "All Sections",
-          "abilities": [
-            { "title": "◯Psychic Immunity", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Psychic Immunity", "description": "" }]
         },
         {
           "section": "Root",
@@ -18348,9 +18331,7 @@
       "uniqueskills": [
         {
           "section": "All Sections",
-          "abilities": [
-            { "title": "◯Underwater Aptitude", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Underwater Aptitude", "description": "" }]
         },
         {
           "section": "Upper Body",
@@ -18811,9 +18792,7 @@
       "uniqueskills": [
         {
           "section": "All Sections",
-          "abilities": [
-            { "title": "◯Underwater Aptitude", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Underwater Aptitude", "description": "" }]
         },
         {
           "section": "Front",
@@ -21232,9 +21211,7 @@
       "uniqueskills": [
         {
           "section": "All Sections",
-          "abilities": [
-            { "title": "◯Underwater Aptitude", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Underwater Aptitude", "description": "" }]
         },
         {
           "section": "Body",
@@ -28256,9 +28233,7 @@
       "uniqueskills": [
         {
           "section": "All Sections",
-          "abilities": [
-            { "title": "◯Underwater Aptitude", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Underwater Aptitude", "description": "" }]
         },
         {
           "section": "Body",
@@ -29418,9 +29393,7 @@
       "uniqueskills": [
         {
           "section": "All Sections",
-          "abilities": [
-            { "title": "◯Poison Immunity", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Poison Immunity", "description": "" }]
         },
         {
           "section": "Head",
@@ -31337,9 +31310,7 @@
       "uniqueskills": [
         {
           "section": "",
-          "abilities": [
-            { "title": "◯Underwater Aptitude", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Underwater Aptitude", "description": "" }]
         }
       ],
       "combatstyles": [
@@ -35880,9 +35851,7 @@
       "uniqueskills": [
         {
           "section": "All Sections",
-          "abilities": [
-            { "title": "◯Lightning Immunity", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Lightning Immunity", "description": "" }]
         },
         {
           "section": "Body",
@@ -39261,9 +39230,7 @@
       "uniqueskills": [
         {
           "section": "",
-          "abilities": [
-            { "title": "◯Psychic Immunity", "description": "" }
-          ]
+          "abilities": [{ "title": "◯Psychic Immunity", "description": "" }]
         }
       ],
       "combatstyles": [
