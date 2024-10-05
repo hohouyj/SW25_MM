@@ -3,8 +3,7 @@
 *::after {
   box-sizing: border-box;
 }
-
-* {
+*/ * {
   margin: 0;
 }
 
@@ -15,18 +14,4 @@
 
 body {
   line-height: 1.2;
-}
-
-.monster {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /* border: 1px solid red; */
-  width: 50rem;
-  border: 0.1rem solid black;
-  padding: 2rem 1rem;
-}
-
-.monster * {
-  /* border: 0.1rem solid red; */
 }

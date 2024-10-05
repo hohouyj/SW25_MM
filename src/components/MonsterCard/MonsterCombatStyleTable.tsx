@@ -26,11 +26,17 @@ export default function MonsterCombatStyleTable({
             <tr key={idx}>
               <td>{style.style}</td>
               <td>
-                {style.accuracy} ({7 + parseInt(style.accuracy)})
+                {style.accuracy}{" "}
+                {parseInt(style.accuracy)
+                  ? "(" + (7 + parseInt(style.accuracy)) + ")"
+                  : ""}
               </td>
               <td>{style.damage}</td>
               <td>
-                {style.evasion} ({7 + parseInt(style.evasion)})
+                {style.evasion}{" "}
+                {parseInt(style.accuracy)
+                  ? "(" + (7 + parseInt(style.accuracy)) + ")"
+                  : ""}
               </td>
               <td>{style.defense}</td>
               <td>{style.hp}</td>
