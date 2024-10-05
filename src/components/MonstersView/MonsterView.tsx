@@ -1,10 +1,4 @@
-import {
-  SimpleGrid,
-  List,
-  TagsInput,
-  MantineProvider,
-  Grid,
-} from "@mantine/core";
+import { List, TagsInput, MantineProvider, Grid } from "@mantine/core";
 import MonsterCard from "../MonsterCard";
 import monstersJSON from "../../data/monsters.json";
 import { Monster } from "../../types";
