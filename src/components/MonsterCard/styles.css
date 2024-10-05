@@ -3,8 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   border: 1px solid black;
-  width: 50rem;
-  padding: 3rem 2.5rem;
+  padding: 1rem 2.5rem;
 }
 
 .monster-card-title {

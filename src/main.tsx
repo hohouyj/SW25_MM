@@ -7,7 +7,7 @@ import MonsterView from "./components/MonstersView/MonsterView.tsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "home",
     element: (
       <>
         <div>
@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "monsters",
+    path: "/",
     element: <MonsterView />,
   },
 ]);
