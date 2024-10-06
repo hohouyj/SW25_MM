@@ -3,6 +3,10 @@ import { useState, ChangeEvent, useMemo } from "react";
 import monsterData from "../data/monsters.json";
 import { useDebouncedValue } from "@mantine/hooks";
 
+type ResultType = {
+  item: any;
+};
+
 type QueryType = {
   $or: [
     { monstername: string },
@@ -54,6 +58,9 @@ const useMonsterSearch = () => {
       // ignoreFieldNorm: false,
       // fieldNormWeight: 1,
       // useExtendedSearch: true,1
+      sortFn: (a: ResultType, b: ResultType) => {
+        return parseInt(a.item[2].v) - parseInt(b.item[2].v);
+      },
       keys,
     };
     return new Fuse(monsterData.allmonsters, fuseOptions);
