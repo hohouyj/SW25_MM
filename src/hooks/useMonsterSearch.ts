@@ -1,47 +1,34 @@
-import Fuse from "fuse.js";
+import Fuse, { Expression } from "fuse.js";
 import { useState, ChangeEvent, useMemo } from "react";
 import monsterData from "../data/monsters.json";
 import { useDebouncedValue } from "@mantine/hooks";
 
-type ResultType = {
-  item: any;
-};
+// type ResultType = {
+//   item: any;
+// };
 
-type QueryType = {
-  $or: [
-    { monstername: string },
-    { habitat: string },
-    { level: string },
-    { monstertype: string },
-    { "uniqueskills.abilities.title": string },
-    { "uniqueskills.abilities.description": string }
-  ];
-};
+type TagQuery =
+  | { monstername: string }
+  | { habitat: string }
+  | { level: string } // Here the value can be either a string or an empty string
+  | { monstertype: string }
+  | { "uniqueskills.abilities.title": string }
+  | { "uniqueskills.abilities.description": string };
 
+type SearchQuery = {
+  $and: Array<{
+    $or: Array<TagQuery>;
+  }>;
+};
 const useMonsterSearch = () => {
-  const [keys, _] = useState<string[]>([
+  const keys = useMemo<string[]>(() => [
     "monstername",
     "habitat",
     "level",
     "monstertype",
     "uniqueskills.abilities.title",
     "uniqueskills.abilities.description",
-  ]);
-  const [query, setQuery] = useState<string>("Abyss Minions");
-  // const [debounced] = useDebouncedValue(query, 300);
-  const [queryTags, setQueryTags] = useState<QueryType[]>([
-    {
-      $or: [
-        { monstername: "Abyss Minions" },
-        { habitat: "Abyss Minions" },
-        { level: "Abyss Minions" },
-        { monstertype: "Abyss Minions" },
-        { "uniqueskills.abilities.title": "Abyss Minions" },
-        { "uniqueskills.abilities.description": "Abyss Minions" },
-      ],
-    },
-  ]);
-  const [debouncedTags] = useDebouncedValue(queryTags, 300);
+  ], []);
   const searchClient = useMemo(() => {
     const fuseOptions = {
       // isCaseSensitive: false,
@@ -58,59 +45,64 @@ const useMonsterSearch = () => {
       // ignoreFieldNorm: false,
       // fieldNormWeight: 1,
       // useExtendedSearch: true,1
-      sortFn: (a: ResultType, b: ResultType) => {
-        return parseInt(a.item[2].v) - parseInt(b.item[2].v);
-      },
+      // sortFn: (a: ResultType, b: ResultType) => {
+      //   return parseInt(a.item[2].v) - parseInt(b.item[2].v);
+      // },
       keys,
     };
     return new Fuse(monsterData.allmonsters, fuseOptions);
   }, [keys]);
+  const [tags, setTags] = useState<string[]>(["Abyss Minions"]);
+  const [debouncedTags] = useDebouncedValue(tags, 300);
+  const query = useMemo<SearchQuery>(() => {
+    const conditions = tags.map((tag) => {
+      let tagQueries: TagQuery[] = [];
+      if (isNaN(parseInt(tag))) {
+        tagQueries = [
+          { monstername: tag },
+          { habitat: tag },
+          { level: "" },
+          { monstertype: tag },
+          { "uniqueskills.abilities.title": tag },
+          { "uniqueskills.abilities.description": tag },
+        ]
+      } else {
+        tagQueries = [
+          { monstername: "" },
+          { habitat: "" },
+          { level: tag },
+          { monstertype: "" },
+          { "uniqueskills.abilities.title": "" },
+          { "uniqueskills.abilities.description": "" },
+        ];
+      }
 
-  const handleQueryChange = (event: ChangeEvent<HTMLInputElement>) => {
-    console.log(event.type);
-    let val = event.currentTarget.value;
-    setQuery(val);
-  };
+      return { $or: tagQueries };
+    });
 
-  const handleTagInputQueryChange = (tags: string[]) => {
-    setQueryTags(
-      tags.map((tag) => {
-        if (isNaN(parseInt(tag))) {
-          return {
-            $or: [
-              { monstername: tag },
-              { habitat: tag },
-              { level: "" },
-              { monstertype: tag },
-              { "uniqueskills.abilities.title": tag },
-              { "uniqueskills.abilities.description": tag },
-            ],
-          };
-        } else {
-          return {
-            $or: [
-              { monstername: "" },
-              { habitat: "" },
-              { level: tag },
-              { monstertype: "" },
-              { "uniqueskills.abilities.title": "" },
-              { "uniqueskills.abilities.description": "" },
-            ],
-          };
-        }
-      })
-    );
-  };
+
+    return {
+      $and: conditions
+    };
+  }, [debouncedTags]);
+
+  const removeTag = (tag: string) => {
+    const newTags = [...tags];
+    const tagIndex = newTags.indexOf(tag, 0);
+    newTags.splice(tagIndex, 1);
+    console.log(newTags);
+    setTags(newTags);
+  }
 
   const results = searchClient
-    .search({ $and: debouncedTags })
-    .map((result) => result.item);
+    .search(query)
+    .map((result) => result.item)
+    .sort((item1, item2) => { return parseInt(item1.level) - parseInt(item2.level); });
 
   return {
-    query,
-    setQuery,
-    handleQueryChange,
-    handleTagInputQueryChange,
+    tags,
+    setTags,
+    removeTag,
     results,
   };
 };
