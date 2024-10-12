@@ -55,7 +55,12 @@ export interface MonsterData {
 }
 
 export interface EncounterMonster extends Monster {
-  hitPoints: number;
+  name: string;
+  currentHp: number;
+  currentMp: number;
+  willpowerBonus: number;
+  fortitudeBonus: number;
+  swordshards: number;
 }
 
 export interface Encounter {
@@ -65,3 +70,11 @@ export interface Encounter {
 export type MonsterPropType = {
   monster: Monster;
 };
+
+
+export interface EncounterConfig {
+  monsters: EncounterMonster[];
+  description: string;
+  name: string;
+  campaign: string;
+}
