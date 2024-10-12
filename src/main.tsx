@@ -4,6 +4,7 @@ import App from "./App.tsx";
 import "@mantine/core/styles.css";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 import MonsterView from "./components/MonstersView/MonsterView.tsx";
+import { MantineProvider } from "@mantine/core";
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,8 @@ const router = createBrowserRouter([
 ]);
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <MantineProvider>
+      <RouterProvider router={router} />
+    </MantineProvider>
   </StrictMode>
 );
