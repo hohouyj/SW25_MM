@@ -1,5 +1,5 @@
-import Fuse, { Expression } from "fuse.js";
-import { useState, ChangeEvent, useMemo } from "react";
+import Fuse from "fuse.js";
+import { useState, useMemo } from "react";
 import monsterData from "../data/monsters.json";
 import { useDebouncedValue } from "@mantine/hooks";
 
@@ -21,14 +21,17 @@ type SearchQuery = {
   }>;
 };
 const useMonsterSearch = () => {
-  const keys = useMemo<string[]>(() => [
-    "monstername",
-    "habitat",
-    "level",
-    "monstertype",
-    "uniqueskills.abilities.title",
-    "uniqueskills.abilities.description",
-  ], []);
+  const keys = useMemo<string[]>(
+    () => [
+      "monstername",
+      "habitat",
+      "level",
+      "monstertype",
+      "uniqueskills.abilities.title",
+      "uniqueskills.abilities.description",
+    ],
+    []
+  );
   const searchClient = useMemo(() => {
     const fuseOptions = {
       // isCaseSensitive: false,
@@ -65,7 +68,7 @@ const useMonsterSearch = () => {
           { monstertype: tag },
           { "uniqueskills.abilities.title": tag },
           { "uniqueskills.abilities.description": tag },
-        ]
+        ];
       } else {
         tagQueries = [
           { monstername: "" },
@@ -80,9 +83,8 @@ const useMonsterSearch = () => {
       return { $or: tagQueries };
     });
 
-
     return {
-      $and: conditions
+      $and: conditions,
     };
   }, [debouncedTags]);
 
@@ -92,12 +94,14 @@ const useMonsterSearch = () => {
     newTags.splice(tagIndex, 1);
     console.log(newTags);
     setTags(newTags);
-  }
+  };
 
   const results = searchClient
     .search(query)
     .map((result) => result.item)
-    .sort((item1, item2) => { return parseInt(item1.level) - parseInt(item2.level); });
+    .sort((item1, item2) => {
+      return parseInt(item1.level) - parseInt(item2.level);
+    });
 
   return {
     tags,
