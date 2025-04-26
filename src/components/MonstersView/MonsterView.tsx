@@ -22,7 +22,7 @@ export default function () {
               value={tags}
               onChange={setTags}
               onRemove={removeTag}
-              label="Press Enter to submit a Monster search tag (level, name, habitat, type, skill name, skill description)"
+              label="Press Enter to Submit a Search Tag (e.g. abyss minions, forrest, daemon, flight, level 1, 5 sections)"
               placeholder="Enter tag"
               clearable
             />
