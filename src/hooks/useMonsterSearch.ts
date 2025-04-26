@@ -39,7 +39,7 @@ const useMonsterSearch = () => {
       // shouldSort: true,
       // includeMatches: false,
       findAllMatches: true,
-      minMatchCharLength: 0,
+      // minMatchCharLength: 1,
       // location: 0,
       threshold: 0.2,
       distance: 10000,
@@ -62,7 +62,7 @@ const useMonsterSearch = () => {
       const match = tag.match(/\d+/);
       const numberString: string = match?.[0] ?? '0'; // Provide default
       if (tag.toLowerCase().includes("level")) {
-        return { level: `^${numberString}` }
+        return { level: `=${numberString}` }
       }
       if (tag.toLowerCase().includes("section")) {
         return { sections: `^${numberString}` }
