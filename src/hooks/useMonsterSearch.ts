@@ -13,12 +13,11 @@ type TagQuery =
   | { level: string } // Here the value can be either a string or an empty string
   | { monstertype: string }
   | { "uniqueskills.abilities.title": string }
-  | { "uniqueskills.abilities.description": string };
+  | { "uniqueskills.abilities.description": string }
+  | { sections: string };
 
 type SearchQuery = {
-  $and: Array<{
-    $or: Array<TagQuery>;
-  }>;
+  $and: Array<{ $or: Array<TagQuery> } | TagQuery>;
 };
 const useMonsterSearch = () => {
   const keys = useMemo<string[]>(
@@ -29,6 +28,7 @@ const useMonsterSearch = () => {
       "monstertype",
       "uniqueskills.abilities.title",
       "uniqueskills.abilities.description",
+      "sections"
     ],
     []
   );
@@ -39,11 +39,11 @@ const useMonsterSearch = () => {
       // shouldSort: true,
       // includeMatches: false,
       findAllMatches: true,
-      // minMatchCharLength: 1,
+      minMatchCharLength: 0,
       // location: 0,
       threshold: 0.2,
       distance: 10000,
-      // useExtendedSearch: false,
+      useExtendedSearch: true,
       // ignoreLocation: false,
       // ignoreFieldNorm: false,
       // fieldNormWeight: 1,
@@ -59,32 +59,31 @@ const useMonsterSearch = () => {
   const [debouncedTags] = useDebouncedValue(tags, 300);
   const query = useMemo<SearchQuery>(() => {
     const conditions = tags.map((tag) => {
-      let tagQueries: TagQuery[] = [];
-      if (isNaN(parseInt(tag))) {
-        tagQueries = [
+      const match = tag.match(/\d+/);
+      const numberString: string = match?.[0] ?? '0'; // Provide default
+      if (tag.toLowerCase().includes("level")) {
+        return { level: `^${numberString}` }
+      }
+      if (tag.toLowerCase().includes("section")) {
+        return { sections: `^${numberString}` }
+      }
+      return {
+        $or: [
           { monstername: tag },
           { habitat: tag },
-          { level: "" },
           { monstertype: tag },
           { "uniqueskills.abilities.title": tag },
           { "uniqueskills.abilities.description": tag },
-        ];
-      } else {
-        tagQueries = [
-          { monstername: "" },
-          { habitat: "" },
-          { level: tag },
-          { monstertype: "" },
-          { "uniqueskills.abilities.title": "" },
-          { "uniqueskills.abilities.description": "" },
-        ];
+        ]
       }
-
-      return { $or: tagQueries };
     });
 
+    console.log({
+      $and: [...conditions],
+    })
+
     return {
-      $and: conditions,
+      $and: [...conditions],
     };
   }, [debouncedTags]);
 
