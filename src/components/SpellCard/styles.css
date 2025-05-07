@@ -1,0 +1,44 @@
+.spell {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 1rem 2.5rem;
+}
+
+.powertable {
+  border-collapse: collapse;
+  font-family: sans-serif;
+  margin: 20px 0;
+}
+
+.powertable td {
+  border: 1px solid black;
+  padding: 6px;
+  width: 40px;
+  text-align: center;
+}
+
+.powertable .bbg {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.powertable .header td {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+.powertable .alt {
+  background-color: #eee;
+}
+
+.powertable .circle {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+.powertable tr:nth-child(2n + 1) {
+  background-color: #f0f0f0;
+}

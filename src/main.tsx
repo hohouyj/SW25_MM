@@ -5,6 +5,7 @@ import "@mantine/core/styles.css";
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
 import MonsterView from "./components/MonstersView/MonsterView.tsx";
 import { MantineProvider } from "@mantine/core";
+import SpellView from "./components/SpellView/SpellView.tsx";
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <MonsterView />,
-  },
+  },{
+    path: "/spells",
+    element: <SpellView />,
+  }
 ]);
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

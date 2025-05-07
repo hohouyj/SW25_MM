@@ -78,3 +78,26 @@ export interface EncounterConfig {
   name: string;
   campaign: string;
 }
+
+export interface Spell {
+  spell_id: string;
+  spellname: string;
+  tradition: string;
+  divinity: string;
+  level: string;
+  cost: string;
+  target: string;
+  rangearea: string;
+  duration: string;
+  resistance: string;
+  type: string;
+  preptime: string;
+  casttime: string;
+  description: string;
+  elementtype: string | null;
+  sword: string | null;
+}
+
+export interface SpellPropType {
+  spell: Spell
+}
