@@ -1,0 +1,7 @@
+.spell-list {
+  max-height: 100vh;
+}
+
+.spell-list {
+  flex-direction: column;
+}
