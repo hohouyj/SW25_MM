@@ -1,15 +1,83 @@
-.spell {
+.spell-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid black;
-  padding: 1rem 2.5rem;
+}
+
+.spell-label {
+  text-align: right;
+  font-weight: bold;
+  background-color: #ddd;
+}
+
+.spell-card-header{
+  display: flex;
+  flex-direction: row;
+  font-size: 1.6rem;
+  border-collapse: collapse;
+}
+
+.spell-card-header div{
+  border: 0.1rem solid black;
+  padding: 0rem 0.8rem;
+  border-style: solid solid solid none;
+}
+
+.spell-card-header > :first-child{
+  border-style: solid;
+}
+
+.spell-card-header .name{
+  flex-grow: 1;
+}
+
+
+.spell-card-details {
+  font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  border: 0.05rem solid black;
+  border-style: none none none solid;
+}
+
+.detail{
+  display: flex;
+  flex-grow: 1;
+  border: 0.05rem solid black;
+  border-style: none solid none none;
+}
+
+.detail div{
+  padding: 0rem 0.8rem;
+  flex-grow: 1;
+  border: 0.05rem solid black;
+  border-style: none none solid none;
+}
+
+.detail .spell-label{
+  flex-grow: 0;
+  border-right: 0.05rem solid black;
+}
+
+.spell-card-body {
+  border: 0.1rem solid black;
+  border-style: none solid solid solid;
+  padding: 0rem 0.8rem;
+
+}
+
+
+
+
+/* Powertable stuffs */
+.spell-power-table {
+  display: flex;
 }
 
 .powertable {
   border-collapse: collapse;
   font-family: sans-serif;
   margin: 20px 0;
+  flex-grow: 1;
 }
 
 .powertable td {

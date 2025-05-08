@@ -79,24 +79,45 @@ export interface EncounterConfig {
   campaign: string;
 }
 
+// export interface Spell {
+//   spell_id: string;
+//   spellname: string;
+//   tradition: string;
+//   divinity: string;
+//   level: string;
+//   cost: string;
+//   target: string;
+//   rangearea: string;
+//   duration: string;
+//   resistance: string;
+//   type: string;
+//   preptime: string;
+//   casttime: string;
+//   description: string;
+//   elementtype: string | null;
+//   sword: string | null;
+// }
+
 export interface Spell {
-  spell_id: string;
-  spellname: string;
+  spell_id: string | number;
+  name: string;
   tradition: string;
-  divinity: string;
   level: string;
+  description: string;
+  power_table?: string | null;
   cost: string;
   target: string;
-  rangearea: string;
   duration: string;
-  resistance: string;
-  type: string;
-  preptime: string;
-  casttime: string;
-  description: string;
-  elementtype: string | null;
-  sword: string | null;
-}
+  resistance?: string;
+  type?: string;
+  preparation_time?: string;
+  casting_time?: string;
+  summary?: string;
+  magisphere?: string | null;
+  rangearea?: string;
+  fairy_magic_type?: string;
+};
+
 
 export interface SpellPropType {
   spell: Spell
