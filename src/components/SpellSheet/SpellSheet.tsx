@@ -1,8 +1,7 @@
-import { Accordion, Container, Paper, Text } from "@mantine/core";
+import { Accordion, Paper, Text } from "@mantine/core";
 import { SpellCaster, Spell, SpellBins } from "../../types";
 import { defaultSpellCaster, getSpellCaster } from "../../utils/spellCasterStorage";
 import { useParams } from "react-router-dom";
-import SpellCard from "../SpellCard/SpellCard";
 import spellData from "../../data/spells.json";
 
 

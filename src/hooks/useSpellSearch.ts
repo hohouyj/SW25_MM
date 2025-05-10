@@ -1,8 +1,7 @@
-import Fuse from "fuse.js";
-import { useState, useMemo } from "react";
-import spellData from "../data/spells.json";
 import { useDebouncedValue } from "@mantine/hooks";
-import { Spell, SpellCaster } from "../types";
+import Fuse from "fuse.js";
+import { useMemo, useState } from "react";
+import spellData from "../data/spells.json";
 
 // type ResultType = {
 //   item: any;
