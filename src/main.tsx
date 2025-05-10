@@ -40,6 +40,10 @@ const router = createBrowserRouter([
         path: "spellsheet",
         element: <SpellCasterManager />,
       },
+      {
+        path: "spellCaster/:id",
+        element: <SpellSheet />
+      }
     ],
   },
 ]);

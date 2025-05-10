@@ -7,42 +7,65 @@ import {
     Group,
     Paper,
     Grid,
+    Select,
+    MultiSelect,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import { useEffect, useState } from "react";
 import { useForm } from "@mantine/form";
 import { notifications } from "@mantine/notifications";
-import { v4 as uuidv4 } from "uuid";
 
 import {
     getAllSpellCasters,
     addSpellCaster,
     updateSpellCaster,
     deleteSpellCaster,
+    defaultSpellCaster,
 } from "../../utils/spellCasterStorage";
 import { SpellCaster } from "../../types";
-
-function defaultSpellCaster(): SpellCaster {
-    return {
-        id: uuidv4(),
-        name: "",
-        abyssal_magic_level: 0,
-        deep_magic_level: 0,
-        divine_level: 0,
-        divinity: "",
-        fairy_magic_level: 0,
-        magitech_level: 0,
-        nature_level: 0,
-        spiritualism_level: 0,
-        summoning_arts_level: 0,
-        truespeech_level: 0,
-    };
-}
+import { useNavigate } from "react-router-dom";
 
 export default function SpellCasterManager() {
     const [spellCasters, setSpellCasters] = useState<SpellCaster[]>([]);
     const [modalOpened, { open, close }] = useDisclosure(false);
     const [isEditing, setIsEditing] = useState(false);
+    const navigate = useNavigate()
+    const DIVINITY_OPTIONS = [
+        "Lyphos, Divine Ancestor",
+        "Gurvazo, Trap Lord",
+        "Grendal, Blazing Emperor",
+        "Meigal, Fraud God",
+        "Strasford, God of Railroads",
+        "Miritsa, Goddess of Love and Vengeance",
+        "Dalion, God of Trees",
+        "Kilhia, God of Wisdom",
+        "Dreven, Magic Hunter King",
+        "Sien, Goddess of the Moon",
+        "Gamel, God of Money",
+        "Sadur, Wandering God",
+        "Myles, Divine Chef",
+        "Asteria, Goddess of Fairies",
+        "Dalkhrem, God of War",
+        "Yuliskaroa, Goddess of Victory",
+        "Dovruk, God of Drunken Ecstasy",
+        "Harula, Guiding Star",
+        "Paro, Divine Herald",
+        "Tidan, God of the Sun",
+        "Aurmata, Armored Goddess",
+        "Eiryak, Sea Snatcher",
+        "Zoras-Valles, Earth Storm",
+        "Nivaceps, Blood-bathing Goddess",
+        "Zaargias, God of Death",
+        "Zeides, Immortal Queen",
+        "Laris, Mad God",
+        "Eve, Shield Against the Abyss",
+        "Adeni, Weaver of Threads",
+        "Furusil, Goddess of Wind and Rain",
+        "Kaggu, Martial Fairy",
+        "Mirtabar, Divine Hand"
+    ];
+    const FAIRY_MAGIC_OPTIONS = ['Basic', 'Dark', 'Earth', 'Fire', 'Light', 'Special', 'Water/Ice', 'Wind'];
+
 
     const form = useForm<SpellCaster>({
         initialValues: defaultSpellCaster(),
@@ -88,6 +111,10 @@ export default function SpellCasterManager() {
         });
     };
 
+    const openSpellSheet = (id: string) => {
+        navigate("/spellCaster/" + id)
+    }
+
     return (
         <>
             <Group justify="space-between" mb="md">
@@ -116,7 +143,7 @@ export default function SpellCasterManager() {
 
                     <Table.Tbody>
                         {spellCasters.map((sc) => (
-                            <Table.Tr key={sc.id}>
+                            <Table.Tr key={sc.id} >
                                 <Table.Td>{sc.name}</Table.Td>
                                 <Table.Td>{sc.divinity || '—'}</Table.Td>
                                 <Table.Td>
@@ -134,6 +161,9 @@ export default function SpellCasterManager() {
                                 </Table.Td>
                                 <Table.Td>
                                     <Group gap="xs">
+                                        <Button size="xs" color="green" onClick={() => openSpellSheet(sc.id)}>
+                                            Spell Sheet
+                                        </Button>
                                         <Button size="xs" onClick={() => handleEdit(sc)}>
                                             Edit
                                         </Button>
@@ -142,7 +172,10 @@ export default function SpellCasterManager() {
                                         </Button>
                                     </Group>
                                 </Table.Td>
+
                             </Table.Tr>
+
+
                         ))}
                     </Table.Tbody>
                 </Table>
@@ -159,8 +192,24 @@ export default function SpellCasterManager() {
                         <Grid.Col span={6}>
                             <TextInput label="Name" {...form.getInputProps("name")} />
                         </Grid.Col>
+
                         <Grid.Col span={6}>
-                            <TextInput label="Divinity" {...form.getInputProps("divinity")} />
+                            <Select
+                                label="Divinity"
+                                data={DIVINITY_OPTIONS}
+                                clearable
+                                {...form.getInputProps("divinity")}
+                            />
+                        </Grid.Col>
+
+                        <Grid.Col span={12}>
+                            <MultiSelect
+                                label="Fairy Magic Elements"
+                                data={FAIRY_MAGIC_OPTIONS}
+                                searchable
+                                clearable
+                                {...form.getInputProps("fairy_magic_types")}
+                            />
                         </Grid.Col>
 
                         {[

@@ -116,6 +116,7 @@ export interface Spell {
   magisphere?: string | null;
   rangearea?: string;
   fairy_magic_type?: string;
+  divinity?: string;
 };
 
 
@@ -136,4 +137,7 @@ export interface SpellCaster {
   spiritualism_level: number,
   summoning_arts_level: number,
   truespeech_level: number,
+  fairy_magic_types: string[]
 }
+
+export type SpellBins = Record<string, Spell[]>;
