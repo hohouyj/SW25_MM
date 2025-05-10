@@ -1,6 +1,7 @@
 .spell-card {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
 }
 
 .spell-label {
@@ -17,7 +18,7 @@
 }
 
 .spell-card-header div{
-  border: 0.1rem solid black;
+  border: 0.05rem solid black;
   padding: 0rem 0.8rem;
   border-style: solid solid solid none;
 }
@@ -59,7 +60,7 @@
 }
 
 .spell-card-body {
-  border: 0.1rem solid black;
+  border: 0.05rem solid black;
   border-style: none solid solid solid;
   padding: 0rem 0.8rem;
 

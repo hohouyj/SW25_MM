@@ -116,9 +116,28 @@ export interface Spell {
   magisphere?: string | null;
   rangearea?: string;
   fairy_magic_type?: string;
+  divinity?: string;
 };
 
 
 export interface SpellPropType {
   spell: Spell
 }
+
+export interface SpellCaster {
+  id: string,
+  name: string,
+  abyssal_magic_level: number,
+  deep_magic_level: number,
+  divine_level: number,
+  divinity: string | null,
+  fairy_magic_level: number,
+  magitech_level: number,
+  nature_level: number,
+  spiritualism_level: number,
+  summoning_arts_level: number,
+  truespeech_level: number,
+  fairy_magic_types: string[]
+}
+
+export type SpellBins = Record<string, Spell[]>;

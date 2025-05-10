@@ -1,24 +1,24 @@
-import Fuse from "fuse.js";
-import { useState, useMemo } from "react";
-import spellData from "../data/spells.json";
 import { useDebouncedValue } from "@mantine/hooks";
+import Fuse from "fuse.js";
+import { useMemo, useState } from "react";
+import spellData from "../data/spells.json";
 
 // type ResultType = {
 //   item: any;
 // };
 
-type TagQuery = { name: string } | {cost: string} | {level: string}
+type TagQuery =
+  | { name: string }
+  | { cost: string }
+  | { level: string }
+  | { tradition: string };
 
 type SearchQuery = {
   $and: Array<{ $or: Array<TagQuery> } | TagQuery>;
 };
 const useSpellSearch = () => {
   const keys = useMemo<string[]>(
-    () => [
-      "name",
-      "cost",
-      "level"
-    ],
+    () => ["name", "cost", "level", "tradition"],
     []
   );
   const searchClient = useMemo(() => {
@@ -49,23 +49,21 @@ const useSpellSearch = () => {
   const query = useMemo<SearchQuery>(() => {
     const conditions = tags.map((tag) => {
       const match = tag.match(/\d+/);
-      const numberString: string = match?.[0] ?? '0'; // Provide default
+      const numberString: string = match?.[0] ?? "0"; // Provide default
       if (tag.toLowerCase().includes("level")) {
-        return { level: `=${numberString}` }
+        return { level: `=${numberString}` };
       }
       if (tag.toLowerCase().includes("mp")) {
-        return { cost: `${numberString}` }
+        return { cost: `${numberString}` };
       }
       return {
-        $or: [
-          { name: tag },
-        ]
-      }
+        $or: [{ name: tag }, { tradition: tag }],
+      };
     });
 
     console.log({
       $and: [...conditions],
-    })
+    });
 
     return {
       $and: [...conditions],
@@ -94,5 +92,6 @@ const useSpellSearch = () => {
     results,
   };
 };
+
 
 export default useSpellSearch;
