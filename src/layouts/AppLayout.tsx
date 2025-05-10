@@ -8,6 +8,7 @@ export default function AppLayout() {
     // { label: 'Home', to: '/home' },
     { label: 'Monsters', to: '/' },
     { label: 'Spells', to: '/spells' },
+    { label: 'Spell Sheet', to: '/spellsheet' },
   ];
 
   return (

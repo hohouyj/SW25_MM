@@ -1,3 +1,5 @@
+
+
 .spell-card {
   display: flex;
   flex-direction: column;
@@ -17,7 +19,7 @@
 }
 
 .spell-card-header div{
-  border: 0.1rem solid black;
+  border: 0.05rem solid black;
   padding: 0rem 0.8rem;
   border-style: solid solid solid none;
 }
@@ -36,27 +38,35 @@
   display: flex;
   flex-wrap: wrap;
   border: 0.05rem solid black;
-  border-style: none none none solid;
+  margin: -0.05rem;
 }
 
 .detail{
   display: flex;
   flex-grow: 1;
   border: 0.05rem solid black;
-  border-style: none solid none none;
+  margin: -0.05rem;
 }
 
 .detail div{
   padding: 0rem 0.8rem;
   flex-grow: 1;
   border: 0.05rem solid black;
-  border-style: none none solid none;
+  margin: -0.05rem;
 }
 
 .detail .spell-label{
   flex-grow: 0;
   border-right: 0.05rem solid black;
+  margin: -0.05rem;
 }
+
+.detail .spell-detail{
+  flex-grow: 0;
+  border-right: 0.05rem solid black;
+  margin: -0.05rem;
+}
+
 
 .spell-card-body {
   border: 0.1rem solid black;

@@ -23,7 +23,7 @@ function SpellCard({ spell, }: SpellCardProps) {
           <div className="spell-label">
             Tar.
           </div>
-          <div>
+          <div className="spell-detail">
             {`${spell.target}`}
           </div>
         </div>

@@ -6,6 +6,12 @@ import MonsterView from "./components/MonstersView/MonsterView.tsx";
 import { MantineProvider } from "@mantine/core";
 import SpellView from "./components/SpellView/SpellView.tsx";
 import AppLayout from "./layouts/AppLayout.tsx";
+import SpellSheet from "./components/SpellSheet/SpellSheet.tsx";
+import SpellCasterManager from "./components/SpellSheet/SpellCasterManager.tsx";
+import { Notifications } from "@mantine/notifications";
+
+import '@mantine/core/styles.css';
+import '@mantine/notifications/styles.css';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +36,10 @@ const router = createBrowserRouter([
         path: "spells",
         element: <SpellView />,
       },
+      {
+        path: "spellsheet",
+        element: <SpellCasterManager />,
+      },
     ],
   },
 ]);
@@ -37,6 +47,7 @@ const router = createBrowserRouter([
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <MantineProvider>
+      <Notifications />
       <RouterProvider router={router} />
     </MantineProvider>
   </StrictMode>

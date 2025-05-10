@@ -7,7 +7,7 @@ import { useDebouncedValue } from "@mantine/hooks";
 //   item: any;
 // };
 
-type TagQuery = { name: string } | {cost: string} | {level: string}
+type TagQuery = { name: string } | {cost: string} | {level: string} | {tradition: string}
 
 type SearchQuery = {
   $and: Array<{ $or: Array<TagQuery> } | TagQuery>;
@@ -17,7 +17,8 @@ const useSpellSearch = () => {
     () => [
       "name",
       "cost",
-      "level"
+      "level",
+      "tradition"
     ],
     []
   );
@@ -59,6 +60,7 @@ const useSpellSearch = () => {
       return {
         $or: [
           { name: tag },
+          {tradition: tag}
         ]
       }
     });
