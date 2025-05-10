@@ -1,8 +1,7 @@
-
-
 .spell-card {
   display: flex;
   flex-direction: column;
+  margin: 1rem;
 }
 
 .spell-label {
@@ -38,38 +37,30 @@
   display: flex;
   flex-wrap: wrap;
   border: 0.05rem solid black;
-  margin: -0.05rem;
+  border-style: none none none solid;
 }
 
 .detail{
   display: flex;
   flex-grow: 1;
   border: 0.05rem solid black;
-  margin: -0.05rem;
+  border-style: none solid none none;
 }
 
 .detail div{
   padding: 0rem 0.8rem;
   flex-grow: 1;
   border: 0.05rem solid black;
-  margin: -0.05rem;
+  border-style: none none solid none;
 }
 
 .detail .spell-label{
   flex-grow: 0;
   border-right: 0.05rem solid black;
-  margin: -0.05rem;
 }
-
-.detail .spell-detail{
-  flex-grow: 0;
-  border-right: 0.05rem solid black;
-  margin: -0.05rem;
-}
-
 
 .spell-card-body {
-  border: 0.1rem solid black;
+  border: 0.05rem solid black;
   border-style: none solid solid solid;
   padding: 0rem 0.8rem;
 
