@@ -1,4 +1,4 @@
-import { AppShell, AppShellHeader, AppShellMain, Box, Group, Anchor } from '@mantine/core';
+import { Anchor, AppShell, AppShellHeader, AppShellMain, Box, Group } from '@mantine/core';
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
 export default function AppLayout() {
@@ -6,7 +6,7 @@ export default function AppLayout() {
 
   const links = [
     // { label: 'Home', to: '/home' },
-    { label: 'Monsters', to: '/' },
+    { label: 'Monsters', to: '/monsters' },
     { label: 'Spells', to: '/spells' },
     { label: 'Spell Sheet', to: '/spellsheet' },
   ];

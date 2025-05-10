@@ -1,14 +1,14 @@
+import { MantineProvider } from "@mantine/core";
+import "@mantine/core/styles.css";
+import { Notifications } from "@mantine/notifications";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "@mantine/core/styles.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import MonsterView from "./components/MonstersView/MonsterView.tsx";
-import { MantineProvider } from "@mantine/core";
+import SpellCasterManager from "./components/SpellSheet/SpellCasterManager.tsx";
+import SpellSheet from "./components/SpellSheet/SpellSheet.tsx";
 import SpellView from "./components/SpellView/SpellView.tsx";
 import AppLayout from "./layouts/AppLayout.tsx";
-import SpellSheet from "./components/SpellSheet/SpellSheet.tsx";
-import SpellCasterManager from "./components/SpellSheet/SpellCasterManager.tsx";
-import { Notifications } from "@mantine/notifications";
 
 import '@mantine/core/styles.css';
 import '@mantine/notifications/styles.css';
@@ -19,17 +19,11 @@ const router = createBrowserRouter([
     element: <AppLayout />,
     children: [
       {
-        path: "home",
-        element: (
-          <>
-            <div>
-              <h1>Hello World</h1>
-            </div>
-          </>
-        ),
+        path: "/",
+        element: <Navigate to="/monsters" replace />,
       },
       {
-        path: "",
+        path: "monsters",
         element: <MonsterView />,
       },
       {
@@ -41,7 +35,7 @@ const router = createBrowserRouter([
         element: <SpellCasterManager />,
       },
       {
-        path: "spellCaster/:id",
+        path: "spellsheet/:id",
         element: <SpellSheet />
       }
     ],

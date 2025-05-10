@@ -1,8 +1,10 @@
-import { Accordion, Paper, Text } from "@mantine/core";
-import { SpellCaster, Spell, SpellBins } from "../../types";
-import { defaultSpellCaster, getSpellCaster } from "../../utils/spellCasterStorage";
+import { Box, Paper, SimpleGrid, Text, Title } from "@mantine/core";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 import spellData from "../../data/spells.json";
+import { Spell, SpellBins, SpellCaster } from "../../types";
+import { defaultSpellCaster, getSpellCaster } from "../../utils/spellCasterStorage";
+import SpellCard from "../SpellCard/SpellCard";
 
 
 
@@ -75,24 +77,46 @@ export default function SpellSheet() {
 
     const spellBins = binSpellsByTradition(spells)
 
+    const [expandedSpellId, setExpandedSpellId] = useState<string | number | null>(null);
+
+
     return (
-        <Accordion multiple variant="separated">
+        <SimpleGrid cols={3} spacing="lg">
             {Object.entries(spellBins)
-                .filter(([_, spells]) => spells.length > 0) // 👈 filter out empty bins
+                .filter(([_, spells]) => spells.length > 0)
                 .map(([tradition, spells]) => (
-                    <Accordion.Item key={tradition} value={tradition}>
-                        <Accordion.Control>{tradition} ({spells.length})</Accordion.Control>
-                        <Accordion.Panel>
-                            {spells.map((spell) => (
-                                <Paper key={spell.spell_id} withBorder p="sm" mb="sm" radius="md">
-                                    <Text fw={500}>{spell.name} (Level {spell.level})</Text>
-                                    <Text size="sm" c="dimmed">{spell.summary || spell.description}</Text>
-                                </Paper>
-                            ))}
-                        </Accordion.Panel>
-                    </Accordion.Item>
+                    <Box key={tradition}>
+                        <Title order={4} mb="sm">
+                            {tradition} ({spells.length})
+                        </Title>
+
+                        {spells.map((spell) => {
+                            const isExpanded = expandedSpellId === spell.spell_id;
+                            return (
+                                <div
+                                    key={spell.spell_id}
+                                    onClick={() =>
+                                        setExpandedSpellId(isExpanded ? null : spell.spell_id)
+                                    }
+                                >
+                                    {isExpanded ? (
+                                        <SpellCard spell={spell} />
+                                    ) : (
+                                        <Paper withBorder p="sm" mb="sm" radius="md" style={{ cursor: "pointer" }}>
+                                            <Text fw={500}>
+                                                {spell.name} (Level {spell.level})
+                                            </Text>
+                                            <Text size="sm" c="dimmed">
+                                                {spell.summary || spell.description}
+                                            </Text>
+                                        </Paper>
+                                    )}
+                                </div>
+                            );
+                        })}
+                    </Box>
                 ))}
-        </Accordion>
+        </SimpleGrid>
 
     );
 }

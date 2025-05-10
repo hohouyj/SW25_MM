@@ -1,29 +1,29 @@
 import {
     Button,
+    Grid,
+    Group,
+    Modal,
+    MultiSelect,
+    NumberInput,
+    Paper,
+    Select,
     Table,
     TextInput,
-    NumberInput,
-    Modal,
-    Group,
-    Paper,
-    Grid,
-    Select,
-    MultiSelect,
 } from "@mantine/core";
-import { useDisclosure } from "@mantine/hooks";
-import { useEffect, useState } from "react";
 import { useForm } from "@mantine/form";
+import { useDisclosure } from "@mantine/hooks";
 import { notifications } from "@mantine/notifications";
+import { useEffect, useState } from "react";
 
-import {
-    getAllSpellCasters,
-    addSpellCaster,
-    updateSpellCaster,
-    deleteSpellCaster,
-    defaultSpellCaster,
-} from "../../utils/spellCasterStorage";
-import { SpellCaster } from "../../types";
 import { useNavigate } from "react-router-dom";
+import { SpellCaster } from "../../types";
+import {
+    addSpellCaster,
+    defaultSpellCaster,
+    deleteSpellCaster,
+    getAllSpellCasters,
+    updateSpellCaster,
+} from "../../utils/spellCasterStorage";
 
 export default function SpellCasterManager() {
     const [spellCasters, setSpellCasters] = useState<SpellCaster[]>([]);
@@ -112,7 +112,7 @@ export default function SpellCasterManager() {
     };
 
     const openSpellSheet = (id: string) => {
-        navigate("/spellCaster/" + id)
+        navigate("/spellsheet/" + id)
     }
 
     return (
