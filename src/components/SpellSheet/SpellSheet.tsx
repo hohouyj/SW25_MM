@@ -104,7 +104,7 @@ export default function SpellSheet() {
                                     ) : (
                                         <Paper withBorder p="sm" mb="sm" radius="md" style={{ cursor: "pointer" }}>
                                             <Text fw={500}>
-                                                {spell.name} (Level {spell.level})
+                                                {spell.name} (Level {spell.level}) {spell.cost}
                                             </Text>
                                             <Text size="sm" c="dimmed">
                                                 {spell.summary || spell.description}
