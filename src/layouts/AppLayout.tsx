@@ -1,4 +1,5 @@
 import { Anchor, AppShell, AppShellHeader, AppShellMain, Box, Group } from '@mantine/core';
+import { Analytics } from "@vercel/analytics/next";
 import { Link, Outlet, useLocation } from 'react-router-dom';
 
 export default function AppLayout() {
@@ -35,6 +36,7 @@ export default function AppLayout() {
       <AppShellMain>
         <Outlet />
       </AppShellMain>
+      <Analytics />
     </AppShell>
   );
 }
