@@ -1,10 +1,10 @@
-import { Box, Paper, SimpleGrid, Text, Title } from "@mantine/core";
+import { Box, Button, Paper, SimpleGrid, Text, Title } from "@mantine/core";
 import { useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSpellFilter } from "../../hooks/useSpellFilter";
 import { defaultSpellCaster, getSpellCaster } from "../../utils/spellCasterStorage";
 import { binSpellsByTradition, getAvailableSpells } from "../../utils/spellFilter";
-import SpellCard from "../SpellCard/SpellCard";
+import MobileSpellCard from "../SpellCard/MobileSpellCard";
 import SpellFilter from "./SpellFilter";
 
 export default function SpellSheet() {
@@ -25,6 +25,7 @@ export default function SpellSheet() {
     return (
         <>
             <SpellFilter options={options} filters={filters} updateFilters={updateFilters} />
+
             <SimpleGrid cols={3} spacing="lg">
                 {Object.entries(spellBins)
                     .filter(([_, spells]) => spells.length > 0)
@@ -36,17 +37,24 @@ export default function SpellSheet() {
 
                             {spells.map((spell) => {
                                 const isExpanded = expandedSpellId === spell.spell_id;
+
                                 return (
-                                    <div
-                                        key={spell.spell_id}
-                                        onClick={() =>
-                                            setExpandedSpellId(isExpanded ? null : spell.spell_id)
-                                        }
-                                    >
+                                    <Box key={spell.spell_id} mb="sm" pos="relative">
+                                        <Button
+                                            size="xs"
+                                            variant="subtle"
+                                            style={{ position: 'absolute', top: 8, right: 8, zIndex: 1 }}
+                                            onClick={() =>
+                                                setExpandedSpellId(isExpanded ? null : spell.spell_id)
+                                            }
+                                        >
+                                            {isExpanded ? 'Close' : 'Open'}
+                                        </Button>
+
                                         {isExpanded ? (
-                                            <SpellCard spell={spell} />
+                                            <MobileSpellCard spell={spell} />
                                         ) : (
-                                            <Paper withBorder p="sm" mb="sm" radius="md" style={{ cursor: "pointer" }}>
+                                            <Paper withBorder p="sm" radius="md" style={{ cursor: 'pointer' }}>
                                                 <Text fw={500}>
                                                     {spell.name} (Level {spell.level}) {spell.cost}
                                                 </Text>
@@ -55,7 +63,7 @@ export default function SpellSheet() {
                                                 </Text>
                                             </Paper>
                                         )}
-                                    </div>
+                                    </Box>
                                 );
                             })}
                         </Box>
