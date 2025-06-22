@@ -10,24 +10,24 @@
   background-color: #ddd;
 }
 
-.spell-card-header{
+.spell-card-header {
   display: flex;
   flex-direction: row;
   font-size: 1.6rem;
   border-collapse: collapse;
 }
 
-.spell-card-header div{
+.spell-card-header div {
   border: 0.05rem solid black;
   padding: 0rem 0.8rem;
   border-style: solid solid solid none;
 }
 
-.spell-card-header > :first-child{
+.spell-card-header> :first-child {
   border-style: solid;
 }
 
-.spell-card-header .name{
+.spell-card-header .name {
   flex-grow: 1;
 }
 
@@ -40,21 +40,21 @@
   border-style: none none none solid;
 }
 
-.detail{
+.detail {
   display: flex;
   flex-grow: 1;
   border: 0.05rem solid black;
   border-style: none solid none none;
 }
 
-.detail div{
+.detail div {
   padding: 0rem 0.8rem;
   flex-grow: 1;
   border: 0.05rem solid black;
   border-style: none none solid none;
 }
 
-.detail .spell-label{
+.detail .spell-label {
   flex-grow: 0;
   border-right: 0.05rem solid black;
 }
@@ -70,22 +70,18 @@
 
 
 /* Powertable stuffs */
-.spell-power-table {
-  display: flex;
-}
-
 .powertable {
+  width: 100%;
   border-collapse: collapse;
   font-family: sans-serif;
-  margin: 20px 0;
-  flex-grow: 1;
+  margin: 1rem 0;
 }
 
 .powertable td {
   border: 1px solid black;
-  padding: 6px;
-  width: 40px;
-  text-align: center;
+  padding: 8px;
+  text-align: left;
+  word-break: break-word;
 }
 
 .powertable .bbg {
@@ -99,15 +95,6 @@
   font-weight: bold;
 }
 
-.powertable .alt {
-  background-color: #eee;
-}
-
-.powertable .circle {
-  font-family: 'Arial', sans-serif;
-  font-weight: bold;
-}
-
 .powertable tr:nth-child(2n + 1) {
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
 }
