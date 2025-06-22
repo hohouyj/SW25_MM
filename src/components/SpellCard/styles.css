@@ -70,22 +70,18 @@
 
 
 /* Powertable stuffs */
-.spell-power-table {
-  display: flex;
-}
-
 .powertable {
+  width: 100%; /* ✅ Make the table take full container width */
   border-collapse: collapse;
   font-family: sans-serif;
-  margin: 20px 0;
-  flex-grow: 1;
+  margin: 1rem 0;
 }
 
 .powertable td {
   border: 1px solid black;
-  padding: 6px;
-  width: 40px;
-  text-align: center;
+  padding: 8px; /* more padding helps readability on mobile */
+  text-align: left; /* better for text content */
+  word-break: break-word;
 }
 
 .powertable .bbg {
@@ -99,15 +95,6 @@
   font-weight: bold;
 }
 
-.powertable .alt {
-  background-color: #eee;
-}
-
-.powertable .circle {
-  font-family: 'Arial', sans-serif;
-  font-weight: bold;
-}
-
 .powertable tr:nth-child(2n + 1) {
-  background-color: #f0f0f0;
+  background-color: #f9f9f9;
 }
