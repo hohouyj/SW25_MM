@@ -26,7 +26,11 @@ export default function SpellSheet() {
         <>
             <SpellFilter options={options} filters={filters} updateFilters={updateFilters} />
 
-            <SimpleGrid cols={3} spacing="lg">
+            <SimpleGrid
+                cols={{ base: 1, sm: 2, md: 3 }}
+                spacing="lg"
+                verticalSpacing="md"
+            >
                 {Object.entries(spellBins)
                     .filter(([_, spells]) => spells.length > 0)
                     .map(([tradition, spells]) => (
