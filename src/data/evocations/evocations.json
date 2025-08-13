@@ -1,0 +1,467 @@
+{
+    "evocations": [
+        {
+            "name": "\u23e9\u25b3Combine Materials",
+            "tradition": "Evocation",
+            "level": "10th",
+            "description": "For the duration, the caster can combine their material cards and use them as a card of higher rank. Multiple cards of any rank can be used as a card of one rank higher (e.g., multiple cards of rank B can be combined into a card of A rank). The number of cards to be combined is determined by the rank of the card of the next Evocation. The color and rank of the cards to be combined must be the same.SS-rank material cards can only be combined into SS cards. This effect is effective even if this Evocation consumes multiple cards simultaneously.",
+            "power_table": null,
+            "card_grades": {
+                "B": "10 cards can be combined and used as an A rank card.",
+                "A": "8 cards can be combined and used as an S rank card.",
+                "S": "6 cards can be combined and used as a SS rank card.",
+                "SS": "4 cards can be combined and used as a SS rank card."
+            },
+            "cards": "White x 1 & Black x 1",
+            "target": "Caster",
+            "rangearea": "Caster",
+            "duration": "3 minutes (18 rounds)",
+            "resistance": "Optional"
+        },
+        {
+            "name": "\u23e9\u25b3Encyclopedia",
+            "tradition": "Evocation",
+            "level": "5th",
+            "description": "This Evocation evokes the target's knowledge and increases the success value of the Monster Knowledge check. This Evocation loses its effect immediately after one Monster Knowledge check.If this Evocation is used for other characters during Combat Preparation, the alchemist and target must be placed in the same position (area, coordinate) during initial placement at the start of the battle.",
+            "power_table": null,
+            "card_grades": {
+                "B": "+1 bonus",
+                "A": "+2 bonus",
+                "S": "+4 bonus",
+                "SS": "+8 bonus"
+            },
+            "cards": "White x 2",
+            "target": "1 character",
+            "rangearea": "Touch",
+            "duration": "Instant",
+            "resistance": "Optional"
+        },
+        {
+            "name": "\u23e9\u25b3Mirage Daze",
+            "tradition": "Evocation",
+            "level": "1st",
+            "description": "The target is disoriented and confused. The target receives a penalty to its Accuracy check for the duration of the effect.",
+            "power_table": null,
+            "card_grades": {
+                "B": "None",
+                "A": "-1 Accuracy",
+                "S": "-2 Accuracy",
+                "SS": "-4 Accuracy"
+            },
+            "cards": "White",
+            "target": "1 character",
+            "rangearea": "2 (30m) / Target",
+            "duration": "1 minute (6 rounds)",
+            "resistance": "Temporary"
+        },
+        {
+            "name": "\u23e9Vorpal Weapon",
+            "tradition": "Evocation",
+            "level": "1st",
+            "description": "The target deals additional physical damage based on the rank of the card used.",
+            "power_table": null,
+            "card_grades": {
+                "B": "+1 damage",
+                "A": "+2 damage",
+                "S": "+3 damage",
+                "SS": "+6 damage"
+            },
+            "cards": "Red",
+            "target": "1 character",
+            "rangearea": "1 (10m) / Target",
+            "duration": "3 minutes (18 rounds)",
+            "resistance": "Optional"
+        },
+        {
+            "name": "\u23e9Lean Force",
+            "tradition": "Evocation",
+            "level": "5th",
+            "description": "Amplifies the target's mana. If the target deals magic damage while the evocation is in effect, its damage is increased.",
+            "power_table": null,
+            "card_grades": {
+                "B": "None",
+                "A": "+1 damage",
+                "S": "+3 damage",
+                "SS": "+6 damage"
+            },
+            "cards": "Red x 2",
+            "target": "1 character",
+            "rangearea": "Touch",
+            "duration": "3 minutes (18 rounds)",
+            "resistance": "Optional"
+        },
+        {
+            "name": "\u23e9Instant Weapon",
+            "tradition": "Evocation",
+            "level": "1st",
+            "description": "Create a melee weapon and give it to the target. The category of this weapon can be chosen arbitrarily, but it is treated as a B-rank magic weapon which deals physical damage. There are no special effects. The bonus/penalty to the Accuracy check is \u00b10, the Minimum Strength is 1, and the Critical Threshold is 10. The Power of the weapon depends on the rank of the card:",
+            "power_table": "<table class=\"powertable\">\n<tr class=\"rolls\">\n<td class=\"bbg\">Rank</td>\n<td class=\"bbg\">Power</td>\n<td>\u2462</td>\n<td>\u2463</td>\n<td>\u2464</td>\n<td>\u2465</td>\n<td>\u2466</td>\n<td>\u2467</td>\n<td>\u2468</td>\n<td>\u2469</td>\n<td>\u246a</td>\n<td>\u246b</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>B</td>\n<td>10</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>\u2469</td>\n</tr>\n<tr class=\"rolls\">\n<td>A</td>\n<td>20</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>\u2469</td>\n</tr>\n<tr>\n<td>S</td>\n<td>30</td>\n<td>2</td>\n<td>4</td>\n<td>4</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>10</td>\n<td>10</td>\n<td>\u2469</td>\n</tr>\n<tr class=\"rolls\">\n<td>SS</td>\n<td>50</td>\n<td>4</td>\n<td>6</td>\n<td>8</td>\n<td>10</td>\n<td>10</td>\n<td>12</td>\n<td>12</td>\n<td>13</td>\n<td>15</td>\n<td>15</td>\n<td>\u2469</td>\n</tr>\n</table>",
+            "card_grades": {},
+            "cards": "White",
+            "target": "1 character",
+            "rangearea": "1 (10m) / Shot",
+            "duration": "1 minute (6 rounds)",
+            "resistance": "Optional"
+        },
+        {
+            "name": "\u23e9\u25b3Manadown",
+            "tradition": "Evocation",
+            "level": "5th",
+            "description": "Diffuses the target's mana, reducing magic damage dealt by the target depending upon the rank of the card used.",
+            "power_table": null,
+            "card_grades": {
+                "B": "-1 damage",
+                "A": "-2 damage",
+                "S": "-4 damage",
+                "SS": "-8 damage"
+            },
+            "cards": "Gold",
+            "target": "1 character",
+            "rangearea": "2 (30m) / Target",
+            "duration": "1 minute (6 rounds)",
+            "resistance": "Temporary"
+        },
+        {
+            "name": "\u23e9Armorust",
+            "tradition": "Evocation",
+            "level": "5th",
+            "description": "Softens the target's skin and armor, reducing Defense. This effect does not reduce Defense to less than 0 (minimum 0).",
+            "power_table": null,
+            "card_grades": {
+                "B": "-1 Defense",
+                "A": "-3 Defense",
+                "S": "-5 Defense",
+                "SS": "-10 Defense"
+            },
+            "cards": "Black x 2",
+            "target": "1 character",
+            "rangearea": "1 (10m) / Shot",
+            "duration": "1 minute (6 rounds)",
+            "resistance": "Temporary"
+        },
+        {
+            "name": "\u25b3Initiative Boost",
+            "tradition": "Evocation",
+            "level": "5th",
+            "description": "Increases the reaction speed of the target and the success value of their Initiative check.If this Evocation is used for other characters in Combat Preparation, the alchemist and target must be placed in the same position (area, coordinate) during initial placement at the start of the battle.",
+            "power_table": null,
+            "card_grades": {
+                "B": "+1 bonus",
+                "A": "+2 bonus",
+                "S": "+4 bonus",
+                "SS": "+8 bonus"
+            },
+            "cards": "Red x 2",
+            "target": "1 character",
+            "rangearea": "Touch",
+            "duration": "Instant",
+            "resistance": "Optional"
+        },
+        {
+            "name": "Clay Field",
+            "tradition": "Evocation",
+            "level": "10th",
+            "description": "All characters within the area become immune to all damage and effects of the Earth type. At the same time, if a character receives physical or magical damage of a Wind type, the damage received is increased by +5 points.The duration varies depending on the rank of the material card consumed.",
+            "power_table": null,
+            "card_grades": {
+                "B": "None",
+                "A": "10 seconds (1 round)",
+                "S": "30 seconds (3 rounds)",
+                "SS": "3 minutes (18 rounds)"
+            },
+            "cards": "Black x 3",
+            "target": "All Areas (30m radius) / Space",
+            "rangearea": "Touch",
+            "duration": "Special",
+            "resistance": "Can't"
+        },
+        {
+            "name": "\u23e9Poison Needle",
+            "tradition": "Evocation",
+            "level": "1st",
+            "description": "The Alchemist releases a poisonous needle into the target. The target is poisoned and suffers Poison magic damage at the end of each Alchemist's turn who uses this Evocation for the duration of the effect.",
+            "power_table": null,
+            "card_grades": {
+                "B": "1 damage",
+                "A": "3 damage",
+                "S": "5 damage",
+                "SS": "10 damage"
+            },
+            "cards": "Black",
+            "target": "1 character",
+            "rangearea": "2 (30m) / Shot",
+            "duration": "1 minute (6 rounds)",
+            "resistance": "Temporary"
+        },
+        {
+            "name": "\u23e9Vivid Liquid",
+            "tradition": "Evocation",
+            "level": "5th",
+            "description": "Extracts the life force of the plant and restores the target's MP.",
+            "power_table": null,
+            "card_grades": {
+                "B": "None",
+                "A": "3 MP",
+                "S": "10 MP",
+                "SS": "20 MP"
+            },
+            "cards": "Green x 2",
+            "target": "1 character",
+            "rangearea": "Touch",
+            "duration": "Instant",
+            "resistance": "Optional"
+        },
+        {
+            "name": "Flame Field",
+            "tradition": "Evocation",
+            "level": "10th",
+            "description": "All characters within the area become immune to all damage and effects of the Fire type. At the same time, if a character receives physical or magical damage of Water/Ice type, the damage received is increased by +5 points.The duration varies depending on the rank of the material card consumed.",
+            "power_table": null,
+            "card_grades": {
+                "B": "None",
+                "A": "10 seconds (1 round)",
+                "S": "30 seconds (3 rounds)",
+                "SS": "3 minutes (18 rounds)"
+            },
+            "cards": "Red x 3",
+            "target": "All Areas (30m radius) / Space",
+            "rangearea": "Touch",
+            "duration": "Special",
+            "resistance": "Can't"
+        },
+        {
+            "name": "\u23e9Heal Spray",
+            "tradition": "Evocation",
+            "level": "1st",
+            "description": "Extracts life from plants and restores the target's HP. This effect also restores Undead, Magitech, and Construct characters.",
+            "power_table": null,
+            "card_grades": {
+                "B": "3 HP",
+                "A": "10 HP",
+                "S": "20 HP",
+                "SS": "50 HP"
+            },
+            "cards": "Green x 2",
+            "target": "1 character",
+            "rangearea": "2 (30m) / Shot",
+            "duration": "Instant",
+            "resistance": "Optional"
+        },
+        {
+            "name": "\u23e9\u25b3Mana Sprout",
+            "tradition": "Evocation",
+            "level": "5th",
+            "description": "Mana is generated and given to the target. The target temporarily gains MP and can spend it freely (it is separate from the character's MP). After the duration has expired, this MP will disappear even if it is not used.",
+            "power_table": null,
+            "card_grades": {
+                "B": "1 MP",
+                "A": "3 MP",
+                "S": "10 MP",
+                "SS": "20 MP"
+            },
+            "cards": "Gold",
+            "target": "1 character",
+            "rangearea": "1 (10m) / Shot",
+            "duration": "10 seconds (1 round)",
+            "resistance": "Can't"
+        },
+        {
+            "name": "\u23e9Unlock Needle",
+            "tradition": "Evocation",
+            "level": "5th",
+            "description": "The alchemist creates a thin needle that moves skillfully and disarms a target key or trap. The following success values are obtained depending on the rank of the material card consumed. Note that this item cannot be combined with items such as a Key Of Unlocking.",
+            "power_table": null,
+            "card_grades": {
+                "B": "12",
+                "A": "16",
+                "S": "20",
+                "SS": "40, and is treated as an Automatic Success"
+            },
+            "cards": "Black x 2",
+            "target": "1 object",
+            "rangearea": "Touch",
+            "duration": "Instant",
+            "resistance": "Can't"
+        },
+        {
+            "name": "Slash Field",
+            "tradition": "Evocation",
+            "level": "10th",
+            "description": "All characters within the area become immune to all damage and effects of the Slashing type. At the same time, if a character receives physical or magical damage of the Bludgeoning type, the damage received is increased by +5 points.The duration varies depending on the rank of the material card consumed.",
+            "power_table": null,
+            "card_grades": {
+                "B": "None",
+                "A": "10 seconds (1 round)",
+                "S": "30 seconds (3 rounds)",
+                "SS": "3 minutes (18 rounds)"
+            },
+            "cards": "White x 3",
+            "target": "All Areas (30m radius) / Space",
+            "rangearea": "Touch",
+            "duration": "Special",
+            "resistance": "Can't"
+        },
+        {
+            "name": "Barrier Field",
+            "tradition": "Evocation",
+            "level": "10th",
+            "description": "For the duration of the effect, characters within the area of effect cannot move out of the area of effect by normal means, such as walking or flying. It is still possible to enter the area of effect from outside the area of effect. The view is not blocked, and ammunition, spells, and other effects are not blocked. It is possible to leave the area by means of [Teleport] spell or other similar means of transportation.The duration varies depending on the rank of the material card consumed.",
+            "power_table": null,
+            "card_grades": {
+                "B": "None",
+                "A": "10 seconds (1 round)",
+                "S": "30 seconds (3 rounds)",
+                "SS": "3 minutes (18 rounds)"
+            },
+            "cards": "Gold x 3",
+            "target": "All Areas (30m radius) / Space",
+            "rangearea": "Touch",
+            "duration": "Special",
+            "resistance": "Can't"
+        },
+        {
+            "name": "Rest Field",
+            "tradition": "Evocation",
+            "level": "10th",
+            "description": "If a character casts a spell or effect that restores HP by consuming MP within the area during the duration, its MP cost is increased by 2 points. When doubled by [Metamagic/**], the MP addition is also doubled.Any recovery effect whose MP cost is increased by this effect will increase its recovery amount by 5 points.The duration varies depending on the rank of the material card consumed.",
+            "power_table": null,
+            "card_grades": {
+                "B": "None",
+                "A": "10 seconds (1 round)",
+                "S": "30 seconds (3 rounds)",
+                "SS": "3 minutes (18 rounds)"
+            },
+            "cards": "Green x 3",
+            "target": "All Areas (30m radius) / Space",
+            "rangearea": "Touch",
+            "duration": "Special",
+            "resistance": "Can't"
+        },
+        {
+            "name": "\u23e9\u25b3Bind Ability",
+            "tradition": "Evocation",
+            "level": "5th",
+            "description": "This Evocation limits the unique skills the target uses and applies a penalty to their success value. It does not affect the following: the success value of Fortitude and Willpower checks; checks that refer to a monster's basic data (see CR I, p. 391); unique skills that are tied to a class that a PC can learn, such as Spells, Spellsongs, Finales, and Evocations; and abilities that do not define or calculate success values in the first place.",
+            "power_table": null,
+            "card_grades": {
+                "B": "-1 penalty",
+                "A": "-2 penalty",
+                "S": "-3 penalty",
+                "SS": "-4 penalty"
+            },
+            "cards": "White x 2",
+            "target": "1 character",
+            "rangearea": "1 (10m) / Target",
+            "duration": "1 minute (6 rounds)",
+            "resistance": "Temporary"
+        },
+        {
+            "name": "\u23e9\u25b3Barkmail",
+            "tradition": "Evocation",
+            "level": "1st",
+            "description": "The target is covered with tree-bark-like mana to raise Defense.",
+            "power_table": null,
+            "card_grades": {
+                "B": "+1 Defense",
+                "A": "+2 Defense",
+                "S": "+4 Defense",
+                "SS": "+8 Defense"
+            },
+            "cards": "Green",
+            "target": "1 character",
+            "rangearea": "2 (30m) / Target",
+            "duration": "3 minutes (18 rounds)",
+            "resistance": "Optional"
+        },
+        {
+            "name": "\u23e9\u25b3Deluxe Materials",
+            "tradition": "Evocation",
+            "level": "10th",
+            "description": "For the duration of the effect, the alchemist gains a bonus to the success value of Evocation checks. The bonus is different depending on the rank of the card of this Evocation check.To get this effect, when the Alchemist consumes Material Cards, they have to treat all of them as one rank lower than the original rank of this effect (SS-rank card becomes S-rank effect, and S-rank card becomes A-rank effect, and A-rank card becomes B-rank effect). Even while this effect is active, it is still possible to use Evocations without this effect and with the normal rank/effect correspondence. Of course, this does not give any bonus to the success value of the Evocation check.",
+            "power_table": null,
+            "card_grades": {
+                "B": "+2 success value",
+                "A": "+4 success value",
+                "S": "+6 success value",
+                "SS": "+10 success value"
+            },
+            "cards": "Red x 1 & Green x 1",
+            "target": "Caster",
+            "rangearea": "Caster",
+            "duration": "3 minutes (18 rounds)",
+            "resistance": "Optional"
+        },
+        {
+            "name": "\u23e9Paralyze Mist",
+            "tradition": "Evocation",
+            "level": "1st",
+            "description": "The target is paralyzed and disoriented. The target takes a penalty to Evasion checks during the duration of the effect.",
+            "power_table": null,
+            "card_grades": {
+                "B": "None",
+                "A": "-1 Evasion",
+                "S": "-2 Evasion",
+                "SS": "-4 Evasion"
+            },
+            "cards": "Green",
+            "target": "1 character",
+            "rangearea": "1 (10m) / Shot",
+            "duration": "1 minute (6 rounds)",
+            "resistance": "Temporary"
+        },
+        {
+            "name": "\u23e9Dispel Needle",
+            "tradition": "Evocation",
+            "level": "5th",
+            "description": "The Alchemist throws a thin needle into the target, forcibly removing any effect it is undergoing. This evocation removes all effects of Techniques, Spellsongs, Evocations, and monster unique skills on the target. It does not remove spell or item effects, nor those of Poison or Curse types.Following the process of \"Forced Removal\" (see MA p. 72), the Evocation check should be compared with the effect's Success Value (not the target's Willpower). An Evocation check has a bonus or penalty depending on the rank of the material card consumed at the time of use.",
+            "power_table": null,
+            "card_grades": {
+                "B": "None.",
+                "A": "No effect when used with Minor Action; regular Evocation check with Major Action.",
+                "S": "Success Value with Minor Action equals 2; Major Action has a bonus +2.",
+                "SS": "Roll regular Evocation check with Minor Action; Major Action has bonus +4."
+            },
+            "cards": "Black",
+            "target": "1 character",
+            "rangearea": "1 (10m) / Shot",
+            "duration": "Instant",
+            "resistance": "Negates"
+        },
+        {
+            "name": "\u23e9\u25b3Crush Fang",
+            "tradition": "Evocation",
+            "level": "1st",
+            "description": "The target's weapon or attack section is slowed. The physical damage caused by the target is reduced for the duration.",
+            "power_table": null,
+            "card_grades": {
+                "B": "-1 damage",
+                "A": "-2 damage",
+                "S": "-4 damage",
+                "SS": "-10 damage"
+            },
+            "cards": "Red",
+            "target": "1 character",
+            "rangearea": "2 (30m) / Target",
+            "duration": "1 minute (6 rounds)",
+            "resistance": "Temporary"
+        },
+        {
+            "name": "\u23e9Critical Ray",
+            "tradition": "Evocation",
+            "level": "1st",
+            "description": "This evocation makes the target's weapons, arms, etc., glow, increasing their offensive power.When the target performs a melee or ranged attack which does physical damage, the 2d roll on the Power Table is increased by the factor below. The attack will be critical if the effect is greater than or equal to the Critical Threshold.For fixed-value characters, their damage will be increased by this amount instead.When using the Power Table, the roll cannot be higher than 13. Also, this effect can only increase the first roll, and is lost immediately afterward (i.e. it does not apply to additional rolls on a critical).",
+            "power_table": null,
+            "card_grades": {
+                "B": "Roll +1",
+                "A": "Roll +2",
+                "S": "Roll +3",
+                "SS": "Roll +6"
+            },
+            "cards": "Gold",
+            "target": "1 character",
+            "rangearea": "Touch",
+            "duration": "10 seconds (1 round)",
+            "resistance": "Optional"
+        }
+    ]
+}

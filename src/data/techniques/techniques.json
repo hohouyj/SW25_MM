@@ -1,0 +1,252 @@
+{
+    "techniques": [
+        {
+            "name": "\u23e9\u25b3Centaur Legs",
+            "tradition": "Technique",
+            "level": "5",
+            "description": "The muscles in the user's lower body stiffen and thicken, becoming incredibly powerful. The Agility of the user is increased by +6.Fixed-value characters gain +1 to Initiative and Evasion. The GM is free to make other modifications at their discretion.",
+            "power_table": null,
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "\u23e9Fire Breath",
+            "tradition": "Technique",
+            "level": "5",
+            "description": "As a Major Action, the user can breathe fire in front of them.",
+            "attack":{
+                "attack_roll": "Enhancer Level + Intelligence Modifier",
+                "target": "1 area (3m Radius) / 5",
+                "rangearea": "1 (10m) / Shot",
+                "resistance": "Half",
+                "type": "Fire",
+                "description": "Deals Power 10 + (Enhancer Level + Intelligence Modifier) Fire magic damage. If the user has the Combat Feats [Magic Convergence] or [Magic Control], they can apply it to this technique. However, the Combat Feat [Metamagic/Area] has no effect."
+            },
+            "power_table": "<table class=\"powertable\">\n<tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>\u2462</td>\n<td>\u2463</td>\n<td>\u2464</td>\n<td>\u2465</td>\n<td>\u2466</td>\n<td>\u2467</td>\n<td>\u2468</td>\n<td>\u2469</td>\n<td>\u246a</td>\n<td>\u246b</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>10</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>\u2469</td>\n</tr>\n</table>",
+            "duration": "30 seconds (3 rounds)"
+        },
+        {
+            "name": "\u23e9\u25b3Gazelle Feet",
+            "tradition": "Technique",
+            "level": "1",
+            "description": "The user's leg muscles become much more active, like that of a gazelle bouncing away from a predator.This increased reaction time gives the user a +1 bonus to Evasion checks.",
+            "power_table": null,
+            "duration": "30 seconds (3 rounds)"
+        },
+        {
+            "name": "\u23e9Giant Arms",
+            "tradition": "Technique",
+            "level": "5",
+            "description": "The user's arms swell immensely, barely able to contain the newfound power inside. The user increases their Strength score by +12.Fixed-value characters gain +2 bonus damage. The GM is free to make other modifications at their discretion.",
+            "power_table": null,
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "\u23e9Spider Web",
+            "tradition": "Technique",
+            "level": "10",
+            "description": "Spin thick threads of strong silk from the user's fingertips to aid in movement. The silk works the same as the Magitech spell [Wire Anchor]. If a check is needed, use the success value of Enhancer Level + Strength Modifier.",
+            "power_table": null,
+            "duration": "3 minutes (18 rounds)"
+        },
+        {
+            "name": "\u23e9\u25b3Chameleon Camouflage",
+            "tradition": "Technique",
+            "level": "10",
+            "description": "The Enhancer gains a +4 bonus to Hide checks. Also, a character with Five Senses perception cannot see an Enhancer under this effect from a distance of 10 or more meters (different areas in Simplified Combat). Treat this as invisibility (see CR II, p. 69).",
+            "power_table": null,
+            "duration": "30 seconds (3 rounds)"
+        },
+        {
+            "name": "\u23e9Cat's Eyes",
+            "tradition": "Technique",
+            "level": "1",
+            "description": "The user's pupils stretch vertically, allowing them to watch an opponent more carefully.This increased observation gives the user a +1 bonus to Accuracy checks.",
+            "power_table": null,
+            "duration": "30 seconds (3 rounds)"
+        },
+        {
+            "name": "\u23e9\u25b3Sphinx Knowledge",
+            "tradition": "Technique",
+            "level": "5",
+            "description": "The user becomes as intelligent as a sphinx. The user's Intelligence score is increased by +6.Fixed-value characters instead gain +1 to Magic Power or other values that the GM determines to be based on Intelligence.",
+            "power_table": null,
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "\u23e9Healthy Body",
+            "tradition": "Technique",
+            "level": "10",
+            "description": "The Enhancer can arbitrarily select one effect they have received of type Poison, Disease, or Psychic and cancel it. There is no need to compare success values. Effects of type Curse + Psychic cannot be canceled.",
+            "power_table": null,
+            "duration": "Instant"
+        },
+        {
+            "name": "\u23e9Scale Leggings",
+            "tradition": "Technique",
+            "level": "1",
+            "description": "Pale scales sprout from the user's body, allowing underwater free movement. The user is no longer affected by movement penalties in the water, can move freely, and does not receive any penalties for being in the water.This technique does not allow for breathing while underwater.",
+            "power_table": null,
+            "duration": "1 hour"
+        },
+        {
+            "name": "\u23e9Balloon Seed Shot",
+            "tradition": "Technique",
+            "level": "10",
+            "description": "The Enhancer can use a thrown weapon with a Minor Action and attack with it only once per 10 seconds (1 round). The Accuracy check of this attack is made with Enhancer level + Dexterity Modifier, and Extra Damage equals Enhancer level + Strength Modifier.",
+            "power_table": null,
+            "duration": "30 seconds (3 rounds)"
+        },
+        {
+            "name": "\u23e9Owl Sight",
+            "tradition": "Technique",
+            "level": "1",
+            "description": "The user's eyes radiate gold, like that of an owl. This allows the user to see through darkness as though it were daylight. The user gains Darkvision.",
+            "power_table": null,
+            "duration": "3 minutes (18 rounds)"
+        },
+        {
+            "name": "\u23e9Bear Muscle",
+            "tradition": "Technique",
+            "level": "1",
+            "description": "Revitalizes the user's muscles and reinforces them, giving the user the strength of a bear. This increases the user's Strength Modifier by +2 but does not affect the user's actual Strength score.",
+            "power_table": null,
+            "duration": "30 seconds (3 rounds)"
+        },
+        {
+            "name": "\u23e9\u25b3Meditation",
+            "tradition": "Technique",
+            "level": "1",
+            "description": "The user stabilizes their thoughts and strengthens their ego, making their mind less susceptible to ill effects.If the user makes a Willpower check against a Psychic-type effect, they receive a +4 bonus to that check.",
+            "power_table": null,
+            "duration": "30 seconds (3 rounds)"
+        },
+        {
+            "name": "\u23e9Rabbit Ears",
+            "tradition": "Technique",
+            "level": "1",
+            "description": "The user can more accurately detect incoming danger by making their ears bigger and more flexible.The user gains a +2 bonus to Listen and Danger Sense checks.",
+            "power_table": null,
+            "duration": "3 minutes (18 rounds)"
+        },
+        {
+            "name": "\u23e9\u25b3Jii Prophecy",
+            "tradition": "Technique",
+            "level": "10",
+            "description": "Jii is a mythical beast that is said to have an excellent sense of danger. With this technique, the Enhancer will be able to sense danger and know what will happen in the future, like the Jii, and gain a +2 bonus to the success value of Danger Sense and Initiative checks.",
+            "power_table": null,
+            "duration": "1 hour"
+        },
+        {
+            "name": "\u23e9\u25b3Antibody",
+            "tradition": "Technique",
+            "level": "1",
+            "description": "The user of this Technique strengthens their immune system, driving off poisons and diseases.When rolling a Fortitude or Willpower check for a Poison-type or Disease-type effect, the user gets a +4 bonus to that check.",
+            "power_table": null,
+            "duration": "30 seconds (3 rounds)"
+        },
+        {
+            "name": "\u23e9Animal Shape",
+            "tradition": "Technique",
+            "level": "5",
+            "description": "The user transforms into an animal common in society, such as a horse, pig, cat, or dog. The user cannot transform while wearing weapons, armor, or costumes.After the transformation, the user's ability scores remain the same. The user can still speak and use skills, but cannot hold items or weapons nor wear armor or clothing. The user can only attack with Punch.This technique does not allow the user to communicate with animals.",
+            "power_table": null,
+            "duration": "1 hour"
+        },
+        {
+            "name": "\u23e9\u25b3Beetleskin",
+            "tradition": "Technique",
+            "level": "1",
+            "description": "The user's skin becomes hardened like the shell of a beetle, granting a +2 bonus to Defense.",
+            "power_table": null,
+            "duration": "30 seconds (3 rounds)"
+        },
+        {
+            "name": "\u23e9Dragon Tail",
+            "tradition": "Technique",
+            "level": "1",
+            "description": "The user grows a long, thick Tail that can be used as a Wrestling weapon.If the user already has a tail, they can use this technique to either increase their Tail weapon's Accuracy by +1 or add +2 to its Extra Damage.This technique's effects are cumulative, to a total of +2 Accuracy and +4 bonus damage.This technique can be used once per round.",
+            "power_table": null,
+            "duration": "3 minutes (18 rounds)"
+        },
+        {
+            "name": "\u23e9\u25b3Kraken Stability",
+            "tradition": "Technique",
+            "level": "10",
+            "description": "The Enhancer's lower body becomes as soft and strong as a Kraken's tentacles. The Enhancer cannot become the target of Throw attacks and will not fall prone to any effect. The Enhancer cannot fall when their feet are directly on the ground or the bottom of a body of water.This technique does not prevent a rider from falling from a horse.",
+            "power_table": null,
+            "duration": "30 seconds (3 rounds)"
+        },
+        {
+            "name": "\u23e9Titan's Foot",
+            "tradition": "Technique",
+            "level": "10",
+            "description": "For the effect's duration, as a Major Action, the Enhancer can kick through walls, doors, floors, and other structures to make a hole with a radius of 1m. If the structure's thickness exceeds 1m, the hole will be drilled in a hemispherical shape with a radius of 1m. When the Kick-breaking is performed, a loud sound will be produced.This effect cannot be applied to iron and steel structures or harder. This effect cannot be used in positions (area, coordinates) where there are other characters.",
+            "power_table": null,
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "\u23e9\u25b3Troll Vitals",
+            "tradition": "Technique",
+            "level": "10",
+            "description": "The Enhancer becomes as strong as a Troll. If the Enhancer receives magic damage for the duration of the effect, it is reduced by 4 points.",
+            "power_table": null,
+            "duration": "30 seconds (3 rounds)"
+        },
+        {
+            "name": "\u23e9\u25b3Strong Blood",
+            "tradition": "Technique",
+            "level": "1",
+            "description": "By keeping a consistent body temperature, the user can stay cool in hot environments and vice versa.When taking any Fire-type or Water/Ice-type damage, reduce the total damage taken by 5 points.",
+            "power_table": null,
+            "duration": "30 seconds (3 rounds)"
+        },
+        {
+            "name": "\u23e9Wide Wings",
+            "tradition": "Technique",
+            "level": "5",
+            "description": "An extensive set of eagle-like wings sprouts from the user's back, allowing the user to fly. When flying, the user's movement speed is 10 meters per round.If the user can already fly, this technique increases the user's movement speed by 20m. This extra movement speed can accumulate up to a 30m bonus.This technique can be used once per round.",
+            "power_table": null,
+            "duration": "3 minutes (18 rounds)"
+        },
+        {
+            "name": "\u23e9Recovery",
+            "tradition": "Technique",
+            "level": "5",
+            "description": "The user can refresh themselves and recover an amount of HP equal to their Enhancer Level.This technique can be used once per round.",
+            "power_table": null,
+            "duration": "Instant"
+        },
+        {
+            "name": "\u23e9Fenrir's Bite",
+            "tradition": "Technique",
+            "level": "10",
+            "description": "Fangs grow in the Enhancer\u2019s mouth. These can be used as a Bite (see CR III, p. 214 or ET, p. 104) wrestling weapon, which can attack only once per 10 seconds (1 round) as a Minor Action. The Accuracy check of this attack is made with Enhancer Level + Dexterity Modifier, and Extra Damage equals Enhancer Level + Strength Modifier.The Enhancer can also use this Bite for a normal melee attack as a Major Action. In this case, Warrior-Type classes (Fighter, Grappler, Fencer) are used for Accuracy checks and damage determination.If a character uses this technique while Biting, they gain a +1 bonus to Accuracy checks or a +2 point bonus to Extra Damage (whichever one the user selects). This effect can accumulate up to a +2 bonus to Accuracy checks and +4 damage.This technique can only be used once per 10 seconds (1 round).",
+            "power_table": null,
+            "duration": "3 minutes (18 rounds)"
+        },
+        {
+            "name": "\u23e9Chic Chick",
+            "tradition": "Technique",
+            "level": "1",
+            "description": "A small bird's wings sprout from the user's back, aiding them in aerial movement.When making Jump checks (see CR I, p. 112), the user receives a +5 bonus for those checks. Additionally, reduce any fall damage the user takes by -20.This technique does not allow the user to fly.",
+            "power_table": null,
+            "duration": "1 hour"
+        },
+        {
+            "name": "\u23e9Daemonfinger",
+            "tradition": "Technique",
+            "level": "5",
+            "description": "The user's hands become incredibly flexible and supple like a daemon. The user increases their Dexterity score by +6.For fixed-value characters, their Accuracy increases by +1. GM is free to make other modifications at their discretion.",
+            "power_table": null,
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "\u23e9Strider Walk",
+            "tradition": "Technique",
+            "level": "10",
+            "description": "Like a water strider, the Enhancer can walk on water or clouds as if moving on land. They cannot take a Full Move when moving with this effect.",
+            "power_table": null,
+            "duration": "3 minutes (18 rounds)"
+        }
+    ]
+}

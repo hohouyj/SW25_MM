@@ -1,0 +1,354 @@
+{
+  "stratagems": [
+    {
+      "name": "\u23e9Godspeed Stance",
+      "tradition": "Stratagem",
+      "level": "1",
+      "description": "Coordinates with allies to build a favorable battle situation.For 10 seconds (1 round), the targets increase their Movement by +5m and the distance of their Limited Move by +2m. This Stratagem has no effect in Simplified Combat.The Tactician using this Stratagem may choose to use a Rank 2 Stratagem of any type in the next round.",
+      "rank": "Rank 1",
+      "type": "Inspirational",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Ironclad Defense IV: Mirror Shield",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "Issues commands to anticipate any damage with the Tactician's next move in mind.When physical or magical damage is applied to the targets within 10 seconds (1 round), the damage is reduced by -1 point. Note that Poison-, Disease-, or Curse-type damage cannot be reduced.",
+      "rank": "Rank 4",
+      "type": "Defense",
+      "edge_cost": "None",
+      "edge_accumulation": "+2"
+    },
+    {
+      "name": "\u23e9Secret Revival",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "Tell the characteristics of the monster again and stimulate the memory of allies.When the Tactician uses this Stratagem, the Tactician specifies an enemy monster in combat. As soon as this Stratagem takes effect, each target can immediately make a Monster Knowledge check against the monster designated by the Tactician, regardless of its turn.The Tactician using this Stratagem may choose to use a Rank 3 Stratagem of any type in the next round.",
+      "rank": "Rank 2",
+      "type": "Inspirational",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Defiant Stand I",
+      "tradition": "Stratagem",
+      "level": "1",
+      "description": "The Tactician predicts magic and unique skills from the enemy, and issues commands to prepare for them.The Tactician specifies either Fortitude or Willpower when using Stratagem. For 10 seconds (1 round), the targets gain a +1 bonus to the Skill Checks specified by the Tactician. The targets lose this effect after performing one specified check.",
+      "rank": "Rank 1",
+      "type": "Resistance",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Great Challenge",
+      "tradition": "Stratagem",
+      "level": "10",
+      "description": "This Stratagem exceptionally also targets the Tactician.You make your presence known with a loud voice, attracting the attention of the enemy with your seemingly defenseless stance.For 10 seconds (1 round), targets except the Tactician gain a +1 bonus to Evasion checks and Fortitude and Willpower checks.At the same time, for 10 seconds (1 round), the Tactician takes a penalty of -3 to Evasion checks and Fortitude and Willpower checks.The Tactician using this Stratagem may choose to use a Rank 3 Stratagem of any type in the next round.",
+      "rank": "Rank 2",
+      "type": "Inspirational",
+      "edge_cost": "1 Edge",
+      "edge_accumulation": "None"
+    },
+    {
+      "name": "\u23e9Surging Offense IV: Radiant Strikes",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "Commands a direct attack with the Tactician's next move in mind.For 10 seconds (1 round), the targets gain a +1 bonus to Accuracy checks and +1 point to physical damage when making melee or ranged attacks.",
+      "rank": "Rank 4",
+      "type": "Attack",
+      "edge_cost": "None",
+      "edge_accumulation": "+2"
+    },
+    {
+      "name": "\u23e9Surging Offense V: Typhoon",
+      "tradition": "Stratagem",
+      "level": "10",
+      "description": "Commands a well-honed strategy to finish off enemies.For 10 seconds (1 round), the targets gain a +2 bonus to Accuracy checks and +2 points to physical damage when making melee or ranged attacks.",
+      "rank": "Rank 5",
+      "type": "Attack",
+      "edge_cost": "5 Edge",
+      "edge_accumulation": "None"
+    },
+    {
+      "name": "\u23e9Finding Flaws",
+      "tradition": "Stratagem",
+      "level": "1",
+      "description": "Gives instructions to strike the enemy's weak point more efficiently.For 10 seconds (1 round), the targets gain a +1 to Extra Damage for detected weak points against enemies. The Tactician using this Stratagem may choose to use a Rank 2 Stratagem of any type in the next round.",
+      "rank": "Rank 1",
+      "type": "Inspirational",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Defiant Stand IV",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "The Tactician inspires their allies with the next move in mind.When using this Stratagem, the Tactician specifies Fortitude or Willpower; for 10 seconds (1 round), the targets gain a +2 bonus to the specified check.",
+      "rank": "Rank 4",
+      "type": "Resistance",
+      "edge_cost": "None",
+      "edge_accumulation": "+2"
+    },
+    {
+      "name": "\u23e9Surging Offense V: Hellfire",
+      "tradition": "Stratagem",
+      "level": "10",
+      "description": "Commands an explosive strategy that will end enemies once and for all.For 10 seconds (1 round), the targets gain +6 to physical damage when making melee or ranged attacks.",
+      "rank": "Rank 5",
+      "type": "Attack",
+      "edge_cost": "5 Edge",
+      "edge_accumulation": "None"
+    },
+    {
+      "name": "\u23e9Ironclad Defense II: Solid Form",
+      "tradition": "Stratagem",
+      "level": "1",
+      "description": "Command a stance to withstand attacks from the enemy.The target's Defense is increased by +2 for 10 seconds (1 round).",
+      "rank": "Rank 2",
+      "type": "Defense",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Ironclad Defense V: Steel Citadel",
+      "tradition": "Stratagem",
+      "level": "10",
+      "description": "Commands a strategy to effectively repel the enemy's attack to the maximum extent possible.The target's Defense is increased by +7 for 10 seconds (1 round).",
+      "rank": "Rank 5",
+      "type": "Defense",
+      "edge_cost": "5 Edge",
+      "edge_accumulation": "None"
+    },
+    {
+      "name": "\u23e9Defiant Stand II",
+      "tradition": "Stratagem",
+      "level": "1",
+      "description": "The Tactician uses this Stratagem to inspire their allies and increase their resistance.When using this Stratagem, the Tactician specifies Fortitude or Willpower; for 10 seconds (1 round), the targets gain a +1 bonus to the specified check.",
+      "rank": "Rank 2",
+      "type": "Resistance",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Surging Offense II: Raging Flame",
+      "tradition": "Stratagem",
+      "level": "1",
+      "description": "Provides instructions for an offensive in a single stroke.For 10 seconds (1 round), the targets gain +2 to physical damage when making melee or ranged attacks.",
+      "rank": "Rank 2",
+      "type": "Attack",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Flowing Fortunes V",
+      "tradition": "Stratagem",
+      "level": "10",
+      "description": "Reads enemy's lineup and directs the strategy to stop enemy advancement.For 10 seconds (1 round), the targets gain a +4 bonus to Evasion checks.",
+      "rank": "Rank 5",
+      "type": "Evasion",
+      "edge_cost": "5 Edge",
+      "edge_accumulation": "None"
+    },
+    {
+      "name": "\u23e9Defiant Stand III",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "The Tactician inspires their allies and prepares them for enemy magic and special attacks.When using Stratagem, the Tactician specifies Fortitude or Willpower; for 10 seconds (1 round), the targets gain a +2 bonus to the specified check.",
+      "rank": "Rank 3",
+      "type": "Resistance",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Ironclad Defense I",
+      "tradition": "Stratagem",
+      "level": "1",
+      "description": "Commands a move to fortify defense.The target's Defense is increased by +1 for 10 seconds (1 round).",
+      "rank": "Rank 1",
+      "type": "Defense",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Surging Offense III: True Aim",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "Commands a stance that inflicts damage to the enemy with precision and certainty.For 10 seconds (1 round), the targets gain a +1 bonus to Accuracy checks and +1 point to physical damage when making melee or ranged attacks.",
+      "rank": "Rank 3",
+      "type": "Attack",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Ironclad Defense V: Giant Wall",
+      "tradition": "Stratagem",
+      "level": "10",
+      "description": "Commands measures to withstand any damage.When physical or magical damage is applied to the target within 10 seconds (1 round), the damage is reduced by 3 points. Note that Poison-, Disease-, or Curse-type damage cannot be reduced.",
+      "rank": "Rank 5",
+      "type": "Defense",
+      "edge_cost": "5 Edge",
+      "edge_accumulation": "None"
+    },
+    {
+      "name": "\u23e9Ironclad Defense III: Steel Armor",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "Command an efficient method to defend against enemy attacks.The target's Defense is increased by +3 for 10 seconds (1 round).",
+      "rank": "Rank 3",
+      "type": "Defense",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Surging Offense I",
+      "tradition": "Stratagem",
+      "level": "1",
+      "description": "Provides instructions for an efficient attack.For 10 seconds (1 round), the targets gain +1 to physical damage when making melee or ranged attacks.",
+      "rank": "Rank 1",
+      "type": "Attack",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Surging Offense II: Whirlwind",
+      "tradition": "Stratagem",
+      "level": "1",
+      "description": "Directs the target to make a precise attack.For 10 seconds (1 round), the targets gain a +1 bonus to Accuracy checks.",
+      "rank": "Rank 2",
+      "type": "Attack",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Surging Offense III: Roaring Flame",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "Commands an efficient attack that deals heavy damage.For 10 seconds (1 round), the targets gain +3 to physical damage when making melee or ranged attacks.",
+      "rank": "Rank 3",
+      "type": "Attack",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Ironclad Defense II: Iron Armor",
+      "tradition": "Stratagem",
+      "level": "1",
+      "description": "Commands a defensive posture, limiting all damage.The Tactician specifies either physical or magical damage when using Stratagem, which reduces the target's damage by 1 point for 10 seconds (1 round) when the specified damage is dealt to the target.",
+      "rank": "Rank 2",
+      "type": "Defense",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Ironclad Defense IV: Castle Armor",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "Commands an efficient defense with the Tactician's next move in mind.The target's Defense is increased by +3 for 10 seconds (1 round).",
+      "rank": "Rank 4",
+      "type": "Defense",
+      "edge_cost": "None",
+      "edge_accumulation": "+2"
+    },
+    {
+      "name": "\u23e9Defiant Stand V: Overflowing Life",
+      "tradition": "Stratagem",
+      "level": "10",
+      "description": "Wake up allies who have fallen or fainted, or inspire other allies.At the moment this Stratagem takes effect, the same effect as [Awaken] is applied to a target who is exceptionally unable to fight (unconscious, sleeping, etc.). However, it is treated as an effect of Stratagem, not a spell, with a success value of 0.Targets that are not subject to the [Awaken]-like effect of this Stratagem gain a +2 bonus to their Fortitude and Willpower checks for 10 seconds (1 round).",
+      "rank": "Rank 5",
+      "type": "Resistance",
+      "edge_cost": "5 Edge",
+      "edge_accumulation": "None"
+    },
+    {
+      "name": "\u23e9Surging Offense IV: Blaze",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "Commands efficient moves with the Tactician's next move in mind.For 10 seconds (1 round), the targets gain +3 to physical damage when making melee or ranged attacks.",
+      "rank": "Rank 4",
+      "type": "Attack",
+      "edge_cost": "None",
+      "edge_accumulation": "+2"
+    },
+    {
+      "name": "\u23e9Defiant Stand V: Aetheric Spring",
+      "tradition": "Stratagem",
+      "level": "10",
+      "description": "This ability calms the mind with a beautiful singing voice, allowing the targets to achieve the desired effect with less mana.For 10 seconds (1 round), whenever the targets consume MP through spellcasting, skill use, or item use, their MP consumption is reduced by 5 points. This effect cannot reduce MP consumption to 0; at least 1 point must be consumed.This effect can stack with other effects that reduce MP consumption, but it is applied first, reducing MP consumption by 5 points before other effects come into effect.",
+      "rank": "Rank 5",
+      "type": "Resistance",
+      "edge_cost": "5 Edge",
+      "edge_accumulation": "None"
+    },
+    {
+      "name": "\u23e9Injury Assessment",
+      "tradition": "Stratagem",
+      "level": "10",
+      "description": "Accurately assesses injuries to allies and provides accurate treatment instructions.If the targets recover at least 1 point of HP for the next 10 seconds (1 round), they recover an additional 5 points of HP.The Tactician using this Stratagem may choose to use a Rank 3 Stratagem of any type in the next round.",
+      "rank": "Rank 2",
+      "type": "Inspirational",
+      "edge_cost": "1 Edge",
+      "edge_accumulation": "None"
+    },
+    {
+      "name": "\u23e9Hymn of the Brave",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "This Stratagem can exceptionally target the Tactician themselves.This Stratagem adds lyrics to a Spellsong and limits the targets to which the effect can be applied.The Tactician can now specify whether the effect should be applied to an \"enemy\" or \"friend.\" For 10 seconds (1 round), Spellsong effects used by the Tactician will only affect the side specified by the Tactician.The Tactician using this Stratagem may choose to use a Rank 2 Stratagem of any type in the next round.",
+      "rank": "Rank 1",
+      "type": "Inspirational",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Ironclad Defense III: Armored Core",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "Issues commands to anticipate any damage and directs a safer and more reliable defense.When physical or magical damage is applied to the targets within 10 seconds (1 round), the damage is reduced by -1 point. Note that Poison-, Disease-, or Curse-type damage cannot be reduced.",
+      "rank": "Rank 3",
+      "type": "Defense",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Flowing Fortunes III",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "Issues commands to anticipate enemy attacks and directs movements to ensure the safety of allies.For 10 seconds (1 round), the targets gain a +2 bonus to Evasion checks.",
+      "rank": "Rank 3",
+      "type": "Evasion",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Flowing Fortunes II",
+      "tradition": "Stratagem",
+      "level": "1",
+      "description": "Commands to read enemy's movements and directs targets to evade easily.For 10 seconds (1 round), the targets gain a +1 bonus to Evasion checks.",
+      "rank": "Rank 2",
+      "type": "Evasion",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Flowing Fortunes I",
+      "tradition": "Stratagem",
+      "level": "1",
+      "description": "Commands a move to avoid enemy attacks.For 10 seconds (1 round), the targets gain a +1 bonus to Evasion checks; a target who makes even one Evasion check loses this effect.",
+      "rank": "Rank 1",
+      "type": "Evasion",
+      "edge_cost": "None",
+      "edge_accumulation": "+1"
+    },
+    {
+      "name": "\u23e9Flowing Fortunes IV",
+      "tradition": "Stratagem",
+      "level": "5",
+      "description": "Issues commands to anticipate enemy attacks and prepare for the next plan from the Tactician.For 10 seconds (1 round), the targets gain a +2 bonus to Evasion checks.",
+      "rank": "Rank 4",
+      "type": "Evasion",
+      "edge_cost": "None",
+      "edge_accumulation": "+2"
+    }
+  ]
+}

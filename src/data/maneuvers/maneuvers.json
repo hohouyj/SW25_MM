@@ -1,0 +1,139 @@
+{
+  "maneuvers": [
+    {
+      "name": "\u25b3Strategic Ingenuity",
+      "tradition": "Maneuver",
+      "level": "1",
+      "description": "Tactician can use their intelligence to gain the upper hand over the enemy.During the Initiative check, Tactician can optionally use as the standard value Tactician class +Intelligence modifier + 1.",
+      "conditions": "-",
+      "prerequisite": "When making an Initiative check",
+      "edge_cost": "None"
+    },
+    {
+      "name": "\u25b3Solid Line",
+      "tradition": "Maneuver",
+      "level": "5",
+      "description": "A Tactician can heal their allies, speeding up their next move.The Tactician can declare the use of this Maneuver once they have restored the current HP value of a Stratagem-applicable ally by 30 points or more, whether through casting a spell or a Combat Feat (if the damage is less than 30 HP because it went over the maximum, it doesn't count). Tactician accumulates Edge 1 point.This Maneuver can be used exceptionally, once per fulfillment of the conditions, ignoring the limit on the number of times it can be used.",
+      "conditions": "-",
+      "prerequisite": "When a Tactician restores 30 or more points of HP to an ally",
+      "edge_cost": "None"
+    },
+    {
+      "name": "\u25b3Sweeping Victory",
+      "tradition": "Maneuver",
+      "level": "5",
+      "description": "When a Tactician defeats an enemy, their next plan is sped up.The Tactician can declare the use of this Maneuver when they have reduced an enemy Character's HP to 0 or less through a Melee Attack, Ranged Attack, or spell casting. The Tactician will accumulate 1 Edge point. This Maneuver can be used exceptionally, once per fulfillment of the conditions, ignoring the limit on the number of times it can be used.",
+      "conditions": "-",
+      "prerequisite": "When a Tactician reduces an enemy to 0 HP or less",
+      "edge_cost": "None"
+    },
+    {
+      "name": "\u23e9Careful Guard II",
+      "tradition": "Maneuver",
+      "level": "5",
+      "description": "The Tactician predicts all enemy attacks against them.For 10 seconds (1 round), when the Tactician receives physical or magical damage, that damage is reduced by 7 points. Note that Poison-, Disease-, or Curse-type damage cannot be reduced.",
+      "conditions": "[ Maneuver: Careful Guard I ]",
+      "prerequisite": "None (used with Minor Action)",
+      "edge_cost": "5 Edge"
+    },
+    {
+      "name": "\u23e9Resistance II",
+      "tradition": "Maneuver",
+      "level": "5",
+      "description": "The Tactician can predict enemy magic and unique skills and prepare for them.For 10 seconds (1 round), the Tactician gains a +5 bonus to either their Fortitude or Willpower.",
+      "conditions": "[ Maneuver: Resistance I ]",
+      "prerequisite": "None (used with Minor Action)",
+      "edge_cost": "5 Edge"
+    },
+    {
+      "name": "\u23e9Concentration I",
+      "tradition": "Maneuver",
+      "level": "1",
+      "description": "The Tactician uses a prepared incantation to increase their spell success rate.For 10 seconds (1 round), when the Tactician makes only one Spellcasting check, they gain a +1 bonus to the success value of the Spellcasting check. Once this bonus is applied, the effect disappears.",
+      "conditions": "-",
+      "prerequisite": "None (used with Minor Action)",
+      "edge_cost": "3 Edge"
+    },
+    {
+      "name": "\u23e9Efficiency II",
+      "tradition": "Maneuver",
+      "level": "5",
+      "description": "The Tactician uses carefully prepared incantations to enhance the effects of their spells.For 10 seconds (1 round), the Tactician gains either +7 to magic damage or +7 to HP recovery from their own spells. If multiple targets are affected by the spell, this bonus is applied to any character among them. Once the bonus is applied, the effect disappears.",
+      "conditions": "[ Maneuver: Efficiency I ]",
+      "prerequisite": "None (used with Minor Action)",
+      "edge_cost": "5 Edge"
+    },
+    {
+      "name": "\u23e9Unexpected Blow I",
+      "tradition": "Maneuver",
+      "level": "1",
+      "description": "The Tactician demonstrates a strategy to take advantage of the enemy's weakness.For 10 seconds (1 round), when the Tactician makes a melee or ranged attack, they gain a +2 bonus to Accuracy checks and +2 points of physical damage dealt per attack. This effect is lost after one use.",
+      "conditions": "-",
+      "prerequisite": "None (used with Minor Action)",
+      "edge_cost": "3 Edge"
+    },
+    {
+      "name": "\u23e9Unexpected Blow II",
+      "tradition": "Maneuver",
+      "level": "5",
+      "description": "The Tactician demonstrates a strategy to greatly take advantage of the enemy's weakness.For 10 seconds (1 round), when the Tactician makes a melee or ranged attack, they gain a +4 bonus to Accuracy checks and +4 points of physical damage dealt per attack. This effect is lost after one use.",
+      "conditions": "[ Maneuver: Unexpected Blow I ]",
+      "prerequisite": "None (used with Minor Action)",
+      "edge_cost": "5 Edge"
+    },
+    {
+      "name": "\u23e9Careful Guard I",
+      "tradition": "Maneuver",
+      "level": "1",
+      "description": "The Tactician predicts all enemy attacks against them.For 10 seconds (1 round), when the Tactician receives physical or magical damage, the damage is reduced by 4 points. Note that Poison-, Disease-, or Curse-type damage cannot be reduced.",
+      "conditions": "-",
+      "prerequisite": "None (used with Minor Action)",
+      "edge_cost": "3 Edge"
+    },
+    {
+      "name": "\u23e9Foresight I",
+      "tradition": "Maneuver",
+      "level": "1",
+      "description": "Tactician predicts enemy attacks.For 10 seconds (1 round), the Tactician gets a +3 bonus to their own Evasion checks.",
+      "conditions": "-",
+      "prerequisite": "None (used with Minor Action)",
+      "edge_cost": "3 Edge"
+    },
+    {
+      "name": "\u23e9Resistance I",
+      "tradition": "Maneuver",
+      "level": "1",
+      "description": "The Tactician can predict enemy magic and unique skills and prepare for them.For 10 seconds (1 round), the Tactician gains a +3 bonus to either their Fortitude or Willpower.",
+      "conditions": "-",
+      "prerequisite": "None (used with Minor Action)",
+      "edge_cost": "3 Edge"
+    },
+    {
+      "name": "\u23e9Foresight II",
+      "tradition": "Maneuver",
+      "level": "5",
+      "description": "The eTactician predicts attacks in greater depth.For 10 seconds (1 round), the Tactician gets a +5 bonus to their own Evasion checks.",
+      "conditions": "[ Maneuver: Foresight I ]",
+      "prerequisite": "None (used with Minor Action)",
+      "edge_cost": "5 Edge"
+    },
+    {
+      "name": "\u23e9Concentration II",
+      "tradition": "Maneuver",
+      "level": "5",
+      "description": "The Tactician uses a prepared incantation to greatly increase their spell success rate.For 10 seconds (1 round), when the Tactician makes one Spellcasting check, they gain a +2 bonus to the success value of the Spellcasting check. Once this bonus is applied, the effect disappears.",
+      "conditions": "[ Maneuver: Concentration I ]",
+      "prerequisite": "None (used with Minor Action)",
+      "edge_cost": "5 Edge"
+    },
+    {
+      "name": "\u23e9Efficiency I",
+      "tradition": "Maneuver",
+      "level": "1",
+      "description": "The Tactician uses a prepared incantation to enhance a spell's effect.For 10 seconds (1 round), the Tactician deals +4 damage or adds +4 to HP recovery to one target of a spell cast by the Tactician. If the spell has more than one target, the Tactician can choose which target to apply the bonus to. Once the bonus is applied, the effect disappears.",
+      "conditions": "-",
+      "prerequisite": "None (used with Minor Action)",
+      "edge_cost": "3 Edge"
+    }
+  ]
+}

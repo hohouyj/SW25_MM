@@ -1,0 +1,690 @@
+{
+  "feats": [
+    {
+      "name": "Double Cast",
+      "description": "Application: 1 spell cast\nRisk: None\nThis feat can be declared with any spell which is cast with a Major Action.\nAfter the spell is cast with a Major Action after declaring this feat, one additional spell may be cast immediately afterward. This additional spell is limited to 1/2 of the maximum level or rank (rounded up) of the second spell's magic system. This second spell's Magic Power will be reduced by 10 (minimum 0).",
+      "prerequisite": "Wizard-type class Level 9+",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Armor Piercer II",
+      "description": "Application: 1 melee attack\nRisk: None\nSimilar to [Armor Piercer I], but when a critical hit occurs in the damage roll, the attack target's Defense is treated as 0.",
+      "prerequisite": "[ Armor Piercer I ], Grappler Level 9+",
+      "use": "Grappler class"
+    },
+    {
+      "name": "Block",
+      "description": "Summary: User counts as double the number of characters for blocking movement or withdrawal\nThe master treats themselves as twice as many characters (number of sections) in a situation where movement blocking or withdrawal from a skirmish occurs.\nThis affects all of the following cases: when the master moves, when a friendly character passes through or leaves a skirmish, when they block the movement of a hostile character, and when a hostile character attempts to withdraw from a skirmish.\nA character initially placed in the frontline in Simplified Combat is treated as twice the number of characters (number of sections), regardless of whether they go first or second.\nIn Standard or Advanced Combat, the master is treated as twice as many characters (number of sections) in a situation where movement blocking or withdrawal from a skirmish occurs. This affects all of the following cases: when the master moves, when a friendly character passes through or leaves the skirmish, when they block the movement of a hostile character, and when a hostile character attempts to withdraw from the skirmish.\nIt is also effective when calculating \"Effect 2\" of Combat Feat [Shadow Step].",
+      "prerequisite": "Adv. Level 3+",
+      "use": "-"
+    },
+    {
+      "name": "Evasive Maneuvers II",
+      "description": "The master always gets a +2 bonus to Evasion checks that use the Fencer or Battle Dancer Class as the Standard Value.",
+      "prerequisite": "[ Evasive Maneuvers I ], Fencer / Battle Dancer Level 9+",
+      "use": "Fencer or Battle Dancer Class"
+    },
+    {
+      "name": "Capacity",
+      "description": "Maximum MP increased by 15 points.\nGrassrunner characters cannot acquire this combat feat.",
+      "prerequisite": "Adv. Level 11+",
+      "use": "-"
+    },
+    {
+      "name": "Bard (Minor)",
+      "description": "Bards play musical instruments, sing songs, and produce various supportive or hindering effects on nearby listeners. Bard Spellsongs increase Rhythm, which they can use to unleash spectacular Finales and change the tide of battle.\nWeapon Restrictions: None\nArmor Restrictions: None\nShield Restrictions: None\nOther Requirements: Bards must be able to play an instrument to use Spellsongs and Finales. Some Spellsongs require singing as well. They may only take a Limited Move on the same turn as using a Spellsong or Finale.\nClass Features: Bards learn one Spellsong or Finale per Bard Class level (which can be increased with the [Additional Songs] feat). Each Bard Class level also allows them to speak, but not read, one new language.\nSkill Packages:\nSpecial Resources: Bards gain the unique statistic Bardic Power, which plays a role similar to Magic Power in Wizard-type Classes. Bardic Power is calculated as Bard Class Level + Spirit Modifier.\nBards accumulate a resource called Rhythm by playing Spellsongs. These three types of Rhythm, Uplifting (\u2bad), Calming (\u2baf), and Enchanting (\u2661), are used to perform Finales.\nSpellsongs and Finales have a range equal to (Bard Class Level x 10)m, centered on the Bard. In Simplified Combat, Spellsongs and Finales have a range of 2 Areas at Bard Class Level 1, and the entire battlefield for Bard Class Level 2+.\nSource: CR II, p. 100; ET, p. 44; MA, p. 163\nBard Spellsongs List\nBard Finales List\nSpecial Instruments List\nBard Class Combat Feats",
+      "minor_class": "",
+      "other-type_class": ""
+    },
+    {
+      "name": "Archer's Grace",
+      "description": "Master may calculate Evasion using their Marksman Class Level + Agility Modifier.",
+      "prerequisite": "Marksman Level 7+",
+      "use": "Marksman class"
+    },
+    {
+      "name": "Mako Stones Master",
+      "description": "The master can use up to two mako stones simultaneously to cast a spell using their combined MP values. The number of MP consumed from either stone can be allocated freely, and it is possible to use a combination of both stones and one's own MP.",
+      "prerequisite": "Adv. Level 9+",
+      "use": "-"
+    },
+    {
+      "name": "Critical Cast I",
+      "description": "Application: 1 spell cast\nRisk: None\nThis feat is declared when the spell is cast and is valid for one cast.\nIf the spell uses the Power Table to determine damage, the Critical Threshold is reduced by -1 (minimum 8).",
+      "prerequisite": "Adv. Level 7+",
+      "use": "Wizard-Type classes"
+    },
+    {
+      "name": "Weapon Master",
+      "description": "The master will be able to equip all rank weapons (including SS rank) of all categories. Class restrictions still apply.",
+      "prerequisite": "[ Weapon Proficiency S/** ] (any), Adv. Level 11+",
+      "use": "-"
+    },
+    {
+      "name": "Critical Cast II",
+      "description": "Application: 1 spell cast\nRisk: None\nDeclared when a spell is cast and is valid for one cast. The following effects are also applied in addition to the effects of [Critical Cast I]: Target's critical immunity and Critical Threshold modifications abilities are all ignored, and for spells with \"Resistance: Half,\" a critical hit will occur when using the Power Table even if the target is resisted. In this case, the total damage is determined with criticals, and then it is halved.",
+      "prerequisite": "[ Critical Cast I ], Adv. Level 11+",
+      "use": "Wizard-Type class"
+    },
+    {
+      "name": "Armor Proficiency A/**",
+      "description": "Summary: +1 Defense for armor in specific category, can equip A-Rank armor in that category\nThe master must choose an armor category for **, such as Metal Armor or Shield, when they acquire this feat. When the master is equipped with the armor of the corresponding category, they gain +1 to Defense. The master may also equip A-rank armor of the corresponding category.\nIt is possible to learn [Armor Proficiency A/**] for different categories by using separate learning slots. If both categories of armor are equipped at the same time (e.g. armor and shield), the increase in Defense is cumulative.\nThis feat is the prerequisite of the [Armor Proficiency S/**] feat.",
+      "prerequisite": "None",
+      "use": "-"
+    },
+    {
+      "name": "Additional Stratagem/Maneuver III",
+      "description": "The number of Stratagems or Maneuvers that can be learned is increased by an additional +1 (total +3) from [Additional Stratagem/Maneuver II].",
+      "prerequisite": "[ Add'l Strat/Maneuver II ], Tactician Level 9+",
+      "use": "-"
+    },
+    {
+      "name": "Pinpoint Attack II",
+      "description": "Increase the master's Accuracy checks by +2.",
+      "prerequisite": "[ Pinpoint Attack I ], Adv. Level 13+",
+      "use": "-"
+    },
+    {
+      "name": "Throwing II",
+      "description": "In addition to the effects of [Throwing I], all thrown weapon attacks that have \"Range: 1 (10m)\" (including the weapon Potion Ball) will now have a \"Range: 2 (20m).\"",
+      "prerequisite": "[ Throwing I ], Adv. Level 5+",
+      "use": "-"
+    },
+    {
+      "name": "Magic Control",
+      "description": "Application: 1 spell cast\nRisk: None\nAffects the next spell to be cast on this turn.\nWhen the declared spell has \"Area: Line\" or \"Target: 1 area (XX radius)/Y,\" any character within the range can be excluded from the targets of the spell in advance.",
+      "prerequisite": "[ Targeting ], [ Magic Convergence ]",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Additional Stratagem/Maneuver II",
+      "description": "The number of Stratagems or Maneuvers that can be learned is increased by an additional +1 (total +2) from [Additional Stratagem/Maneuver I].",
+      "prerequisite": "[ Add'l Strat/Maneuver I ], Tactician Level 5+",
+      "use": "-"
+    },
+    {
+      "name": "Ever-Changing I",
+      "description": "The master may declare an active combat feat twice per round, either by declaring two different feats in one attack and applying them both together or by declaring one feat in each of the different attacks (to allow for multiple attacks). In the latter case, the same feat may be declared twice.\nIf the declared feats have risks, they are all applied cumulatively, even if the same feat is declared multiple times.",
+      "prerequisite": "Grappler or Fencer or Battle Dancer Level 5+",
+      "use": "Grappler / Fencer / Battle Dancer class"
+    },
+    {
+      "name": "Dual Wielding",
+      "description": "Summary: Can handle two one-handed weapons\nThe master can wield one \"Stance: 1H\" (1H# is not allowed) weapon, each with a minimum strength of 20 or less, in each arm/hand slot, and can make one attack with each as a single Major Action. Each attack will have a -2 penalty on the Accuracy check.\nWhich arm is used for the attack is arbitrary, and each may perform Accuracy checks and damage decisions with different Warrior-Type classes. The target cannot change between the first and second attacks, but the second attack can be canceled after checking the result of the first attack.\nThis feat is the prerequisite of the [Dual Technique], [Twin Strike], and [Peerless Double Swords] feats.",
+      "prerequisite": "None",
+      "use": "-"
+    },
+    {
+      "name": "Twin Strike",
+      "description": "Summary: Perform Accuracy checks on multiple targets\nIn the case of two attacks with [Dual Wielding], after checking the result of the first attack, the master can choose whether to attack the same target or a different target with the second attack.",
+      "prerequisite": "[ Dual Wielding ]",
+      "use": "-"
+    },
+    {
+      "name": "Armor Master",
+      "description": "The master will be able to equip all ranks of armor (including SS rank) of all categories.",
+      "prerequisite": "[ Armor Proficiency S/** ] (any), Adv. Level 11+",
+      "use": "-"
+    },
+    {
+      "name": "Geomancer (Minor)",
+      "description": "The Geomancer class utilizes the power of world creation by harnessing the Qi (life force) that fills the world. They can exert various effects around them, making them the Masters of the Land.\nGeomancers' effects are called Aspects, broadly categorized into those that deal fixed damage, those that give disadvantages, those that heal, and those that give advantages.\nWeapon Restrictions: None\nArmor Restrictions: None\nShield Restrictions: None\nOther Requirements: To use Aspects, a Geomancer must deploy a Geograph. While the Geograph is deployed, a Geomancer can only make a Limited Move on the same turn as Aspects are dispatched.\nClass Features: Geomancers learn one Aspect per Geomancer Class level.\nSkill Packages:\nSpecial Resources: While a Geomancer has a Geograph deployed, they earn one point of all types of Qi every 10 seconds. The three types of Qi are Heavenly Qi, Earthly Qi, and Spirit Qi. The ultimate amount of Qi which can be stored depends on the Geograph. Gathered Qi points are then spent to create Aspects. The target of each active Aspect is determined randomly each turn.\nSource: MA, p. 18; MA, p. 49\nGeomancer Aspects List\nGeomancer Class Combat Feats",
+      "minor_class": "",
+      "other-type_class": ""
+    },
+    {
+      "name": "Power Strike III",
+      "description": "Application: 1 melee attack\nRisk: Evasion check -2\nThis feat is declared at the time of a melee attack and is valid for one attack.\nIf the declared attack hits, the damage is increased by 20 points. As a risk, any Evasion check is modified by a -2 penalty.\nWhen attacking multiple characters at the same time, one of the hit characters should be chosen randomly. The damage to that one character will be increased by 20 points. This target selection should be made before determining damage.",
+      "prerequisite": "[ Power Strike II ], Fighter Level 15+",
+      "use": "Fighter class , 2H weapon"
+    },
+    {
+      "name": "Lethal Strike III",
+      "description": "Application: 1 melee attack\nRisk: None\nWhen a melee attack is made, this feat can be declared at the time of the attack and is effective for that single attack.\nIf the declared attack hits, the target's critical immunity and Critical Threshold modifications abilities are all ignored. The damage roll on the Power Table is increased by +1 if the roll is 3-11. Double 1s and double 6s work as usual. Critical Thresholds do not change, but increasing the roll will make crits more likely (e.g., for a damage roll with Critical 10, on a roll of 9, adding this feat's +1 makes it a critical hit).\nWhen attacking multiple characters simultaneously, select one character randomly from among those hit. The above process is then used to calculate the damage to that one character. This target selection is made before damage is determined.",
+      "prerequisite": "[ Lethal Strike II ], Fencer / Battle Dancer Level 11+",
+      "use": "Fencer or Battle Dancer class"
+    },
+    {
+      "name": "Powerful Magic II",
+      "description": "The master gains +2 to the Magic Power of any magic system they have mastered.",
+      "prerequisite": "[ Powerful Magic I ], Adv Lvl 11+, 2 Wizard classes Lvl 10+",
+      "use": "-"
+    },
+    {
+      "name": "Enhanced Evocations I",
+      "description": "Summary: Evocation check +1\nThe master gets a +1 bonus to the success value of any Evocation check they perform.",
+      "prerequisite": "Alchemist Level 3+",
+      "use": "Alchemist class"
+    },
+    {
+      "name": "Tenacity",
+      "description": "The master\u2019s Maximum HP increases by 15 points.\nThis feat is the prerequisite of the [Super Tenacity] feat.",
+      "prerequisite": "Fighter / Fencer / Grappler / Battle Dancer Level 5+",
+      "use": "-"
+    },
+    {
+      "name": "Mana Strike",
+      "description": "Application: 1 melee attack\nRisk: Fortitude and Willpower -2\nWhen a melee attack is made, this feat can be declared at the time of the attack and is effective for that single attack.\nIf the declared attack hits, the damage is increased by the attacker's Magic Power. The risk is a -2 penalty to any Fortitude or Willpower checks by the user.\nWhen attacking multiple characters at the same time, select one character at random from among those hit. The damage to that one character will be increased. This target selection is made before determining damage.",
+      "prerequisite": "None",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Armor Proficiency S/**",
+      "description": "The master must choose an armor category for ** when they acquire this feat for which they already have [Armor Proficiency A/**]. When the master is equipped with the armor of the corresponding category, they gain +2 (+3 total) to Defense. The master may also equip S-rank armor of the corresponding category.\nThis feat is the prerequisite of the [Armor Master] feat.",
+      "prerequisite": "[ Armor Proficiency A/** ], Adv. Level 5+",
+      "use": "-"
+    },
+    {
+      "name": "Harmony",
+      "description": "A Bard with this Combat Feat can start another Spellsong while their Pet is still performing a Spellsong, compounding its effect and causing both to occur simultaneously. In this case, the Pet's Spellsong is treated as having the same effect range as its owner and the same Success Value as its owner's Performance check. If the Bard does not make a Performance check, or if the Performance check is an Automatic Failure, the Pet's Spellsong will still continue, but with a Success Value of 0.\nIf a Finale is used, Pet's Spellsong will instead copy the same Success Value of the Finale.\nThe Pet's Spellsong does not generate any Rhythm.",
+      "prerequisite": "Bard Level 5+",
+      "use": "Bard class"
+    },
+    {
+      "name": "Dodge",
+      "description": "Summary: Each successful Evasion check with a shield in melee lowers the Critical Threshold of the next attack by -1\nA shield can be used to intercept an attack while gaining a favorable position for oneself and aiming for a fatal blow.\nThe master of this feat should note the number of successful Evasion checks they make against enemy melee attacks during a round. On their first melee attack of their turn, their Critical Threshold is reduced by this number of successes (minimum of 8). If their first melee attack damages multiple targets, only one target (determined by the master) gains this effect. If the player makes a second or later melee attack on their turn, they do not gain this effect.\nTo gain this effect, the character must have a shield equipped at the time of the Evasion check(s), but they do not need to have the shield equipped when they make their own attack.",
+      "prerequisite": "None",
+      "use": "Shield"
+    },
+    {
+      "name": "Improved Throw II",
+      "description": "When the master performs a Throw, the power of the Throw is increased by +20. Throw can be used against any character with up to 3 sections, regardless of movement method or the number of legs. When attacking a character with multiple sections, the Accuracy check is performed only once. The attacked target may choose any section to perform an Evasion check. If the Evasion check fails, the target will be thrown (if a melee attack is not possible in any section due to [Attack Obstacle] or other reason, the target cannot be affected with Throw). All sections will be thrown, and the attacker will deal damage to each section.",
+      "prerequisite": "[ Improved Throw I ], Grappler Level 9+",
+      "use": "Grappler class"
+    },
+    {
+      "name": "Nerve Strike",
+      "description": "Application: 1 melee attack\nRisk: None\nDeclared at the time of a melee attack, this feat is valid for that single attack. It cannot be declared when attacking multiple targets at the same time.\nIf the attack hits, for the next 10 seconds (1 round), all physical damage caused by the enemy (or section) will be reduced by 8 points.",
+      "prerequisite": "Grappler/Battle Dancer Level 9+",
+      "use": "Grappler or Battle Dancer Class"
+    },
+    {
+      "name": "Enhancer (Minor)",
+      "description": "Enhancers are a very physical class who use their body and mana to create advantages in battle. It is not a class that makes use of weapons, but uses nonmagical Techniques with associated special effects.\nWeapon Restrictions: None\nArmor Restrictions: None\nShield Restrictions: None\nOther Requirements: Enhancers must be able to breathe freely to use Techniques (vocalization is not required). They may not take a Full Move on the same turn as using a Technique. All Techniques cost a base 3MP to use, but are not magical.\nClass Features: Enhancers learn one Technique per Enhancer Class level.\nSource: CR II, p. 97; ET, p. 42; MA, p. 159\nEnhancer Techniques List\nEnhancer Class Combat Feats",
+      "minor_class": "",
+      "other-type_class": ""
+    },
+    {
+      "name": "Tail Swing I",
+      "description": "Application: 1 melee attack\nRisk: None\nThis feat can only be declared when a melee attack is made with the wrestling weapon Tail, and works for only one attack.\nWhen making a Tail attack, the user can attack up to 3 characters who share the same coordinates or are within the same skirmish. The attacker's Accuracy check is made only once, with a -1 penalty. The damage should be determined individually if the attacker hits more than one character.",
+      "prerequisite": "Adv. Level 3+",
+      "use": "Tail"
+    },
+    {
+      "name": "\u25b3Cover I",
+      "description": "Application: 10 seconds (1 round)\nRisk: None\nWhen declaring this feat, the user can specify any one willing character. During the following 10 seconds (1 round), if the specified character becomes the target of a melee attack, ranged attack, or similar unique skill with an Evasion/Negates effect, the user becomes a target instead. This intercepted attack always hits, as the user cannot make an Evasion check.\nFor this attack interception to take place, the character and the user must be in the same area. If an effect occurs as part of an attack, the user receives the effect immediately after substitution. The effect of [Cover] is automatically applied only once per round when the target is targeted.\n[Cover] is a special combat feat. Some additional explanations are given here.",
+      "prerequisite": "None",
+      "use": "-"
+    },
+    {
+      "name": "Decoy Attack I",
+      "description": "Application: 1 melee attack\nRisk: None\nThe master makes an overtly large attack to draw attention and aid their allies. Accuracy checks are penalized by -2, but the damage is increased by +2 on a hit.\nIf the declared attack is evaded, the enemy receives a -1 penalty to Evasion checks for the next 10 seconds (1 round). This effect is cumulative up to -4, but if the target fails an Evasion check even once, the penalty is removed.\nUse of this feat is declared when a melee attack is made, and is only active for that one attack. This feat cannot be declared when attacking multiple targets at the same time.",
+      "prerequisite": "None",
+      "use": "-"
+    },
+    {
+      "name": "Magic Convergence",
+      "description": "Application: 1 spell cast\nRisk: None\nAffects the next spell to be cast on this turn. A spell with \"Target: 1 area (XX radius)/Y\" can be cast instead as \"Target: 1 Character.\"\nThis feat, along with [Targeting], is a prerequisite for the [Magic Control] feat.",
+      "prerequisite": "None",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Card Reduction",
+      "description": "Application: 1 Evocation use\nRisk: None\nIf an Evocation requires a variable number of Material Cards to use, it now requires one less, to a minimum of one (i.e., an Evocation cannot use 0 Material Cards).\nIf the Alchemist wishes to increase the number of targets of that Evocation, first reduce the number of Material Cards needed via this Combat Feat, then multiply by the number of intended targets.",
+      "prerequisite": "Alchemist Level 5+",
+      "use": "Alchemist class"
+    },
+    {
+      "name": "\u25b3Cover II",
+      "description": "Application: 10 seconds (1 round)\nRisk: None\nThe effect of this combat feat is exactly the same as [Cover I] (see CR I, p. 256). However, this feat no longer counts toward multiple active combat feats per turn. In other words, other active combat feat declarations can be made even if [Cover II] is used.\nIf a character can make multiple active combat feat declarations in a turn, [Cover II] can be declared separately an equal number of times.",
+      "prerequisite": "[ Cover I ], Adv. Level 7+",
+      "use": "-"
+    },
+    {
+      "name": "Targeting",
+      "description": "Summary: Prevents stray shots\nThe master's shots do not risk straying when making a ranged attack or when performing an \"Area: Shot\" spell or effect into a skirmish.\nThis feat is the prerequisite of the [Hawk Eye] feat, and (with [Magic Convergence]) is a prerequisite for the [Magic Control] feat.",
+      "prerequisite": "None",
+      "use": "-"
+    },
+    {
+      "name": "Power Strike I",
+      "description": "Application: 1 melee attack\nRisk: Evasion Check -2\nThis feat can be declared at the time of any melee attack, and is effective for that single attack. If the declared attack hits, its damage is increased by 4 points. As a risk, any Evasion checks take a -2 penalty.\nIf multiple characters are hit in the same attack, select one character at random from among those hit. The damage to that one character will be increased by 4 points. This target selection is made before determining damage.",
+      "prerequisite": "None",
+      "use": "-"
+    },
+    {
+      "name": "Consecutive Evocation",
+      "description": "When using an Evocation with a Major Action, the master may use two different Evocations once with each Major Action. An Evocation check is performed for each Evocation, and the target is defined separately for each Evocation.",
+      "prerequisite": "Alchemist Level 5+",
+      "use": "Alchemist class"
+    },
+    {
+      "name": "Taunting Strike I",
+      "description": "Application: 1 weapon attack\nRisk: None\nWhen a melee attack or ranged attack is made, this feat can be declared at the time of the attack and is effective for that single attack. If multiple attacks are made at the same time, the effect is applied to all of them.\nThe target hit by the declared attack is provoked and must attack the user as much as possible during the following 10 seconds (1 round). The method of attack is unrestricted.\n[Taunting Strike I] has no effect on characters with an Intellect score of 18 or more or on monsters with an Intellect of \"High.\" It also has no effect if the provoked target is unable to attack the user or if the target is in a different area.\nThe damage dealt by an attack using this feat is reduced by 2 points (min 0); even if the applied damage is 0, the provocation will still be effective.",
+      "prerequisite": "None",
+      "use": "-"
+    },
+    {
+      "name": "Super Tenacity",
+      "description": "The master's Maximum HP increases by 15 points (30 points in total with [Tenacity]).",
+      "prerequisite": "Fighter / Grappler Level 7+, [ Tenacity ]",
+      "use": "-"
+    },
+    {
+      "name": "Hawk Eye",
+      "description": "Summary: Can target shielded enemies\nThe master can see through shielded areas, such as those created by hostile characters on the battlefield or skirmishes, and can make ranged attacks and use magic at targets in or beyond those shielded areas.",
+      "prerequisite": "[ Targeting ]",
+      "use": "-"
+    },
+    {
+      "name": "Intense Finale",
+      "description": "Summary: Finale Power +10\nThe Power of damage and/or recovery effects of a Finale increases by 10.",
+      "prerequisite": "Bard Level 3+",
+      "use": "Bard class"
+    },
+    {
+      "name": "Weapon Proficiency A/**",
+      "description": "Summary: Damage +1 for weapons in a selected category, can equip A-Rank weapons in that category\nThe master must choose a weapon category for **, such as Swords or Axes, when they acquire this feat. When they wield a weapon of that category, they deal +1 damage with it. In addition, they can wield A rank weapons of that category. [Weapon Proficiency A/**], which has different categories, can be learned several times by using separate learning slots.\nThis feat is the prerequisite of the [Weapon Proficiency S/**] feat.",
+      "prerequisite": "None",
+      "use": "-"
+    },
+    {
+      "name": "Footwork",
+      "description": "Can move up to 10m with Limited Move. If the character's Normal Move is less than 10, it is limited to that movement instead.\nIn Simplified Combat, a character can move one area with Limited Move.",
+      "prerequisite": "Adv. Level 9+",
+      "use": "-"
+    },
+    {
+      "name": "Pinpoint Attack I",
+      "description": "The master's Accuracy checks increase by +1.",
+      "prerequisite": "Adv. Level 7+",
+      "use": "-"
+    },
+    {
+      "name": "Stomp",
+      "description": "When the master successfully makes a Throw, the target can be additionally attacked with a Kick. If an [Improved Throw] simultaneously throws more than one section, the Kick can be made at any one section of this target.\n[Chain Attack] cannot be added to this Kick attack.",
+      "prerequisite": "Grappler Level 5+",
+      "use": "Grappler class"
+    },
+    {
+      "name": "Special Instrument Proficiency",
+      "description": "Summary: Can equip and use Special Instruments\nThis feat allows the master to equip and use items classified as Special Instruments. Equipping items that can also be used as weapons or armor (for instance, the Cymbal Shield or the String Bow) does not increase Extra Damage or Defense as other proficiency feats do.",
+      "prerequisite": "Bard Level 1+",
+      "use": "Bard class"
+    },
+    {
+      "name": "Flying Kick",
+      "description": "The master may attack a target with a Kick only after performing a Normal Move and moving at least 1 area (Simplified Combat) or 10 meters (Standard Combat). This attack does not activate [Chain Attack]. The master may then perform a normal Major Action.",
+      "prerequisite": "Grappler Level 9+",
+      "use": "Grappler class"
+    },
+    {
+      "name": "Decoy Attack II",
+      "description": "Application: 1 melee attack\nRisk: None\nSame as [Decoy Attack I], but the damage on a hit is +8. In addition, the penalty to the Evasion check given when the declared attack is evaded is -2, and accumulates up to -8.",
+      "prerequisite": "[ Decoy Attack I ], Adv. Level 9+",
+      "use": "-"
+    },
+    {
+      "name": "Dividing Triad",
+      "description": "Once the targets of an Aspect have been determined, the master can cancel any undesired effects of the Aspect to be given by the Geomancer. Apply the remaining effects of the other Aspects to the target as usual.",
+      "prerequisite": "Geomancer Lvl 3+",
+      "use": "Geomancer class"
+    },
+    {
+      "name": "Guardian I",
+      "description": "When declaring [Cover], multiple targets can be arbitrarily specified, up to 3 maximum. As long as the target character is in the proper position, it will be covered by a melee attack, a ranged attack, or any other similar attack (effect \"Evasion/Negates\").\nThe same character may be covered more than once in one round.",
+      "prerequisite": "Adv. Level 5+, [ Cover ]",
+      "use": "-"
+    },
+    {
+      "name": "Multi-Action",
+      "description": "Application: 1 melee attack or spell cast\nRisk: None\nAllows the master to make a melee attack and cast a spell together in one Major Action. If a character declares a Melee Attack, they can cast a spell immediately afterward. Conversely, if a character casts a spell, they may perform a melee attack immediately thereafter. Even if the character has the ability to declare multiple combat feats in one round, they cannot declare an additional [Multi-Action] for additional melee attacks or spells cast.\nThe conditions for casting the spell must be met, and movement is limited to Limited Move.\nThere are some Combat Feats that allow additional actions by a character. However, all of them are outside the target of the [Multi-Action] declaration.\nMelee attacks via [Chain Attack] or [Follow-Up], kicks via [Flying Kick] or [Stomp], additional spells via [Double Cast], and additional melee attacks or spells via [Multi-Action] itself cannot be targets of the [Multi-Action] declaration.\nThe Combat Feat [Fast Action] adds a Major Action itself. Therefore, if you make a melee attack using a Major Action, you can declare [Multi-Action].\nIf the character has mastered either [Ever-Changing] or [Battle Master], it is possible to execute 2 combinations of melee attacks and spells cast by combining them with [Fast Action]. Please note that [Rune Master] cannot be used for this purpose, as [Multi-Action] does not meet the condition of [Use: Wizard-Type Classes].\nIf you have mastered [Dual Wielding] and declare [Multi-Action] when performing two melee attacks with one Major Action, you must declare [Multi-Action] for the first attack but *not* the second attack.\nIn other words, resolve attacks in this order:\nFirst Melee Attack \u2192 Cast a Spell \u2192 Second Melee Attack\nor\nCast a Spell \u2192 2 Melee Attacks\nThe two attacks of [Twin Strike] are linked by the decision to choose a target for the second attack depending on the outcome of the first attack. Therefore, when using [Multi-Action] to cast a spell along with [Twin Strike], you must cast the spell before resolving either melee attack.\nIf [Fast Action] and [Multi-Action] are combined, it is possible to perform either combination twice.\nEven if you declare a combination with a Combat Feat that can attack multiple targets at the same time, such as [Cleave], you can only cast the spell once, regardless of how many melee attack targets you can get.\nIf you want to use both [Double Cast] and [Multi-Action], you need to declare both abilities at the same time to cast a spell.\nAfter this declaration, you can perform a [Double Cast] spell and melee attack combo. The person declaring the actions can choose the order in which they are performed.\nIt is important to note that if you declare [Multi-Action] before the melee attack, you cannot then declare [Double Cast], as the subsequent spell cast is not considered a Major Action. Please ensure you follow the correct order.",
+      "prerequisite": "Adv. Level 5+",
+      "use": "-"
+    },
+    {
+      "name": "Vagrant Combat Feats",
+      "description": "Enhanced Resistance I\nPrerequisite: Adv. Level 3+\nUse: -\nFollow-Up\nPrerequisite: [Shield Bash]\nUse: 1H weapon\nEnhanced Resistance II\nPrerequisite: [Enhanced Resistance I]/Adv. Level 11+\nUse: -\nCheat Cast I\nPrerequisite: None\nUse: Wizard-Type Classes\nDesperate Strike I\nPrerequisite: None\nUse: -\nHerald Strike\nPrerequisite: None\nUse: -\nQuick Cast\nPrerequisite: None\nUse: Wizard-Type Classes\nShadow Step I\nPrerequisite: None\nUse: -\nShield Bash I\nPrerequisite: None\nUse: Shield\nWild Strike I\nPrerequisite: None\nUse: 1H weapon\nShield Bash II\nPrerequisite: [Shield Bash I]/Adv. Level 5+\nUse: Shield\nDesperate Strike II\nPrerequisite: [Desperate Strike I]/Adv. Level 7+\nUse: -\nShadow Step II\nPrerequisite: [Shadow Step I]/Adv. Level 7+\nUse: -\nWild Strike II\nPrerequisite: [Wild Strike I]/Adv. Level 7+\nUse: 1H weapon\nCheat Cast II\nPrerequisite: [Cheat Cast I]/Adv. Level 13+\nUse: Wizard-Type Classes\nDesperate Strike III\nPrerequisite: [Desperate Strike II]/Adv. Level 15+\nUse: -\nPlunder\nGain: Scout or Ranger or Sage Level 5\nUse: 1H weapon\n\u00a0\nCrude Take\nGain: Scout or Ranger or Sage Level 5\nUse: -"
+    },
+    {
+      "name": "Mirage Arrow",
+      "description": "Application: 1 ranged attack\nRisk: None\nAn attack using this feat must be made with a thrown weapon or bow, and is valid for one attack of that type.\nAn attack declared with this feat either uses two thrown weapons of the same type or double ammunition for shooting. For a bow, the weapon is exceptionally treated as if two attacks can be made without needing to change weapons. Accuracy checks may be made twice, taking the better of the two rolls. Only one attack will hit the target.",
+      "prerequisite": "Marksman Level 9+",
+      "use": "Marksman class"
+    },
+    {
+      "name": "Repeated Strike II",
+      "description": "Application: 1 melee attack\nRisk: None\nSame as [Repeated Strike I] (see CR I, p. 257), except that if the declared attack hits on the first Accuracy check, the damage is increased by 4 points.\nIf multiple attacks are made simultaneously, another Accuracy check can be performed on all targets that evaded them. The player may choose any one of the characters hit by the first attack to increase damage by 4 points (the choice should be made before the damage is determined).",
+      "prerequisite": "[ Repeated Strike I ], Fencer/Fighter/Battle Dancer Level 7+",
+      "use": "Fighter / Fencer / Battle Dancer class, 2H weapon"
+    },
+    {
+      "name": "Evasive Maneuvers I",
+      "description": "Summary: Evasion check +1\nThe master gains a +1 bonus to all Evasion checks.",
+      "prerequisite": "Adv. Level 3+",
+      "use": "-"
+    },
+    {
+      "name": "Additional Songs III",
+      "description": "The number of Spellsongs or Finales that the master can learn is increased by an additional +1 (total +3) from [Additional Songs II].",
+      "prerequisite": "[ Additional Songs II ], Bard Level 13+",
+      "use": "Bard class"
+    },
+    {
+      "name": "Powerful Magic I",
+      "description": "The master gains +1 to the Magic Power of any magic system they have mastered.",
+      "prerequisite": "2 Wizard-type classes Level 6+",
+      "use": "-"
+    },
+    {
+      "name": "Aimed Attack I",
+      "description": "Application: 1 weapon attack\nRisk: None\nWhen a melee attack or ranged attack is made, this feat can be declared at the time of the attack and is effective for that single attack. If multiple attacks are made at the same time, the effect is applied to all of them.\nDeclared attacks gain a +1 bonus to Accuracy checks, but the critical threshold increases by +1 for the damage roll on the Power Table. A critical threshold of 13 or more will never result in a critical hit.",
+      "prerequisite": "None",
+      "use": "-"
+    },
+    {
+      "name": "Snipe",
+      "description": "The archer who uses this combat feat specifies a target which can be attacked at the time this feat is declared. If the archer makes a shooting attack on that target in their next Major Action and hits with a success value 3 or higher than the target's Evasion value/roll, the attack's total damage is doubled. If the user's success value is only 1 or 2 higher than the target's success value, the target will still be hit, but the damage calculation will be performed as usual, without doubling. (A miss is still a miss.)\nThe user must be able to attack the target without causing a stray shot, both when using the combat feat and when executing the shooting attack. Movement when using this combat feat is limited to Limited Move. If a different Major Action is performed after the combat feat is declared instead of a shooting attack, its effect will be lost.\nThe user cannot overlap the effects of this skill with abilities, magic, ammunition, etc., that can attack multiple enemies at the same time. If they use them, the effects of this skill do not occur.",
+      "prerequisite": "None",
+      "use": "Marksman class , 2H ranged weapon"
+    },
+    {
+      "name": "Dual Technique",
+      "description": "The penalty to the Accuracy check for two attacks from [Dual Wielding] is eliminated.",
+      "prerequisite": "Adv. Level 5+, [ Dual Wielding ]",
+      "use": "-"
+    },
+    {
+      "name": "Universal Metamagic",
+      "description": "Application: 10 seconds (1 round)\nRisk: None\nOn the turn of the user who declares this combat feat, the player can choose whether or not to obtain the effect of any [Metamagic/**] feats for any spells cast. The user doesn't need to know all [Metamagic/**] to use them in any combination.\nMultiple effects may be combined. In that case, the MP consumption is calculated by multiplying all the coefficients determined for each Metamagic. For example, if user selects [Metamagic/Targets] to target 2 characters and [Metamagic/Time] to extend the duration by 3 times, they would have to spend 2x3=6 times the MP.\nThis feat is the prerequisite of the [Metamagic Master] feat.\nThe acquisition of [Universal Metamagic] is considered equivalent to acquiring every [Metamagic/**] Combat Feat.\n[Universal Metamagic] lasts for 10 seconds (1 round), so if the caster casts more than one spell in their turn, the caster can choose different [Metamagic/**] effects for each spell cast.\nFor example, a Conjurer (who has also learned [Rune Master]) can declare [Double Cast] and [Universal Metamagic], first on [Acid Cloud] with [Metamagic/Power Assurance], [Metamagic/Accuracy], and [Metamagic/Area], then [Counter Magic] doubled by [Metamagic/Targets], and so on.",
+      "prerequisite": "Any [ Metamagic/** ]",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "MP Save/**",
+      "description": "Choose one Wizard-type class for ** when acquiring this feat, such as Sorcerer or Priest. Whenever the master uses magic with the corresponding class, the MP consumption is reduced by 1 point (minimum 1 MP).\nWhen using [Metamagic/**], the MP consumption by this combat feat is reduced first, and then multiplied to calculate the final MP consumption.\nThis combat feat may be acquired for multiple classes by using separate learning slots.",
+      "prerequisite": "Adv. Level 5+",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Additional Songs I",
+      "description": "Summary: Learn one more Spellsong or Finale\nThe mastery of this Combat Specialty will allow the mastery of one extra Spellsong or Finale. In other words, they can learn up to a total of (Bard Level + 1) Spellsongs and Finales in total.",
+      "prerequisite": "Bard Level 1+",
+      "use": "Bard class"
+    },
+    {
+      "name": "Metamagic/Accuracy",
+      "description": "Application: 10 seconds (1 round)\nRisk: None\nIn the turn in which the user declares this feat, they may choose whether or not to perform this Metamagic on all spell casts. If the user chooses to use this Metamagic, they must spend twice as much MP as they would normally spend and gain the following benefits.\nSpellcasting checks can be performed by rolling 2d twice and selecting the desired roll.\nThis feat is the prerequisite of the [Universal Metamagic] feat.",
+      "prerequisite": "None",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Armor Piercer III",
+      "description": "Application: 1 melee attack\nRisk: None\nWhen a melee attack is made, this feat can be declared at the time of the attack and is effective for that single attack.\nIf the declared attack hits, the attack target's Defense is treated as half (rounded up). The target's critical immunity and Critical Threshold modifications abilities are all ignored. When a critical occurs, Defense is treated as 0.\nWhen attacking multiple characters simultaneously, select one character randomly from among those hit. The above process is performed when applying damage to that character. This target selection is made before determining damage.",
+      "prerequisite": "[ Armor Piercer II ]/ Grappler Level 15+",
+      "use": "Grappler class"
+    },
+    {
+      "name": "Ever-Changing II",
+      "description": "The master may declare an active combat feat three times per round, either by declaring three different feats in one attack and applying them each together or by declaring one feat in each of the different attacks (to allow for multiple attacks). How the master divides the three declarations is optional.\nIf the declared feats have risks, they are all applied cumulatively, even if the same feat is declared multiple times.",
+      "prerequisite": "[ Ever-Changing I ], Grappler/Fencer/Battle Dancer Level 13+",
+      "use": "Grappler / Fencer / Battle Dancer class"
+    },
+    {
+      "name": "Metamagic/Area",
+      "description": "Application: 10 seconds (1 round)\nRisk: None\nIn the turn in which the user declares this feat, they may choose whether or not to perform this Metamagic on all spell casts. If the user chooses to use this Metamagic, they gain the following benefits.\nThe effect area of a spell whose target is \"1 area (XX radius)/Space,\" \"1 area (XX radius)/All,\" or \"1 area (XX radius)/Y\" and whose radius part is from 2 to 5 meters will be expanded.\n+1m doubles the MP cost, +2m triples it, etc. A spell's radius can only be expanded to a maximum of 6m.\nIf a spell has a maximum number of targets (i.e., \"1 area (radius XX)/Y\"), the maximum number of targets is increased by 5 for each additional meter in radius.\nIn Simplified Combat, only the effect of increasing the maximum number of targets is available.\nThis feat is the prerequisite of the [Universal Metamagic] feat.",
+      "prerequisite": "None",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Infight I",
+      "description": "Application: 10 seconds (1 round)\nRisk: Evasion Check -2\nThis feat must be declared on a single character at the time of declaration. Also, it cannot be declared on a turn when the user performs a melee or ranged attack on any other character.\nIf a melee attack is made using the Grappler class against a given character for a period of 10 seconds (1 round), the master gains a +2 bonus to Accuracy checks.\nThe master may not attack any other character until the beginning of their next turn (but may attack other sections of the original target, if it has multiple sections). As a risk, all Evasion checks by the user are subject to a -2 penalty.",
+      "prerequisite": "Grappler Level 5+",
+      "use": "Grappler class"
+    },
+    {
+      "name": "Lethal Strike I",
+      "description": "Application: 1 melee attack\nRisk: Evasion Check -2\nWhen a melee attack is made, this feat can be declared at the time of the attack and is effective for that single attack.\nIf the declared attack hits, the damage roll on the Power Table is increased by 1 if the roll is 3-11 (e.g. rolling 5 on the Power Table takes the value found in column 6 instead). Double 1s and double 6s work as is. Critical Thresholds do not change, but increasing the roll will make crits more likely (e.g., on a damage roll with Critical 10, on a roll of 9, adding this feat's +1 makes it a critical hit).\nAs a risk, any Evasion check is subject to a -2 penalty.\nWhen attacking multiple characters at the same time, select one character at random from among those hit. The above process is then used to calculate the damage to that one character. This target selection must be made before any damage is determined.",
+      "prerequisite": "None",
+      "use": "-"
+    },
+    {
+      "name": "Metamagic/Targets",
+      "description": "Application: 10 seconds (1 round)\nRisk: None\nIn the turn in which the user declares this feat, they may choose whether or not to perform this Metamagic on any spells cast. If the user chooses to use this Metamagic, they gain the following benefits.\nThis feat increases the number of targets for any spell with \"Target: 1 character\" (including 1 Entire Character and 1 Character X), \"Target: One Object,\" and \"Target: 1 spell.\" Spells with \"Range: Caster\" or \"Range: Touch\" cannot be affected.\nEach additional target multiplies the MP consumed (2x for 2 targets, 3x for 3 targets, etc.). A single Spellcasting check should be made for all targets.\nThis feat is the prerequisite of the [Universal Metamagic] feat.",
+      "prerequisite": "None",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Additional Stratagem/Maneuver I",
+      "description": "This Combat Feat mastery allows for an additional +1 Stratagem or Maneuver to be acquired, resulting in a total of (Tactician class level + 1) Stratagems and Maneuvers that can be learned.",
+      "prerequisite": "Tactician Level 1+",
+      "use": "-"
+    },
+    {
+      "name": "Guardian II",
+      "description": "This has the same effect as [Guardian I], but the master can declare up to 5 targets when declaring [Cover].",
+      "prerequisite": "[ Guardian I ], Adv. Level 9+",
+      "use": "-"
+    },
+    {
+      "name": "Tail Swing II",
+      "description": "Application: 1 melee attack\nRisk: None\nSimilar to [Tail Swing I], but up to 5 characters can be attacked with the Tail, and there is no penalty to the Accuracy check.",
+      "prerequisite": "[ Tail Swing I ], Adv. Level 9+",
+      "use": "Tail"
+    },
+    {
+      "name": "Marionette",
+      "description": "If the master is controlling/using a Golem, Fairy, summoned Daemon with an Action Chart, etc., they can make them act independently. In the next round after using [Marionette], those characters can act before the controlling character's next turn.\nWhen the master gives \"Obey Command\" to a Golem, Undead, Fairy, or making a Daemon act according to the Daemon Action Chart, its turn is not fixed immediately after the master's turn but can be any turn within the allies' turn.\nThe limitation of one \"Obey Command\" per turn for a Golem and Undead and one for a Fairy remains unchanged. For example, if a player orders a Fairy to act before their turn and then summons another Fairy, the newly summoned Fairy cannot be given a command and act in the same round.",
+      "prerequisite": "Adv. Level 5+",
+      "use": "-"
+    },
+    {
+      "name": "Versatile",
+      "description": "Application: Instant\nRisk: None\nThe user can declare this feat immediately after using a Stratagem of two or more Ranks lower than the one used in the previous round. For example, if the user used Rank 3 in the previous round, they can declare this feat if they start at Rank 1. If Rank 4 is used immediately before, they can declare this feat if they start at Rank 1 or 2. If Rank 5 is used immediately before, they can declare this feat if they start at Rank 1, 2, or 3.\nUsing this feat will earn the user 2 points of Edge.",
+      "prerequisite": "Tactician Level 9+",
+      "use": "-"
+    },
+    {
+      "name": "Skillful Play",
+      "description": "Application: 1 Spellsong or Finale performance\nRisk: None\nThis Combat Feat is declared when using a Spellsong or Finale.\nIn the use of a Spellsong or Finale where the declaration has been made, the Performance check is made twice, and either result can be used. If a comparison of Success Values is required, the player performs this process first, and then the passive side rolls the result only once.",
+      "prerequisite": "Bard Level 7+",
+      "use": "Bard class"
+    },
+    {
+      "name": "Improved Throw I",
+      "description": "Summary: Throw attack +10 Power, can Throw characters with up to two Sections\nWhen the master performs a Throw, the Power of the Throw is increased by +10. A Throw is no longer limited to bipedal characters or similar methods of movement, and can be used on any character with up to two sections. Two-section characters will need only one Accuracy Check to hit. The attacked target may choose any section to perform an Evasion check, and if the Evasion check fails, the target will be hit (if a melee attack is not possible in either section due to an [Attack Obstacle] or some other reason, the target will be unaffected by a Throw attack). All sections will be thrown, and the attacker may inflict damage on each section.",
+      "prerequisite": "Grappler Level 3+",
+      "use": "Grappler class"
+    },
+    {
+      "name": "Lethal Strike II",
+      "description": "Application: 1 melee attack\nRisk: Evasion check -1\nSame as [Lethal Strike I], but with a reduced penalty modifier of -1 to the Evasion check risk.",
+      "prerequisite": "[ Lethal Strike I ], Adv. Level 7+",
+      "use": "-"
+    },
+    {
+      "name": "\u25b3Frontline Mastermind",
+      "description": "Application: Instant\nRisk: None\nThe user of this feat accumulates an additional 2 points of Edge if their own Initiative success value is greater than the maximum value of the enemy's Initiative (or greater than or equal to the Initiative of the monster data).",
+      "prerequisite": "Tactician Level 5+",
+      "use": "-"
+    },
+    {
+      "name": "Fighter (Major)",
+      "description": "A warrior who stands on the frontline, fighting enemies with weapons. Provided that you meet the Minimum Strength and Rank proficiency, you can wield almost every melee and thrown weapon, with no particular limitations on armor or shields.\nWeapon Restrictions: None\nArmor Restrictions: None\nShield Restrictions: None\nSource: CR I, p. 87; ET, p. 18\nFighter Class Combat Feats",
+      "major_class": "",
+      "warrior-type_class": ""
+    },
+    {
+      "name": "Violentcast I",
+      "description": "Application: 1 spell cast\nRisk: None\nThis feat can be declared at the time of a spell casting, and is valid for only one casting.\nIf the spell only deals damage to the target, the user gains a +2 bonus to the Success Value of the Spellcasting check. This feat only works for spells that deal damage and have a duration of \"Instant.\"\nIt is not effective for spells with effects other than damage or for spells that do not deal damage. However, it works for spells that increase damage depending on the target's classification, or spells that deal damage only under specific conditions (such as casting [Cremation] or [Cure Wounds] on Undead characters).",
+      "prerequisite": "None",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Violentcast II",
+      "description": "Application: 1 spell cast\nRisk: None\nThis feat can be declared at the time of casting a spell and is valid for the one time of the cast.\nIf the spell only damages the target, the user gains a +3 bonus to the success value of the Spellcasting check. This feat does not affect spells that do not deal damage or have effects other than dealing damage. This feat even works for spells that increase damage based on specific conditions, such as the target's classification.",
+      "prerequisite": "[ Violentcast I ], Adv. Level 13+",
+      "use": "Wizard-Type class"
+    },
+    {
+      "name": "Throwing I",
+      "description": "Summary: Use Potions as thrown weapons and gain +1 Accuracy for thrown attacks\nThe master gains a +1 bonus to Accuracy checks on any thrown attacks.\nIn addition, a potion can be placed in a Potion Ball, which can be used as a thrown weapon. The range is \"1 (10m),\" and the target is always hit unless there is an automatic failure on the Accuracy check.\nIf the target is hit with a Potion Ball, the potion's effect is given to the target. In this case, it is considered \"Resistance: Optional\" (i.e., if the target does not wish to be hit, it will not be affected).",
+      "prerequisite": "None",
+      "use": "-"
+    },
+    {
+      "name": "Battle Dancer (Major)",
+      "description": "The Battle Dancer class is a unique specialization within the Warrior category. Unlike other warriors, Battle Dancers eschew heavy armor and instead rely on nimble movements resembling a dance to manipulate their weapons.\nAs masters of attack, Battle Dancers employ a wide array of Combat Feats and utilize multiple attacks in combat. However, due to the class's rarity and the high casualty rate resulting from its low defense, few adventurers have truly mastered the art of the Battle Dancer.\nWeapon Restrictions: None; may also equip Wrestling weapons\nArmor Restrictions: Only items marked \"Grapplers may equip\" or \"Grapplers only\"\nShield Restrictions: May not equip\nClass Features: At Level 1, Battle Dancers receive one bonus Active Combat Feat from the following list: [Decoy Attack I], [Repeated Strike I], [Aimed Attack I], [Power Strike I], [Taunting Strike I], [Lethal Strike I], [Mana Strike], [Shadow Step I] (Vagrants only), [Desperate Strike I] (Vagrants only), [Herald Strike] (Vagrants only), and [Wild Strike I] (Vagrants only). This Combat Feat only applies to the Battle Dancer Class and cannot be \"shared\" with other classes.\nSource: BM, p. 12; BM, p. 92\nBattle Dancer Combat Feats",
+      "major_class": "",
+      "warrior-type_class": ""
+    },
+    {
+      "name": "Additional Songs II",
+      "description": "The number of Spellsongs or Finales that the master can learn increases by an additional +1 (total +2) from [Additional Songs I].",
+      "prerequisite": "[ Additional Songs I ], Bard Level 7+",
+      "use": "Bard class"
+    },
+    {
+      "name": "\u25b3Defensive Stance",
+      "description": "Application: 10 seconds (1 round)\nRisk: Most Skill Checks -4\nThis feat must be declared before any Skill Check is performed on the master's turn. If the master is under the continuous effect of any check at the beginning of their turn, they may declare it immediately before that check.\nThe user chooses one check from the following types: Evasion, Fortitude, or Willpower. The user receives a +4 bonus to that check until the beginning of their next turn. Each turn in which they declare this feat, they can choose a different check.\nAs a risk, all other checks except the two not selected above and Death Checks suffer a -4 penalty. However, suppose this combat feat is declared during the Combat Preparation. In that case, the Initiative check and Monster Knowledge check at the time of Combat Preparation are also exempt from this risk.\nThis combat feat is limited to Normal or Limited Moves. It cannot be declared if a Full Move is performed on this turn. However, if the user has the ability to perform a Full Move as a Normal Move, or if a Full Move does not restrict the use of any action, this feat can be declared.",
+      "prerequisite": "None",
+      "use": "-"
+    },
+    {
+      "name": "Aimed Attack II",
+      "description": "Application: 1 weapon attack\nRisk: None\nSame as [Aimed Attack I] (see CR I, p. 257), except the bonus to the Accuracy check is +2, and there is no increase (or decrease) of the Critical Threshold.",
+      "prerequisite": "[ Aimed Attack I ], Adv. Level 7+",
+      "use": "-"
+    },
+    {
+      "name": "Weapon Proficiency S/**",
+      "description": "The master must choose a weapon category for ** when they acquire this feat, for which they already have [Weapon Proficiency A/**]. When they wield a weapon of that category, they deal +2 damage (+3 total) with it. In addition, they can wield S-rank weapons of that category.\nThis feat is the prerequisite of the [Weapon Master] feat.",
+      "prerequisite": "[ Weapon Proficiency A/** ], Adv. Level 5+",
+      "use": "-"
+    },
+    {
+      "name": "Cleave II",
+      "description": "Application: 1 melee attack\nRisk: None\nSame as [Cleave I], but the user can make a melee attack on up to 5 characters, and there is no reduction in damage.",
+      "prerequisite": "[ Cleave I ], Fighter / Battle Dancer Level 9+",
+      "use": "Fighter or Battle Dancer class, 2H melee weapon"
+    },
+    {
+      "name": "Aimed Attack III",
+      "description": "Application: 1 weapon attack\nRisk: None\nWhen a melee attack or ranged attack is made, this feat can be declared at the time of the attack and is effective for that single attack. If multiple attacks are made simultaneously, the effect is applied to all of them.\nThe declared attack gains a +3 bonus to Accuracy checks.",
+      "prerequisite": "[ Aimed Attack II ], Adv. Level 11+",
+      "use": "-"
+    },
+    {
+      "name": "Confident Performer",
+      "description": "Application: 1 Finale performance\nRisk: None\nThis combat feat can be declared using any Finale which has \"Resistance: Half.\" Once this declaration is made, the Finale is treated as \"Resistance: Can't,\" but its Critical Threshold is changed to \"None.\"\nOnly a change in the type of resistance or immunities can negate the Finale's effect.",
+      "prerequisite": "Bard Level 3+",
+      "use": "Bard class"
+    },
+    {
+      "name": "Infight II",
+      "description": "Application: 10 seconds (1 round)\nRisk: Evasion check -2\nSame as [Infight I] (see CR I, p. 255), but the master not only gains a +2 bonus to Accuracy checks, but also gains +4 damage on a hit.",
+      "prerequisite": "[ Infight I ], Grappler Level 9+",
+      "use": "Grappler class"
+    },
+    {
+      "name": "Peerless Double Swords",
+      "description": "Removes the minimum strength limitation of the weapons that can be equipped from [Dual Wielding].",
+      "prerequisite": "[ Dual Wielding ], Adv. Level 11+",
+      "use": "-"
+    },
+    {
+      "name": "Distant Evocations",
+      "description": "The master treats any Evocation of \"Range/Area: Touch\" as \"Range/Area: 1 (10m) / Shot\". If their Evocation is \"Target: 1 Character,\" they can select multiple targets simultaneously by doubling the number of material cards they consume.",
+      "prerequisite": "Alchemist Level 5+",
+      "use": "Alchemist class"
+    },
+    {
+      "name": "Fencer (Minor)",
+      "description": "Although inferior to Fighters and Grapplers when comparing raw offense and defense, the Fencer comes with varied attacks and the potential to unleash incredible one-hit damage. The Fencer's Strength Score is halved (rounding up) to determine which Minimum Strength requirements they meet when equipping weapons, armors, and shields. However, Fencers benefit from an increased chance of generating critical damage (see CR I p. 136) with any weapon they wield.\nThe Fencer's higher critical chance comes with the potential to unleash incredible one-hit damage. As a Minor class, the Fencer's faster growth rate is another benefit when advancing alongside other classes.\nWeapon Restrictions: 1/2 (round up) Strength Score for Minimum Strength requirement\nArmor Restrictions: 1/2 (round up) Strength Score for Minimum Strength requirement\nShield Restrictions: 1/2 (round up) Strength Score for Minimum Strength requirement\nClass Features: Weapons wielded by a Fencer receive -1 to their normal Critical Threshold (minimum 8).\nSource: CR I, p. 88; ET, p. 22\nFencer Class Combat Feats",
+      "minor_class": "",
+      "warrior-type_combat_class": ""
+    },
+    {
+      "name": "Armor Piercer I",
+      "description": "Application: 1 melee attack\nRisk: None\nWhen a melee attack is made, this feat can be declared at the time of the attack and is effective for that single attack.\nIf the declared attack hits, the attack target's Defense is treated as half (rounded up), but the critical threshold is increased by +1 for damage determination. A critical hit will never occur if the critical threshold is 13 or more.\nWhen attacking multiple characters, select one character at random from among those hit. The above process is performed when applying damage to that one character. This target selection is made before determining damage.",
+      "prerequisite": "None",
+      "use": "Grappler class"
+    },
+    {
+      "name": "Cleave I",
+      "description": "Application: 1 melee attack\nRisk: None\nWhen a melee attack is made with a non-wrestling Stance: 2H weapon, this feat can be declared at the time of the attack and is effective for that single attack.\nThe user can attack up to 3 targets within the user's reach. Only one Accuracy check is made against all targets. On any successful hit, damage is reduced by 3 points. If more than one target is hit, damage is determined individually.",
+      "prerequisite": "Fighter or Battle Dancer Class Level 3+",
+      "use": "Fighter or Battle Dancer , 2H melee weapon"
+    },
+    {
+      "name": "Spreading Triad",
+      "description": "When an Aspect is activated, two targets are selected at random within the range. It is important that the two targets are different from each other.\nWhen canceling the effect of the Aspect, the master can choose to cancel both targets or cancel only one of the two targets and affect the remaining character.",
+      "prerequisite": "Geomancer Lvl 1+",
+      "use": "Geomancer class"
+    },
+    {
+      "name": "Metamagic/Distance",
+      "description": "Application: 10 seconds (1 round)\nRisk: None\nIn the turn in which the user declares this feat, they may choose whether or not to perform this Metamagic on any spells cast. If the user chooses to use this Metamagic, they gain the following benefits.\nThis feat increases a spell's range distance. Spells with \"Range: Caster\" or \"Range: Touch\" cannot be affected.\nFor every multiple of the spell's range distance increase, the MP to be consumed is multiplied by the same number. The multiplier can only be chosen in integer multiples.\nIn Simplified Combat, \"Range: 1\" can be changed to \"Range: 2\" by doubling the MP cost.\nThis feat is the prerequisite of the [Universal Metamagic] feat.",
+      "prerequisite": "None",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Metamagic/Time",
+      "description": "Application: 10 seconds (1 round)\nRisk: None\nIn the turn in which the user declares this feat, they may choose whether or not to perform this Metamagic on any spells cast. If the user chooses to use this Metamagic, they gain the following benefits.\nThis feat extends the duration of the spell. Spells with \"Duration: Instant\" and \"Duration: Permanent\" cannot be affected. The portion can be extended in the case of \"Duration: Instant /\u25b3\u25b3.\"\nThe MP consumed is doubled or tripled for every doubling or tripling of time. The multiplier can only be chosen in integer multiples.\nThis feat is the prerequisite of the [Universal Metamagic] feat.",
+      "prerequisite": "None",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Metamagic Master",
+      "description": "The master can declare [Universal Metamagic] and combine [Metamagic/Targets] with other [Metamagic/**] and can decide which one is combined with which Metamagic for each target separately. MP consumption of the target will be added up after the target's declaration.\nFor example: A character casts [Energy Bolt] at two targets. One target is not specifically affected by Metamagic, but the other is affected simultaneously by [Metamagic/Power Assurance] and [Metamagic/Distance]. Since casting [Energy Bolt] normally costs MP5, the MP consumption would be (5)+(5x2x3)=35 points.",
+      "prerequisite": "[ Universal Metamagic ]",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Taunting Strike II",
+      "description": "Application: 1 weapon attack\nRisk: None\nThis feat is similar to [Taunting Strike I], but with limited effect on characters with Intellect of 18 or more and monsters with \"Intellect: High.\" These characters are not forced to attack the character who performed [Taunting Strike II], but will receive a -2 penalty to their success value in Accuracy checks, Spellcasting checks, and other unique skill checks. The effect of [Taunting Strike II] is applied for 10 seconds (1 round) after the attack hits.",
+      "prerequisite": "[ Taunting Strike I ], Fencer / Battle Dancer Level 7+",
+      "use": "Battle Dancer or Fencer class"
+    },
+    {
+      "name": "Muscle Mystery",
+      "description": "This feat triples the duration of all Techniques. This does not work on Techniques whose duration is \"Instant.\"",
+      "prerequisite": "Enhancer Level 5+",
+      "use": "Enhancer class"
+    },
+    {
+      "name": "Combat Feats by Class",
+      "description": "Abyss Gazer Class Combat Feats\nAlchemist Class Combat Feats\nArtificer Class Combat Feats\nBard Class Combat Feats\nBattle Dancer Combat Feats\nConjurer Class Combat Feats\nDark Hunter Class Combat Feats\nDruid Class Combat Feats\nEnhancer Class Combat Feats\nFairy Tamer Class Combat Feats\nFencer Class Combat Feats\nFighter Class Combat Feats\nGeomancer Class Combat Feats\nGrappler Class Combat Feats\nMarksman Class Combat Feats\nPriest Class Combat Feats\nRanger Class Combat Feats\nRider Class Combat Feats\nSage Class Combat Feats\nScout Class Combat Feats\nSorcerer Class Combat Feats\nTactician Class Combat Feats\nWarlock Class Combat Feats"
+    },
+    {
+      "name": "Metamagic/Power Assurance",
+      "description": "Application: 10 seconds (1 round)\nRisk: None\nIn the turn in which the user declares this feat, they may choose whether or not to perform this Metamagic on all spell casts. If the user chooses to use this Metamagic, they must spend twice as much MP as they would normally spend to gain the following benefits.\nIf the 2d roll when using the Power Table for spell damage is 4 or less, the roll can be rerolled once and the user may choose to use either result.\nThis feat is the prerequisite of the [Universal Metamagic] feat.",
+      "prerequisite": "None",
+      "use": "Wizard-type classes"
+    },
+    {
+      "name": "Repeated Strike I",
+      "description": "Application: 1 melee attack\nRisk: None\nThis feat can be declared when performing a melee attack with a weapon with \"Stance: 2H\" and is valid for one attack.\nIf the declared attack is evaded, another melee attack can be made immediately afterward with the same weapon on the same target.\nIf multiple attacks are made simultaneously, another Accuracy check can be performed on all targets evading them. If either the first or second attack hits, a damage decision is made for each.",
+      "prerequisite": "None",
+      "use": "Fighter / Fencer / Battle Dancer class, 2H melee weapon"
+    },
+    {
+      "name": "Rhythm Conversion",
+      "description": "Application: Instant\nRisk: None\nThis particular move can be declared at any time during the turn.\nWhen declaring this feat, any one Rhythm that has already accumulated 1 point or more reduces by 1 point. At the same time, the accumulation of any other Rhythm increases by 1 point.\nWhether or not a Spellsong with certain effect conditions actually generates that effect depends on the timing of the Performance check. For instance, if a Performance Check has already taken place, and a change of Rhythm via this feat would have altered the outcome of that check, the effect will still not be generated even if all its conditions are now met. Conversely, if an effect has already been generated and the change in Rhythm causes its condition to no longer be met, the effect will not disappear.",
+      "prerequisite": "Bard Level 3+",
+      "use": "Bard class"
+    },
+    {
+      "name": "Power Strike II",
+      "description": "Application: 1 melee attack\nRisk: Evasion check -2\nSame as [Power Strike I], but damage is increased by +12 on a hit.",
+      "prerequisite": "[ Power Strike I ], Fighter / Grappler / Battle Dancer Level 9+",
+      "use": "Fighter or Grappler or Battle Dancer class"
+    },
+    {
+      "name": "Wordbreak",
+      "description": "One sustained spell or spell effect can be negated. This effect has \"Range: Touch\" and \"Target: 1 spell.\" Only spells or unique skills with a duration of more than 10 seconds (1 round) can be canceled. Effects that are \"Permanent\" or \"Instant\" in duration, effects that result in a fall prone (e.g., a Throw), and effects that are continuous (e.g., being grabbed and rendered immobile) cannot be canceled. Effects with \"Duration: Instant/X seconds/minutes (Y rounds)\" can be canceled.\nTo remove the effect, the user must perform a Skill Check using their own Magic Power as the standard value and compare the success value to the effect to be removed. The effect is canceled if the user's success value is higher than the standard value. Please follow the rules for forced removal (CR I, p. 166).",
+      "prerequisite": "None",
+      "use": "Wizard-type Classes"
+    }
+  ]
+}
