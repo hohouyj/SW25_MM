@@ -32,8 +32,11 @@ export default function SpellSheet() {
                 verticalSpacing="md"
             >
                 {Object.entries(spellBins)
-                    .filter(([_, spells]) => spells.length > 0)
-                    .map(([tradition, spells]) => (
+                    .filter(([_, spells]) => spells.length > 0).sort(([_, spellsA], [__, spellsB]) => {
+                        const maxLevelA = Math.max(...spellsA.map(s => Number(s.level)));
+                        const maxLevelB = Math.max(...spellsB.map(s => Number(s.level)));
+                        return maxLevelB - maxLevelA; // descending order
+                    }).map(([tradition, spells]) => (
                         <Box key={tradition}>
                             <Title order={4} mb="sm">
                                 {tradition} ({spells.length})
