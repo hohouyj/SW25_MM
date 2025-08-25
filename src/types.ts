@@ -141,3 +141,55 @@ export interface SpellCaster {
 }
 
 export type SpellBins = Record<string, Spell[]>;
+
+export interface Stunt {
+  name: string;
+  tradition: string;
+  level: string;
+  description: string;
+  prerequisite: string;
+  compatible: string;
+  area: string;
+}
+
+export interface Aspect {
+  name: string;
+  tradition: string;  // "Aspect"
+  level: string;      // e.g., "5th"
+  description: string;
+  power_table?: string | null;
+  cost?: string;
+  duration?: string;
+  type?: string;
+}
+
+export interface Evocation {
+  name: string;
+  tradition: string; // "Evocation"
+  level: string; // e.g., "5th"
+  description: string;
+  power_table?: string | null;
+  card_grades?: Record<string, string>; // e.g., { B: "None", A: "+1 damage", ... }
+  cards?: string;
+  target?: string;
+  rangearea?: string;
+  duration?: string;
+  resistance?: string;
+}
+
+
+
+
+export interface FieldConfig<T> {
+  label?: string;            // Display name for the field
+  key: keyof T;              // The property in T
+  isHeader?: boolean;        // Appears in the card title
+  isBadge?: boolean;         // Appears as a badge next to title
+  isDescription?: boolean;   // Renders in description section
+  hideIfEmpty?: boolean;     // Skip if value is null/undefined/empty
+  isCustom?: boolean;
+}
+
+export interface FeatureCardConfig<T> {
+  fields: FieldConfig<T>[];
+}

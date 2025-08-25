@@ -1,7 +1,7 @@
 import { useDebouncedValue } from "@mantine/hooks";
 import Fuse from "fuse.js";
 import { useMemo, useState } from "react";
-import spellData from "../data/spells.json";
+import spellData from "../data/stunts/stunts.json";
 
 // type ResultType = {
 //   item: any;
@@ -16,7 +16,7 @@ type TagQuery =
 type SearchQuery = {
   $and: Array<{ $or: Array<TagQuery> } | TagQuery>;
 }; // fuse js query type
-const useSpellSearch = () => {
+const useStuntSearch = () => {
   const keys = useMemo<string[]>(
     () => ["name", "cost", "level", "tradition"],
     []
@@ -42,7 +42,7 @@ const useSpellSearch = () => {
       // },
       keys,
     };
-    return new Fuse(spellData.spells, fuseOptions);
+    return new Fuse(spellData.stunts, fuseOptions);
   }, [keys]);
   const [tags, setTags] = useState<string[]>(["Fire Bolt"]);
   const [debouncedTags] = useDebouncedValue(tags, 300);
@@ -94,4 +94,4 @@ const useSpellSearch = () => {
 };
 
 
-export default useSpellSearch;
+export default useStuntSearch;

@@ -12,6 +12,7 @@ import AppLayout from "./layouts/AppLayout.tsx";
 
 import '@mantine/core/styles.css';
 import '@mantine/notifications/styles.css';
+import StuntView from "./components/StuntView/StuntView.tsx";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         path: "spellsheet/:id",
         element: <SpellSheet />
+      },
+      {
+        path: "stunts",
+        element: <StuntView />
       }
     ],
   },

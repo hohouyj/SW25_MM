@@ -4,8 +4,9 @@ import { useParams } from "react-router-dom";
 import { useSpellFilter } from "../../hooks/useSpellFilter";
 import { defaultSpellCaster, getSpellCaster } from "../../utils/spellCasterStorage";
 import { binSpellsByTradition, getAvailableSpells } from "../../utils/spellFilter";
-import MobileSpellCard from "../SpellCard/MobileSpellCard";
 import SpellFilter from "./SpellFilter";
+import FeatureCard from "../FeatureCard/FeatureCard";
+import { spellConfig } from "../../configs/FeatureCardConfigs";
 
 export default function SpellSheet() {
     const [expandedSpellId, setExpandedSpellId] = useState<string | number | null>(null);
@@ -56,7 +57,7 @@ export default function SpellSheet() {
                                         </Button>
 
                                         {isExpanded ? (
-                                            <MobileSpellCard spell={spell} />
+                                            <FeatureCard data={spell} config={spellConfig}  />
                                         ) : (
                                             <Paper withBorder p="sm" radius="md" style={{ cursor: 'pointer' }}>
                                                 <Text fw={500}>

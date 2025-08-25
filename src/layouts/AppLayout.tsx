@@ -10,6 +10,7 @@ export default function AppLayout() {
     { label: 'Monsters', to: '/monsters' },
     { label: 'Spells', to: '/spells' },
     { label: 'Spell Sheet', to: '/spellsheet' },
+    { label: 'Stunts', to: '/stunts' },
   ];
 
   return (
