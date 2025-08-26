@@ -12,7 +12,7 @@ import AppLayout from "./layouts/AppLayout.tsx";
 
 import '@mantine/core/styles.css';
 import '@mantine/notifications/styles.css';
-import StuntView from "./components/StuntView/StuntView.tsx";
+import FeatureView from "./components/FeatureView/FeatureView.tsx";
 
 const router = createBrowserRouter([
   {
@@ -40,8 +40,8 @@ const router = createBrowserRouter([
         element: <SpellSheet />
       },
       {
-        path: "stunts",
-        element: <StuntView />
+        path: "features",
+        element: <FeatureView />
       }
     ],
   },

@@ -6,7 +6,7 @@ import { defaultSpellCaster, getSpellCaster } from "../../utils/spellCasterStora
 import { binSpellsByTradition, getAvailableSpells } from "../../utils/spellFilter";
 import SpellFilter from "./SpellFilter";
 import FeatureCard from "../FeatureCard/FeatureCard";
-import { spellConfig } from "../../configs/FeatureCardConfigs";
+import { spellConfig } from "../FeatureCard/FeatureCardConfigs";
 
 export default function SpellSheet() {
     const [expandedSpellId, setExpandedSpellId] = useState<string | number | null>(null);
@@ -57,7 +57,7 @@ export default function SpellSheet() {
                                         </Button>
 
                                         {isExpanded ? (
-                                            <FeatureCard data={spell} config={spellConfig}  />
+                                            <FeatureCard data={{ ...spell, feature_name: 'spells' }} config={spellConfig}  />
                                         ) : (
                                             <Paper withBorder p="sm" radius="md" style={{ cursor: 'pointer' }}>
                                                 <Text fw={500}>

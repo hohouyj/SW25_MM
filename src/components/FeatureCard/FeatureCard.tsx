@@ -6,21 +6,15 @@ import {
     Stack,
     Text,
     Title,
+    Box,
 } from '@mantine/core';
+import { FeatureName } from './FeatureCardConfigs';
+import { FeatureCardConfig } from '../../types';
+import "./feature_card_styles.css"
 
 interface FeatureCardProps<T> {
-    data: T;
-    config: {
-        fields: {
-            isCustom?: boolean;
-            key: keyof T;
-            label?: string;
-            isHeader?: boolean;
-            isBadge?: boolean;
-            isDescription?: boolean;
-            hideIfEmpty?: boolean;
-        }[];
-    };
+    data: T & { feature_name: FeatureName };
+    config: FeatureCardConfig<T>;
 }
 
 export default function FeatureCard<T>({ data, config }: FeatureCardProps<T>) {
@@ -30,8 +24,9 @@ export default function FeatureCard<T>({ data, config }: FeatureCardProps<T>) {
     const headerField = config.fields.find(f => f.isHeader);
     const badgeFields = config.fields.filter(f => f.isBadge);
     const descriptionFields = config.fields.filter(f => f.isDescription);
+    const customFields = config.fields.filter(f => f.isCustom);
     const otherFields = config.fields.filter(
-        f => !f.isHeader && !f.isBadge && !f.isDescription
+        f => !f.isHeader && !f.isBadge && !f.isDescription && !f.isCustom
     );
 
     return (
@@ -63,48 +58,39 @@ export default function FeatureCard<T>({ data, config }: FeatureCardProps<T>) {
 
                         if (f.hideIfEmpty && (val === null || val === undefined || val === '')) return null;
 
-                        // ✅ Handle custom render for card_grades
-                        if (f.isCustom && f.key === 'card_grades') {
-                            const grades = val as Record<string, string>;
-                            return (
-                                <div key="card_grades">
-                                    <Divider mt="sm" />
-                                    <Text size="sm" fw={500}>Card Grades:</Text>
-                                    <ul style={{ fontSize: '0.875rem', color: '#5c5f66', marginTop: '4px', paddingLeft: '16px' }}>
-                                        {Object.entries(grades).map(([grade, effect]) => (
-                                            <li key={grade}><strong>{grade}</strong>: {effect}</li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            );
-                        }
-
                         // ✅ Default key-value rendering
                         return (
                             <Group key={String(f.key)} gap={infoGap}>
                                 <Text fw={500} w={labelWidth}>{f.label || String(f.key)}</Text>
-                                <Text>{String(val)}</Text>
+                                <Text>{f.render ? f.render(val) : String(val)}</Text>
                             </Group>
                         );
                     })}
                 </Stack>
+                {customFields.map(f => {
+                    const val = data[f.key];
 
+                    if (f.hideIfEmpty && (val === null || val === undefined || val === '')) {
+                        return null;
+                    }
 
-
+                    return f.render ? f.render(val, f.key, infoGap) : null;
+                })}
 
                 {/* Descriptions */}
                 {descriptionFields.map(f => {
                     const val = data[f.key];
                     if (!val) return null;
                     return (
-                        <div key={String(f.key)}>
-                            <Divider mt="sm" />
-                            <Text size="sm" fw={500}>{f.label || String(f.key)}:</Text>
-                            <div
-                                style={{ fontSize: '0.875rem', color: '#5c5f66' }}
+                        <Box key={String(f.key)} mt="sm">
+                            <Divider />
+                            <Text size="sm" fw={500} mt="xs" mb="xs">
+                                {f.label || String(f.key)}:
+                            </Text>
+                            <Box
                                 dangerouslySetInnerHTML={{ __html: val as string }}
                             />
-                        </div>
+                        </Box>
                     );
                 })}
             </Stack>

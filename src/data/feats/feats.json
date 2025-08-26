@@ -1,5 +1,5 @@
 {
-  "feats": [
+  "selected_features": [
     {
       "name": "Double Cast",
       "description": "Application: 1 spell cast\nRisk: None\nThis feat can be declared with any spell which is cast with a Major Action.\nAfter the spell is cast with a Major Action after declaring this feat, one additional spell may be cast immediately afterward. This additional spell is limited to 1/2 of the maximum level or rank (rounded up) of the second spell's magic system. This second spell's Magic Power will be reduced by 10 (minimum 0).",

@@ -1,11 +1,18 @@
 import { useDebouncedValue } from "@mantine/hooks";
 import Fuse from "fuse.js";
 import { useMemo, useState } from "react";
-import spellData from "../data/stunts/stunts.json";
-
-// type ResultType = {
-//   item: any;
-// };
+import aspectsData from "../data/aspects/aspects.json";
+import evocationsData from "../data/evocations/evocations.json";
+import finalesData from "../data/finales/finales.json";
+import classFeaturesData from "../data/feats/feat-automatic.json";
+import selectedFeaturesData from "../data/feats/feats.json";
+import maneuversData from "../data/maneuvers/maneuvers.json";
+import spellSongsData from "../data/spellsongs/spellsongs.json"
+import stuntsData from "../data/stunts/stunts.json";
+import strategemsData from "../data/stratagems/stratagems.json";
+import techniquesData from "../data/techniques/techniques.json";
+import weavingsData from "../data/weavings/weavings.json";
+import { FeatureName } from "../components/FeatureCard/FeatureCardConfigs";
 
 type TagQuery =
   | { name: string }
@@ -16,7 +23,8 @@ type TagQuery =
 type SearchQuery = {
   $and: Array<{ $or: Array<TagQuery> } | TagQuery>;
 }; // fuse js query type
-const useStuntSearch = () => {
+
+const useFeatureSearch = () => {
   const keys = useMemo<string[]>(
     () => ["name", "cost", "level", "tradition"],
     []
@@ -42,9 +50,34 @@ const useStuntSearch = () => {
       // },
       keys,
     };
-    return new Fuse(spellData.stunts, fuseOptions);
+    function extractAndCombineDynamic(...jsonObjects: Record<string, unknown[]>[]): unknown[] {
+      return jsonObjects.flatMap(obj =>
+        Object.entries(obj).flatMap(([key, arr]) =>
+          (arr as Record<string, unknown>[]).map(item => ({
+            ...item,
+            feature_name: key // removes plural "s" (e.g., "evocations" -> "evocation")
+          }))
+        )
+      );
+    }
+
+    const combined = extractAndCombineDynamic(
+      aspectsData,
+      evocationsData,
+      finalesData,
+      classFeaturesData,
+      selectedFeaturesData,
+      maneuversData,
+      spellSongsData,
+      stuntsData,
+      strategemsData,
+      techniquesData,
+      weavingsData
+    );
+    return new Fuse(combined, fuseOptions);
+
   }, [keys]);
-  const [tags, setTags] = useState<string[]>(["Fire Bolt"]);
+  const [tags, setTags] = useState<string[]>(["Technique"]);
   const [debouncedTags] = useDebouncedValue(tags, 300);
   const query = useMemo<SearchQuery>(() => {
     const conditions = tags.map((tag) => {
@@ -78,12 +111,16 @@ const useStuntSearch = () => {
     setTags(newTags);
   };
 
+  interface SearchableItem {
+    level: string; // or number if it's numeric
+    [key: string]: any; // optional if more fields exist
+    feature_name: FeatureName;
+  }
+
   const results = searchClient
     .search(query)
-    .map((result) => result.item)
-    .sort((item1, item2) => {
-      return parseInt(item1.level) - parseInt(item2.level);
-    });
+    .map((result) => result.item as SearchableItem)
+    .sort((item1, item2) => parseInt(item1.level) - parseInt(item2.level));
 
   return {
     tags,
@@ -94,4 +131,4 @@ const useStuntSearch = () => {
 };
 
 
-export default useStuntSearch;
+export default useFeatureSearch;

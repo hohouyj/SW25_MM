@@ -178,7 +178,104 @@ export interface Evocation {
 }
 
 
+export interface ClassFeature {
+  name: string;
+  description: string;
+  gain?: string; // e.g., "Grappler Level 7"
+  use?: string;  // e.g., "-"
+}
 
+export interface SelectedFeature {
+  name: string;
+  description: string;
+  prerequisite?: string;
+  use?: string;
+}
+
+
+export interface Finale {
+  name: string;
+  tradition: string; // "Finale"
+  level: string; // e.g., "10"
+  rhythm_cost?: string;
+  resistance?: string;
+  type?: string;
+  power_table?: string | null;
+  description: string;
+}
+
+
+
+export interface Maneuver {
+  name: string;
+  tradition: string; // "Maneuver"
+  level: string;
+  edge_cost?: string;
+  prerequisite?: string;
+  conditions?: string;
+  description: string;
+}
+
+export interface Spellsong {
+  name: string;
+  tradition: string; // "Spellsong"
+  level: string;
+  singing?: string;
+  pet?: string[];
+  effect_condition?: string;
+  resistance?: string;
+  type?: string;
+  base_rhythm?: string;
+  flourish_value?: string;
+  extra_rhythm?: string;
+  description: string;
+}
+
+export interface Stratagem {
+  name: string;
+  tradition: string; // "Stratagem"
+  level: string;
+  rank?: string;
+  type?: string;
+  edge_cost?: string;
+  edge_accumulation?: string;
+  description: string;
+}
+
+
+export interface TechniqueAttack {
+  attack_roll?: string;
+  target?: string;
+  rangearea?: string;
+  resistance?: string;
+  type?: string;
+  description?: string;
+}
+
+export interface Technique {
+  name: string;
+  tradition: string; // "Technique"
+  level: string;
+  description: string;
+  attack?: TechniqueAttack;
+  power_table?: string | null;
+  duration?: string;
+}
+
+export interface EssenceWeaving {
+  name: string;
+  tradition: string; // "Essence Weaving"
+  level: string;
+  description: string;
+  power_table?: string | null;
+  cost?: string;
+  prerequisite?: string;
+  target?: string;
+  rangearea?: string;
+  duration?: string;
+  resistance?: string;
+  summary?: string;
+}
 
 export interface FieldConfig<T> {
   label?: string;            // Display name for the field
@@ -188,6 +285,7 @@ export interface FieldConfig<T> {
   isDescription?: boolean;   // Renders in description section
   hideIfEmpty?: boolean;     // Skip if value is null/undefined/empty
   isCustom?: boolean;
+  render?: Function;
 }
 
 export interface FeatureCardConfig<T> {
