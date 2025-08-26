@@ -1,0 +1,283 @@
+{
+    "stunts": [
+        {
+            "name": "\u25efRiding as One",
+            "tradition": "Stunt",
+            "level": "5",
+            "description": "With training, the jockey can control the mount using only commands and by shifting their weight. This allows the jockey to ride while having both hands free to perform Actions.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "None"
+        },
+        {
+            "name": "\u25efImproved HP Enhancement",
+            "tradition": "Stunt",
+            "level": "5",
+            "description": "Increase the Maximum HP of all sections of the mount by 5 points (total +10).",
+            "prerequisite": "[ HP Enhancement ]",
+            "compatible": "Animals, Mythical Beasts",
+            "area": "All"
+        },
+        {
+            "name": "\u25baTrample",
+            "tradition": "Stunt",
+            "level": "5",
+            "description": "Mount runs straight through the battlefield and attacks targets along its path.This is considered a melee attack with \"Range/Area: 1 (mount's movement m)/Breakthrough\". For each target, select a section (if a target is a mount, include its jockey) for a melee attack, and perform an Accuracy check and damage determination for each one separately.Self-Exclusion\nWhen using the \"Area: Breakthrough\" effect, all sections of the Jockey and Mount are excluded from its effects.Position (area, coordinate) Change at the Same Time\nWhen the \"Area: Breakthrough\" effect is used, all sections of a multi-section character, or a rider and mount, are moved to the endpoint of the Breakthrough.If Effect Worked\nIn the case of multi-section characters and mounted riders/mounts, all of them are considered to have performed an action (Major Action or Minor Action, depending on the effect) when a Breakthrough effect is used. All such spells and abilities described in this book are used with Major Actions.If each section, rider, or mount can still perform further Actions, and they wish to perform them individually, do the following:1. Perform Minor Actions sequentially for each section. Movement and Major Actions cannot be performed.\n2. Breakthrough effect\n3. Make the next actions of each section sequentiallyFalling Off a Mount During a Collision while Riding\nIf a mounted character encounters some factor that impedes their movement, such as a wall or a cliff, then the rider/mount will hit the wall, fall off the cliff, or whatever is appropriate.Should a mount crash into a wall, all sections of both rider and mount suffer damage and fall prone. This will also cause the rider to fall from the mount (see CR III, p. 89), but in this case, the rider will not suffer damage for doing so.",
+            "prerequisite": "Charge",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "All"
+        },
+        {
+            "name": "\u23e9Intimidation",
+            "tradition": "Stunt",
+            "level": "1",
+            "description": "The mount stares at a target in the same skirmish with lethal intent, intimidating and frightening them. A contested roll is made between the Rider's Rider Class Level + Spirit Modifier against the target's Willpower. If the Stunt is successful, the target receives a -1 penalty to Accuracy, Spellcasting and any check of Unique Skills made with a Major Action for 10 seconds (1 round).This is a Psychic-type effect and can only be performed once every 10 seconds (1 round).Using this Stunt causes the mount to spend 5 MP.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts",
+            "area": "Main"
+        },
+        {
+            "name": "\u25baMagic Command",
+            "tradition": "Stunt",
+            "level": "1",
+            "description": "The jockey takes a Major Action to instruct the mount to cast any one spell it has.The Stunt is only valid if the jockey performs it as a Major Action first during their turn and the mount casts a spell immediately following a Major Action. This is limited to one and only one Major Action, regardless of the number of Major Actions that the mount can perform and whether the spell could be cast with a Minor Action.A mount can cast a spell with or without an implement, without considering armor penalty, vocalization, etc. Also, if the mount has learned a combat feat related to casting spells, the mount can apply or declare the effect of the feat.This stunt can only be used twice a day.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts",
+            "area": "All"
+        },
+        {
+            "name": "\u25efImproved Elevated Attack",
+            "tradition": "Stunt",
+            "level": "5",
+            "description": "When riding a mount, this Stunt further increases the physical damage done by the jockey and any passengers by +1, to a total of +2 damage. This includes not only melee attacks but any ranged attacks and thrown weapons as well.",
+            "prerequisite": "Elevated Attack",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "None"
+        },
+        {
+            "name": "\u25baCharge",
+            "tradition": "Stunt",
+            "level": "1",
+            "description": "Increases attack damage after movement.After making a Normal Move, the Jockey or Mount can use this Stunt instead of a normal melee attack. Active Combat Feats can be declared for this Stunt as for a normal melee attack.This Stunt can only be used by the Jockey and Mount (all sections) once per turn.If the Charge melee attack hits, Extra Damage is increased by +2 points in Simplified Combat and +1 point in Standard and Advanced Combat for every 5m (rounded up) of movement to determine the total damage.When calculating the distance traveled in Standard and Advanced Combat, the shortest distance between the start and end of movement is used regardless of travel route.No other melee attacks can be made before using this Stunt. Once this Stunt is used, no other actions can be made.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "All"
+        },
+        {
+            "name": "\u23e9Steady Command",
+            "tradition": "Stunt",
+            "level": "5",
+            "description": "This Stunt can only be done with Normal Move (by mount).The jockey keeps their position while the mount tries to move quietly.While the mount moves with Normal Move, the jockey can still perform any actions possible with Limited Move. However, on every action check made because of this Stunt, the jockey must take a -4 penalty, and all mount sections cannot perform their own Major Action.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "None"
+        },
+        {
+            "name": "\u25efElevated Attack",
+            "tradition": "Stunt",
+            "level": "1",
+            "description": "When riding a mount, this Stunt increases the physical damage done by the jockey and any passengers by +1. This includes not only melee attacks but any ranged attacks and thrown weapons as well.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "None"
+        },
+        {
+            "name": "\u25efSearch Command",
+            "tradition": "Stunt",
+            "level": "1",
+            "description": "It is possible to have the mount perform Track, Notice, Danger Sense, Search and Spot Trap checks, etc. Regardless of the mount, the standard value of the check is Rider Level + Intelligence Modifier.In principle, the jockey must be riding in order to perform a check, but it is also possible if the jockey is at the mount's side and holding the reins.Based on the assumption that the jockey has mastered this stunt, the player can write these five checks together as a \"Rider Observation check package.\"",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts",
+            "area": "Main"
+        },
+        {
+            "name": "\u25efMount's Devotion",
+            "tradition": "Stunt",
+            "level": "1",
+            "description": "When being ridden by a jockey at the same position (area, coordinate), if the jockey receives physical or magical damage that would reduce them to 0 HP or lower, the mount may take the damage instead. After determining the applied damage that would be dealt to the jockey, reduce the mount's HP by that much instead. If a mount has multiple sections, only the Main Section can be a substitute in this way.This Stunt can only be used once per combat.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts",
+            "area": "Main"
+        },
+        {
+            "name": "\u25baMounted Command",
+            "tradition": "Stunt",
+            "level": "10",
+            "description": "The jockey judges the battle situation and gives instructions to their teammates. This Stunt can only be performed with a Major Action while the jockey is on the jockey's mount. All characters (including mounts) within all areas (30m radius) that the jockey designates (as long as the characters accept it) gain a +2 bonus to Accuracy checks for 10 seconds (1 round). The Mount can still perform a Major Action this round.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "None"
+        },
+        {
+            "name": "\u25efImproved Enhance Mount",
+            "tradition": "Stunt",
+            "level": "10",
+            "description": "With this Stunt, the mount is significantly more mobile, increasing the mount's Accuracy and Evasion by an additional +1 (for a total of +2). If the mount has multiple sections, then only the Main section receives this bonus; if the mount is not multi-sectioned, then the whole mount will be affected.",
+            "prerequisite": "[ Enhance Mount ]",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "Main or All"
+        },
+        {
+            "name": "\u25efLion's Fury",
+            "tradition": "Stunt",
+            "level": "5",
+            "description": "If the mount has multiple sections, any two of them can perform a Major Action. A jockey can also perform Major Actions separately.If more than one section takes a Major Action due to this effect, the later section(s) receive a -2 penalty on Evasion checks for the following 10 seconds (1 round).",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "All"
+        },
+        {
+            "name": "\u25efInstant Magic Command",
+            "tradition": "Stunt",
+            "level": "10",
+            "description": "[Magic Command] can be performed with a Minor Action and during Combat Preparation.If the jockey so instructs during Combat Preparation, the mount will cast the spell in Combat Preparation according to the jockey's instruction. This instruction is limited to magic that can be cast during Combat Preparation.",
+            "prerequisite": "[ Magic Command ]",
+            "compatible": "Animals, Mythical Beasts",
+            "area": "All"
+        },
+        {
+            "name": "\u25efRemote Command",
+            "tradition": "Stunt",
+            "level": "1",
+            "description": "With this Stunt, the jockey can be up to 30m away and issue commands to their mount. A mount that is able to hear their jockey will perform the command to the best of their abilities. The effect of a Stunt whose area is \"Main\" or \"All\" can be applied, just as when the jockey is riding. No voice or action is required to give instructions.This Stunt has no effect while the jockey is riding a mount.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts",
+            "area": "All"
+        },
+        {
+            "name": "\u25efUnique Skill Release",
+            "tradition": "Stunt",
+            "level": "5",
+            "description": "The jockey becomes familiar with the mount's movements and abilities and allows them to use their unique skills at will.With this Stunt, a mount's unique skills with \"Prerequisite: Unique Skill Release\" can now be used. Additionally, unique skills with \"Enhance: Unique Skill Release\" can be used to their full extent.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "Main or All or None"
+        },
+        {
+            "name": "\u25efImproved Attack Obstruction",
+            "tradition": "Stunt",
+            "level": "10",
+            "description": "The mount is maneuvered to provide the jockey and any passengers an additional +1 bonus to Evasion while riding, for a total of +2.",
+            "prerequisite": "[ Attack Obstruction ]",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "None"
+        },
+        {
+            "name": "\u25baOrochi's Fury",
+            "tradition": "Stunt",
+            "level": "10",
+            "description": "If the mount has multiple sections, this Stunt can be used to take a Major Action with each of those sections during the mount's turn.As with [Lion's Fury], if more than one section performs a Major Action, they receive a -2 penalty on Evasion checks for the following 10 seconds (1 round).",
+            "prerequisite": "[ Lion's Fury ]",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "All"
+        },
+        {
+            "name": "\u25efAttack Obstruction",
+            "tradition": "Stunt",
+            "level": "1",
+            "description": "The mount is maneuvered to provide the jockey and any passengers a +1 bonus to Evasion while riding.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "None"
+        },
+        {
+            "name": "\u25efBalance",
+            "tradition": "Stunt",
+            "level": "10",
+            "description": "The mount can now perform a Major Action even when performing [Steady Command]. The rider must still take a -4 penalty to action checks.",
+            "prerequisite": "[ Steady Command ]",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "All"
+        },
+        {
+            "name": "\u25efEnhance Mount",
+            "tradition": "Stunt",
+            "level": "1",
+            "description": "This Stunt tightens the control the Rider has over the mount, increasing the mount's Accuracy and Evasion by +1. If the mount has multiple Sections, only the Main Section receives such a bonus; if the mount is not multi-Sectioned, then the whole mount will be affected.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "Main or All"
+        },
+        {
+            "name": "\u23e9Overdrive",
+            "tradition": "Stunt",
+            "level": "10",
+            "description": "This Stunt should be used immediately before using [Limit Drive]. The bonus to the mount's Accuracy check from the [Limit Drive] used immediately after is increased by an additional +2 (+4 total), and the increment to physical damage is an additional +4 (+8 total). The penalty for an Evasion check and the need for recalibration for 10 minutes remain the same.When [Overdrive] is used, all sections of the jockey and mount take 10 points of fixed damage to HP at the end of their turn.",
+            "prerequisite": "[ Limit Drive ]",
+            "compatible": "Magitech",
+            "area": "All"
+        },
+        {
+            "name": "\u23e9Limit Drive",
+            "tradition": "Stunt",
+            "level": "5",
+            "description": "When this Stunt is used, for the next 10 seconds (1 round), the Accuracy of all sections of the Mount is increased by 2 points, and all physical damage dealt by the mount is increased by 4 points.The Evasion of all of the mount's sections and jockey are reduced by 2 points until the beginning of the next turn.This Stunt can only be used once per combat. Once this stunt is used, it cannot be used again with the same mount unless the mount is recalibrated for 10 minutes.",
+            "prerequisite": "None",
+            "compatible": "Magitech",
+            "area": "All"
+        },
+        {
+            "name": "\u25efGreater Elevated Attack",
+            "tradition": "Stunt",
+            "level": "10",
+            "description": "When riding a mount, this Stunt further increases the physical damage done by the jockey and any passengers by +2, to a total of +4 damage. This includes not only melee attacks but any ranged attacks and thrown weapons as well.",
+            "prerequisite": "[ Improved Elevated Attack ]",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "None"
+        },
+        {
+            "name": "\u25efMind to Mind",
+            "tradition": "Stunt",
+            "level": "1",
+            "description": "The jockey conveys their own perception information to the mount and perceives what the mount perceives.If either the jockey or the mount perceives something, both are considered to have perceived it. In rulings involving perception, the better effect is always taken. If either the mount or the jockey has the combat feat [Targeting] or [Hawk Eye], both are considered to have it.This stunt has no effect unless the jockey is mounted, even if the jockey has obtained [Remote Command].",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "All"
+        },
+        {
+            "name": "\u25efTandem",
+            "tradition": "Stunt",
+            "level": "1",
+            "description": "The jockey manipulates the mount so that the passenger can ride comfortably.The jockey's passenger can use both hands, and the penalty for an Action Check is reduced to -1. This stunt affects the passenger even if the jockey is not riding.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "None"
+        },
+        {
+            "name": "\u25efHP Enhancement",
+            "tradition": "Stunt",
+            "level": "1",
+            "description": "Increase the Maximum HP of all sections of the mount by 5 points.",
+            "prerequisite": "None",
+            "compatible": "Animals, Mythical Beasts",
+            "area": "All"
+        },
+        {
+            "name": "\u25efUnique Skill Perfect Release",
+            "tradition": "Stunt",
+            "level": "10",
+            "description": "The jockey awakens the mount's latent potential and takes full control of it. With this Stunt, a mount's unique skills with \"Prerequisite: Unique Skill Perfect Release\" can now be used. Additionally, unique skills with \"Enhance: Unique Skill Perfect Release\" can be used to their full extent.",
+            "prerequisite": "[ Unique Skill Release ]",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "All"
+        },
+        {
+            "name": "\u25efSuper Charge",
+            "tradition": "Stunt",
+            "level": "10",
+            "description": "This Stunt allows the jockey to declare a [Charge] even after taking a Full Move, and the penalty of Evasion Check -4 is applied after using Full Move.In Simplified Combat, if there are no hostile characters in the frontline area, the jockey can [Charge] from their own rearguard area to the enemy rearguard area, gaining 4 points of Extra Damage.",
+            "prerequisite": "[ Charge ]",
+            "compatible": "Animals, Mythical Beasts, Magitech",
+            "area": "All"
+        },
+        {
+            "name": "\u25efImproved Magic Command",
+            "tradition": "Stunt",
+            "level": "5",
+            "description": "The number of times [Magic Command] can be performed is increased to 4 times per day.",
+            "prerequisite": "[ Magic Command ]",
+            "compatible": "Animals, Mythical Beasts",
+            "area": "All"
+        }
+    ]
+}

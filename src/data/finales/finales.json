@@ -1,0 +1,124 @@
+{
+  "finales": [
+    {
+      "name": "Spring Breeze",
+      "tradition": "Finale",
+      "level": "1",
+      "rhythm_cost": "⮭2",
+      "resistance": "Half",
+      "type": "Wind",
+      "power_table": "<table class=\"powertable\">\n<tbody><tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>③</td>\n<td>④</td>\n<td>⑤</td>\n<td>⑥</td>\n<td>⑦</td>\n<td>⑧</td>\n<td>⑨</td>\n<td>⑩</td>\n<td>⑪</td>\n<td>⑫</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>10</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>⑩</td>\n</tr>\n</tbody></table>",
+      "description": "Deals Power 10 + Bardic Power magic damage to 1 target character."
+    },
+    {
+      "name": "Summer Vitality",
+      "tradition": "Finale",
+      "level": "1",
+      "rhythm_cost": "⮭1♡1",
+      "resistance": "Optional",
+      "type": "-",
+      "power_table": "<table class=\"powertable\">\n<tbody><tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>③</td>\n<td>④</td>\n<td>⑤</td>\n<td>⑥</td>\n<td>⑦</td>\n<td>⑧</td>\n<td>⑨</td>\n<td>⑩</td>\n<td>⑪</td>\n<td>⑫</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>20</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>None</td>\n</tr>\n</tbody></table>",
+      "description": "Restores one Target's HP by Power 20 + Bardic Power points. The effect of [Finale: Summer Vitality] can only be received once per hour per target character. Undead, Magitech, and Constructs cannot be affected by this Finale."
+    },
+    {
+      "name": "Autumn Harvest",
+      "tradition": "Finale",
+      "level": "1",
+      "rhythm_cost": "⮯1♡1",
+      "resistance": "Optional",
+      "type": "-",
+      "power_table": "<table class=\"powertable\">\n<tbody><tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>③</td>\n<td>④</td>\n<td>⑤</td>\n<td>⑥</td>\n<td>⑦</td>\n<td>⑧</td>\n<td>⑨</td>\n<td>⑩</td>\n<td>⑪</td>\n<td>⑫</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>0</td>\n<td>1</td>\n<td>2</td>\n<td>2</td>\n<td>3</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>None</td>\n</tr>\n</tbody></table>",
+      "description": "Restores one target character's MP by Power 0 + Bardic Power points. The effect of [Finale: Autumn Harvest] can only be received once per target character per day. Undead, Magitech, and Constructs cannot be affected by this Finale."
+    },
+    {
+      "name": "Winter's Chill",
+      "tradition": "Finale",
+      "level": "1",
+      "rhythm_cost": "⮯2",
+      "resistance": "Half",
+      "type": "Water/Ice",
+      "power_table": "<table class=\"powertable\">\n<tbody><tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>③</td>\n<td>④</td>\n<td>⑤</td>\n<td>⑥</td>\n<td>⑦</td>\n<td>⑧</td>\n<td>⑨</td>\n<td>⑩</td>\n<td>⑪</td>\n<td>⑫</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>10</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>⑩</td>\n</tr>\n</tbody></table>",
+      "description": "Deals Power 10 + Bardic Power magic damage to 1 target character."
+    },
+    {
+      "name": "Beast's Roar",
+      "tradition": "Finale",
+      "level": "5",
+      "rhythm_cost": "⮭4",
+      "resistance": "Half",
+      "type": "Bludgeoning",
+      "power_table": "<table class=\"powertable\">\n<tbody><tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>③</td>\n<td>④</td>\n<td>⑤</td>\n<td>⑥</td>\n<td>⑦</td>\n<td>⑧</td>\n<td>⑨</td>\n<td>⑩</td>\n<td>⑪</td>\n<td>⑫</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>20</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>⑩</td>\n</tr>\n</tbody></table>",
+      "description": "Up to 3 target characters are dealt Power 20 + Bardic Power magic damage."
+    },
+    {
+      "name": "Breath of the Meadows",
+      "tradition": "Finale",
+      "level": "5",
+      "rhythm_cost": "⮭2♡2",
+      "resistance": "Optional",
+      "type": "-",
+      "power_table": "<table class=\"powertable\">\n<tbody><tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>③</td>\n<td>④</td>\n<td>⑤</td>\n<td>⑥</td>\n<td>⑦</td>\n<td>⑧</td>\n<td>⑨</td>\n<td>⑩</td>\n<td>⑪</td>\n<td>⑫</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>30</td>\n<td>2</td>\n<td>4</td>\n<td>4</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>10</td>\n<td>10</td>\n<td>None</td>\n</tr>\n</tbody></table>",
+      "description": "This Finale restores HP to up to 3 target characters by Power 30 + Bardic Power points. The effect of [Finale: Breath of the Meadows] can only be received once per hour per target character. Undead, Magitech, and Constructs cannot be affected by this Finale."
+    },
+    {
+      "name": "Banquet of Flowers",
+      "tradition": "Finale",
+      "level": "5",
+      "rhythm_cost": "⮯2♡2",
+      "resistance": "Optional",
+      "type": "-",
+      "power_table": "<table class=\"powertable\">\n<tbody><tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>③</td>\n<td>④</td>\n<td>⑤</td>\n<td>⑥</td>\n<td>⑦</td>\n<td>⑧</td>\n<td>⑨</td>\n<td>⑩</td>\n<td>⑪</td>\n<td>⑫</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>10</td>\n<td>1</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>None</td>\n</tr>\n</tbody></table>",
+      "description": "The MP of up to 3 target characters will be restored by Power 10 + Bardic Power points. The effect of [Finale: Banquet of Flowers] can be received only once per target character per day. Undead, Magitech, and Constructs cannot be affected by this Finale."
+    },
+    {
+      "name": "Screaming Snake-Pit Symphony",
+      "tradition": "Finale",
+      "level": "5",
+      "rhythm_cost": "⮯4",
+      "resistance": "Half",
+      "type": "Wind",
+      "power_table": "<table class=\"powertable\">\n<tbody><tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>③</td>\n<td>④</td>\n<td>⑤</td>\n<td>⑥</td>\n<td>⑦</td>\n<td>⑧</td>\n<td>⑨</td>\n<td>⑩</td>\n<td>⑪</td>\n<td>⑫</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>20</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>⑩</td>\n</tr>\n</tbody></table>",
+      "description": "Deals Power 20 + Bardic Power magic damage up to 3 target characters."
+    },
+    {
+      "name": "Dance of the Fire Dragon",
+      "tradition": "Finale",
+      "level": "10",
+      "rhythm_cost": "⮭6",
+      "resistance": "Half",
+      "type": "Fire and Wind",
+      "power_table": "<table class=\"powertable\">\n<tbody><tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>③</td>\n<td>④</td>\n<td>⑤</td>\n<td>⑥</td>\n<td>⑦</td>\n<td>⑧</td>\n<td>⑨</td>\n<td>⑩</td>\n<td>⑪</td>\n<td>⑫</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>30</td>\n<td>2</td>\n<td>4</td>\n<td>4</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>10</td>\n<td>10</td>\n<td>⑩</td>\n</tr>\n</tbody></table>",
+      "description": "Up to 5 target characters are dealt Power 30 + Bardic Power magic damage."
+    },
+    {
+      "name": "Roar of the Water Dragon",
+      "tradition": "Finale",
+      "level": "10",
+      "rhythm_cost": "⮯6",
+      "resistance": "Half",
+      "type": "Water/Ice and Lightning",
+      "power_table": "<table class=\"powertable\">\n<tbody><tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>③</td>\n<td>④</td>\n<td>⑤</td>\n<td>⑥</td>\n<td>⑦</td>\n<td>⑧</td>\n<td>⑨</td>\n<td>⑩</td>\n<td>⑪</td>\n<td>⑫</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>30</td>\n<td>2</td>\n<td>4</td>\n<td>4</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>10</td>\n<td>10</td>\n<td>⑩</td>\n</tr>\n</tbody></table>",
+      "description": "Up to 5 target characters are dealt Power 30 + Bardic Power magic damage."
+    },
+    {
+      "name": "Blue Moon Light",
+      "tradition": "Finale",
+      "level": "10",
+      "rhythm_cost": "⮯3♡3",
+      "resistance": "Optional",
+      "type": "-",
+      "power_table": "<table class=\"powertable\">\n<tbody><tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>③</td>\n<td>④</td>\n<td>⑤</td>\n<td>⑥</td>\n<td>⑦</td>\n<td>⑧</td>\n<td>⑨</td>\n<td>⑩</td>\n<td>⑪</td>\n<td>⑫</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>20</td>\n<td>1</td>\n<td>2</td>\n<td>3</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>8</td>\n<td>9</td>\n<td>10</td>\n<td>None</td>\n</tr>\n</tbody></table>",
+      "description": "The MP of up to 5 target characters will be restored by Power 20 + Bardic Power points. The effect of [Finale: Blue Moon Light] can be received only once per target character per day. This effect does not affect Undead, Construct, and Magitech characters."
+    },
+    {
+      "name": "Bright Sunshine",
+      "tradition": "Finale",
+      "level": "10",
+      "rhythm_cost": "⮭3♡3",
+      "resistance": "Optional",
+      "type": "-",
+      "power_table": "<table class=\"powertable\">\n<tbody><tr class=\"rolls\">\n<td class=\"bbg\">Power</td>\n<td>③</td>\n<td>④</td>\n<td>⑤</td>\n<td>⑥</td>\n<td>⑦</td>\n<td>⑧</td>\n<td>⑨</td>\n<td>⑩</td>\n<td>⑪</td>\n<td>⑫</td>\n<td class=\"bbg\">Crit</td>\n</tr>\n<tr>\n<td>40</td>\n<td>4</td>\n<td>5</td>\n<td>6</td>\n<td>7</td>\n<td>9</td>\n<td>10</td>\n<td>11</td>\n<td>11</td>\n<td>12</td>\n<td>13</td>\n<td>None</td>\n</tr>\n</tbody></table>",
+      "description": "The HP of up to 5 target characters will be restored by Power 40 + Bardic Power points. The effect of [Finale: Bright Sunshine] can be received only once per target character per day. This effect does not affect Undead, Construct, or Magitech characters."
+    }
+  ]
+}

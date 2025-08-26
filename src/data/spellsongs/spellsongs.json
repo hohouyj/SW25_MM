@@ -1,0 +1,392 @@
+{
+  "spellsongs": [
+    {
+      "name": "Ambience",
+      "tradition": "Spellsong",
+      "level": "1",
+      "singing": "Not Required",
+      "pet": [
+        "Frog",
+        "Insect"
+      ],
+      "effect_condition": "None",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "⮯1",
+      "flourish_value": "13",
+      "extra_rhythm": "⮯1",
+      "description": "This slow, droning melody calms the nerves and makes one unwilling to fight. The target takes a -1 penalty on Accuracy checks."
+    },
+    {
+      "name": "Ballad",
+      "tradition": "Spellsong",
+      "level": "1",
+      "singing": "Not Required",
+      "pet": [
+        "Frog",
+        "Insect"
+      ],
+      "effect_condition": "None",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "⮯1",
+      "flourish_value": "13",
+      "extra_rhythm": "⮯1",
+      "description": "This sad, melancholy song brings down the mood of all who hear it. Characters receive a -1 penalty for their Evasion."
+    },
+    {
+      "name": "Cacophony",
+      "tradition": "Spellsong",
+      "level": "1",
+      "singing": "Not Required",
+      "pet": [
+        "Bird",
+        "Frog",
+        "Insect"
+      ],
+      "effect_condition": "None",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "⮯1",
+      "flourish_value": "13",
+      "extra_rhythm": "⮯1",
+      "description": "This horrible racket disrupts the concentration of all within the area of effect, making it very difficult to cast any magic. Characters receive a -1 penalty for all Spellcasting checks."
+    },
+    {
+      "name": "Early Bird",
+      "tradition": "Spellsong",
+      "level": "1",
+      "singing": "Not Required",
+      "pet": [
+        "Bird",
+        "Frog"
+      ],
+      "effect_condition": "None",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "⮭1",
+      "flourish_value": "13",
+      "extra_rhythm": "♡1",
+      "description": "This jaunty melody awakens any sleeping characters. Those asleep naturally wake up without issue, but if a character was put to sleep by some other effect, the Bard's Performance check Success Value needs to exceed the effect's Success Value. While the Bard is playing this Spellsong, characters in the Area of Effect cannot naturally fall asleep. Spells, Spellsongs, and other abilities that try to put characters within the Area of Effect to sleep must pass an opposed check against Bard's Performance check."
+    },
+    {
+      "name": "Morale",
+      "tradition": "Spellsong",
+      "level": "1",
+      "singing": "Not Required",
+      "pet": [
+        "Bird",
+        "Frog",
+        "Insect"
+      ],
+      "effect_condition": "None",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "⮭1",
+      "flourish_value": "13",
+      "extra_rhythm": "⮭1",
+      "description": "A heroic tune that inspires courage in all who hear it. Characters affected by this Spellsong receive a +1 bonus to their Accuracy."
+    },
+    {
+      "name": "Requiem",
+      "tradition": "Spellsong",
+      "level": "1",
+      "singing": "Not Required",
+      "pet": [
+        "Bird",
+        "Frog",
+        "Insect"
+      ],
+      "effect_condition": "⮯2♡1",
+      "resistance": "Negates",
+      "type": "-",
+      "base_rhythm": "⮯1",
+      "flourish_value": "13",
+      "extra_rhythm": "♡1",
+      "description": "A mournful melody to remember the dead, this Spellsong only works on Undead monsters. Affected Undead receives a -2 penalty for all actions and checks."
+    },
+    {
+      "name": "Resistance",
+      "tradition": "Spellsong",
+      "level": "1",
+      "singing": "Not Required",
+      "pet": [
+        "Bird",
+        "Frog"
+      ],
+      "effect_condition": "None",
+      "resistance": "Can't",
+      "type": "Psychic",
+      "base_rhythm": "⮯1",
+      "flourish_value": "13",
+      "extra_rhythm": "⮭1",
+      "description": "This repetitive sonata toughens the listener's body and mind, allowing them to shrug off ill effects. Characters affected by this Spellsong receive a +1 bonus to their Fortitude and Willpower checks."
+    },
+    {
+      "name": "Summon Fish",
+      "tradition": "Spellsong",
+      "level": "1",
+      "singing": "Not Required",
+      "pet": [
+        "Bird",
+        "Insect"
+      ],
+      "effect_condition": "None",
+      "resistance": "Can't",
+      "type": "Psychic",
+      "base_rhythm": "♡1",
+      "flourish_value": "13",
+      "extra_rhythm": "♡1",
+      "description": "This Spellsong must be used near water. It plays a melody that sounds like flowing water, attracting harmless fish nearby. The song begins to take effect immediately, but the fish gradually come together, and the assembly is complete after 3 minutes (18 rounds). If any of these fish are harmed, the effect ends immediately, and all of the gathered fish flee."
+    },
+    {
+      "name": "Summon Small Animals",
+      "tradition": "Spellsong",
+      "level": "1",
+      "singing": "Not Required",
+      "pet": [
+        "Bird",
+        "Insect"
+      ],
+      "effect_condition": "None",
+      "resistance": "Can't",
+      "type": "Psychic",
+      "base_rhythm": "♡1",
+      "flourish_value": "13",
+      "extra_rhythm": "♡1",
+      "description": "This pleasant melody arouses the interest of nearby small animals and calls them to the Bard. A Bard can only call on mammals and birds of a size that would fit with both hands cupped together. The Spellsong begins to take effect immediately, but the small animals gradually come together, and the assembly is complete after 3 minutes (18 rounds). If these small animals are harmed, the effect ends immediately, and all of the gathered animals flee."
+    },
+    {
+      "name": "Break",
+      "tradition": "Spellsong",
+      "level": "5",
+      "singing": "Not Required",
+      "pet": [
+        "Frog",
+        "Insect"
+      ],
+      "effect_condition": "None",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "⮯2",
+      "flourish_value": "18",
+      "extra_rhythm": "⮯1",
+      "description": "The melody is jarring and distracts the listener's concentration. The target receives a -1 penalty to Fortitude and Willpower Checks."
+    },
+    {
+      "name": "Charming",
+      "tradition": "Spellsong",
+      "level": "5",
+      "singing": "Required",
+      "pet": "-",
+      "effect_condition": "♡4",
+      "resistance": "Negates",
+      "type": "Psychic (Weak)",
+      "base_rhythm": "♡2",
+      "flourish_value": "18",
+      "extra_rhythm": "♡1",
+      "description": "The target is mesmerized by the Bard's singing and cannot bring themselves to harm the Bard. In Contested Checks where the Bard is on the passive side, the Bard automatically gets a favorable result."
+    },
+    {
+      "name": "Curiosity",
+      "tradition": "Spellsong",
+      "level": "5",
+      "singing": "Required",
+      "pet": "-",
+      "effect_condition": "♡4",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "♡2",
+      "flourish_value": "18",
+      "extra_rhythm": "♡1",
+      "description": "The Bard sings and plays a song that evokes strong curiosity. If the Bard is not visible to the target, the target cannot control its desire to see the Bard and tries to move to an arbitrary position (area or coordinate) where it can see the Bard. If the target cannot reach a visible place, the target moves as close as possible. If the Bard is already visible, this Spellsong has no effect."
+    },
+    {
+      "name": "Elements",
+      "tradition": "Spellsong",
+      "level": "5",
+      "singing": "Not Required",
+      "pet": [
+        "Bird",
+        "Frog"
+      ],
+      "effect_condition": "None",
+      "resistance": "Can't",
+      "type": "-",
+      "base_rhythm": "♡2",
+      "flourish_value": "18",
+      "extra_rhythm": "♡1",
+      "description": "This irregular rhythm calls on elemental faeries for aid. When playing this Spellsong, the Bard specifies one of the following types: Fire, Water/Ice, Earth, Wind, or Lightning. All physical and magical damage of the chosen type is increased by +2."
+    },
+    {
+      "name": "Love Song",
+      "tradition": "Spellsong",
+      "level": "5",
+      "singing": "Required",
+      "pet": "-",
+      "effect_condition": "⮭6♡6",
+      "resistance": "Negates",
+      "type": "Psychic (Weak)",
+      "base_rhythm": "♡2",
+      "flourish_value": "18",
+      "extra_rhythm": "⮭1",
+      "description": "This buoyant ballad stimulates romance, causing \"love to be in the air.\" Affected listeners will look to be with the closest partner of their choice, with current lovers/spouses taking precedence over random people. If current partners are not nearby, the closest available partner for the listener's orientation will be subject to these magically enhanced feelings, regardless of race. If no applicable partners are within the area of effect, the Spellsong has no effect. Those with budding romantic feelings will attempt to see if the partner reciprocates these feelings, while current partners will attempt to retire to act on these feelings. The effects of this Spellsong last 1 hour, even if Bard stops performing."
+    },
+    {
+      "name": "Lullaby",
+      "tradition": "Spellsong",
+      "level": "5",
+      "singing": "Required",
+      "pet": "-",
+      "effect_condition": "⮯4♡4",
+      "resistance": "Negates",
+      "type": "Psychic (Weak)",
+      "base_rhythm": "⮯2",
+      "flourish_value": "18",
+      "extra_rhythm": "♡1",
+      "description": "An inviting melody that gently lulls listeners into a state of drowsiness. The subjects are dizzy and unable to move or take any active action. If forced to make an Action Check (see CR I, p. 114), the target takes a -4 penalty. The duration of this Spellsong is 10 seconds (1 round), as usual. After that time, the drowsiness automatically disappears."
+    },
+    {
+      "name": "Nostalgia",
+      "tradition": "Spellsong",
+      "level": "5",
+      "singing": "Not Required",
+      "pet": [
+        "Bird",
+        "Frog",
+        "Insect"
+      ],
+      "effect_condition": "⮯6♡6",
+      "resistance": "Negates",
+      "type": "Psychic (Weak)",
+      "base_rhythm": "⮯2",
+      "flourish_value": "18",
+      "extra_rhythm": "♡1",
+      "description": "A wistful tune, this Spellsong invokes feelings of days long past in the hearts of its listeners, causing them to wish to go back home. If in combat, those affected by the Spellsong attempt to retreat from the battlefield and escape. This Spellsong has no effect if the listener is already at home or is unable to escape. Once affected, listeners will be under the effects of this Spellsong for 1 hour. After 1 hour, or if the listener manages to return home, this Spellsong's effect ends."
+    },
+    {
+      "name": "Trance",
+      "tradition": "Spellsong",
+      "level": "5",
+      "singing": "Not Required",
+      "pet": [
+        "Bird",
+        "Frog",
+        "Insect"
+      ],
+      "effect_condition": "None",
+      "resistance": "Can't",
+      "type": "Psychic",
+      "base_rhythm": "⮭2",
+      "flourish_value": "18",
+      "extra_rhythm": "⮭1",
+      "description": "This is a clear melody that sharpens the mind of the listener. Those affected by this Spellsong gain a +1 bonus modifier to Spellcasting Checks."
+    },
+    {
+      "name": "Chorus",
+      "tradition": "Spellsong",
+      "level": "10",
+      "singing": "Required",
+      "pet": "-",
+      "effect_condition": "♡6",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "♡2",
+      "flourish_value": "24",
+      "extra_rhythm": "♡2",
+      "description": "Targets sing along with the Bard. A target can only perform a Limited Move as a type of movement and cannot cast spells that require vocalization, give verbal commands or instructions, or say a password."
+    },
+    {
+      "name": "Clap",
+      "tradition": "Spellsong",
+      "level": "10",
+      "singing": "Not Required",
+      "pet": "Bird",
+      "effect_condition": "⮭4♡2",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "♡2",
+      "flourish_value": "24",
+      "extra_rhythm": "⮭2",
+      "description": "Anyone hearing the Bard's rhythmic clapping has the urge to clap along. This Spellsong causes all weapons, shields, and items held or equipped by targets in their hands to drop to the ground when the effect is activated. Affected characters can use only weapon attacks with non-hand weapons such as Kicks, Tails, Bites, and so on. They also cannot use Stance items."
+    },
+    {
+      "name": "Dance",
+      "tradition": "Spellsong",
+      "level": "10",
+      "singing": "Not Required",
+      "pet": "-",
+      "effect_condition": "⮭4♡2",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "♡2",
+      "flourish_value": "24",
+      "extra_rhythm": "⮭2",
+      "description": "Targets are impelled to move rhythmically to the music. The target receives a -2 penalty on Accuracy and Evasion checks. However, a target does not receive this penalty if these checks are performed using the Grappler class."
+    },
+    {
+      "name": "Dare",
+      "tradition": "Spellsong",
+      "level": "10",
+      "singing": "Not Required",
+      "pet": "Frog",
+      "effect_condition": "None",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "⮯2",
+      "flourish_value": "24",
+      "extra_rhythm": "⮯2",
+      "description": "The melody is so jarring that it makes targets lose their ability to make calm decisions. The target will no longer be able to declare any active combat feats or unique skills that use them."
+    },
+    {
+      "name": "Fall",
+      "tradition": "Spellsong",
+      "level": "10",
+      "singing": "Not Required",
+      "pet": "Insect",
+      "effect_condition": "⮯6",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "⮯2",
+      "flourish_value": "24",
+      "extra_rhythm": "⮯2",
+      "description": "If a flying target is in the air at the time of the effect, the target will be forced to fall to the ground. See \"Forced Fall Effect\" (CR II, p. 79) for falling rules. While under the Spellsong's effect, the target cannot fly again. [Sword's Grace/Wings Of The Wind] cannot be used, and any [Flying] unique skill is lost. A character whose movement method is only airborne, such as \"Flying\" or \"Floating,\" cannot move."
+    },
+    {
+      "name": "Lazy",
+      "tradition": "Spellsong",
+      "level": "10",
+      "singing": "Not Required",
+      "pet": [
+        "Bird",
+        "Frog",
+        "Insect"
+      ],
+      "effect_condition": "⮯4♡2",
+      "resistance": "Negates",
+      "type": "Psychic",
+      "base_rhythm": "♡2",
+      "flourish_value": "24",
+      "extra_rhythm": "⮯2",
+      "description": "This lugubrious melody causes fatigue which interferes with the target's actions. The target takes a -1 penalty to all Skill Checks."
+    },
+    {
+      "name": "Reduction",
+      "tradition": "Spellsong",
+      "level": "10",
+      "singing": "Not Required",
+      "pet": [
+        "Bird",
+        "Frog",
+        "Insect"
+      ],
+      "effect_condition": "⮯2♡4",
+      "resistance": "Can't",
+      "type": "Psychic",
+      "base_rhythm": "♡2",
+      "flourish_value": "24",
+      "extra_rhythm": "⮯2",
+      "description": "A peaceful tune, this Spellsong reduces MP consumption of spells within range by 1 point (but cannot reduce it to 0 or lower). While using [Metamagic/**] combat feats, the cost is reduced before use of Metamagic. This spell doesn't affect MP consumption besides spells, like techniques or items that require MP."
+    }
+  ]
+}

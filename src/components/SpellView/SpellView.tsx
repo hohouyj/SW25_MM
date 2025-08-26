@@ -1,8 +1,8 @@
 import { Container, Grid, TagsInput } from "@mantine/core";
 import { Spell } from "../../types";
-import './spell_styles.css';
-import SpellCard from "../SpellCard/SpellCard";
 import useSpellSearch from "../../hooks/useSpellSearch";
+import FeatureCard from "../FeatureCard/FeatureCard";
+import { spellConfig } from "../FeatureCard/FeatureCardConfigs";
 
 export default function () {
   const { tags, setTags, removeTag, results } = useSpellSearch();
@@ -26,7 +26,7 @@ export default function () {
             <Grid.Col span={10}>
                   {results.map((spell: Spell) => {
                     return (
-                        <SpellCard spell={spell} key={spell.spell_id} />
+                        <FeatureCard data={{ ...spell, feature_name: "spells" }} key={spell.spell_id} config={spellConfig} />
                     );
                   })}
                 

@@ -1,0 +1,255 @@
+{
+    "aspects": [
+        {
+            "name": "Heavenly Domain: Invisible Pavilion",
+            "tradition": "Aspect",
+            "level": "1st",
+            "description": "This ability creates an invisible cover above the target, limiting their ability to fly. The duration of the effect and its additional effects depend on the amount of Heavenly Qi used:\nUsing 1 point of Heavenly Qi will prevent the target from moving by flying. Additionally, the target will not be exposed to rain or snow falling from above.\nUsing 2 points of Heavenly Qi will also prevent the target from using or applying abilities like [ Sword's Grace/Wings Of The Wind ] or [\u3007Flying].\nUsing 3 points of Heavenly Qi will also cause the target to fall prone on the spot if they were flying at the time of the effect.\nNote that this effect has no impact on characters with multiple sections.",
+            "power_table": null,
+            "cost": "Heavenly Qi 1 - 3",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Spirit Domain: Vanishment",
+            "tradition": "Aspect",
+            "level": "10th",
+            "description": "This effect reduces the target's presence and makes it difficult for others to perceive.\nWhile this Aspect is active, any effect with a maximum number of targets that includes the target will automatically exclude it. Additionally, the target cannot be affected by \"Area: Line\" or \"Area: Breakthrough\" effects (it will not be hit randomly). Effects with \"/All\" or \"/Space\" will still affect the target as usual.\nThis effect lasts for the duration of the effect or until it has been triggered a number of times equal to the Spirit Qi consumed, after which it is lost.",
+            "power_table": null,
+            "cost": "Spirit Qi 1 - 4",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Heavenly Domain: Guiding Winds",
+            "tradition": "Aspect",
+            "level": "5th",
+            "description": "Winds change the trajectory of ammunition and thrown weapons, guiding them to their mark.\nIf the target makes a Ranged Attack during the duration, its Accuracy check is increased by (Heavenly Qi consumed) points.",
+            "power_table": null,
+            "cost": "Heavenly Qi 1 - 4",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Earthly Domain: Shifting Energies",
+            "tradition": "Aspect",
+            "level": "5th",
+            "description": "This ability removes attribute types from the target's surroundings. As a result, the target will not be able to deal physical or magical damage of any type (meaning damage with a specified type, either in the spell or effect description) for the duration of the effect. In return, the target will be immune to any physical, magical, or fixed damage with a Type of its own.\nThe target is not immune to purely physical, untyped damage.",
+            "power_table": null,
+            "cost": "Earthly Qi 3",
+            "duration": "10 seconds (1 round)",
+            "type": "Curse"
+        },
+        {
+            "name": "Earthly Domain: Cursed Snake Eyes",
+            "tradition": "Aspect",
+            "level": "10th",
+            "description": "The targets' misfortunes trigger a curse upon the target.\nIf any characters within the Domain Range roll 2d to perform a check, use the Power Table, or determine damage, and the result is double 1s, the target suffers (Earthly Qi consumed x 2) points of fixed damage. Other 2d rolls made for different reasons are not affected by the curse.\nThe damage is dealt immediately after rolling 2d. If multiple double 1's occur in a single operation, the damage is repeated that number of times.",
+            "power_table": null,
+            "cost": "Earthly Qi 1 - 4",
+            "duration": "10 seconds (1 round)",
+            "type": "Curse"
+        },
+        {
+            "name": "Spirit Domain: After Image",
+            "tradition": "Aspect",
+            "level": "10th",
+            "description": "Creates an afterimage of the target. For the effect time, the target will have the effect of the [ Blink ] spell.",
+            "power_table": null,
+            "cost": "Spirit Qi 4",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Heavenly Domain: Wrath of Tenma",
+            "tradition": "Aspect",
+            "level": "5th",
+            "description": "For the duration of the effect, the target's magic damage is increased by the amount of Heavenly Qi consumed.",
+            "power_table": null,
+            "cost": "Heavenly Qi 1 - 4",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Spirit Domain: Refresh",
+            "tradition": "Aspect",
+            "level": "1st",
+            "description": "This Aspect restores inner balance within the target, allowing them to recover MP equal to the amount of Spirit Qi consumed. This effect will not restore more MP than half of the target's maximum MP value.\nThis Aspect can only be used once per day.",
+            "power_table": null,
+            "cost": "Spirit Qi 1 - 4",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Heavenly Domain: Mana Break",
+            "tradition": "Aspect",
+            "level": "10th",
+            "description": "This ability dissolves the target's inner mana. It reduces the target's MP by (Heavenly Qi consumed x 2) points (minimum 0).\nThis aspect has no effect on targets that have no MP.",
+            "power_table": null,
+            "cost": "Heavenly Qi 1 - 4",
+            "duration": "Instant"
+        },
+        {
+            "name": "Earthly Domain: Quicksand",
+            "tradition": "Aspect",
+            "level": "1st",
+            "description": "This technique interferes with the target's footing, creating the illusion of muddy ground and making it difficult to move or evade.\nWhen used with 1 point of Earthly Qi, the target will be unable to move for the duration of the effect.\nWhen used with 2 points of Earthly Qi, the target also receives a -1 penalty on Evasion checks. This effect has no impact on a flying target. If the target is a character with multiple sections, all sections are affected by this effect.\nIf 3 points are consumed, the above Evasion check penalty is further increased by -1, for a total penalty of -2.",
+            "power_table": null,
+            "cost": "Earthly Qi 1 - 3",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Heavenly Domain: Descending Thunder",
+            "tradition": "Aspect",
+            "level": "1st",
+            "description": "Lightning strikes down from the heavens, dealing (Heavenly Qi consumed x 2) fixed damage to the target.",
+            "power_table": null,
+            "cost": "Heavenly Earthly Spirit Qi 1 - 4",
+            "duration": "Instant 10 seconds (1 round)",
+            "type": "Lightning"
+        },
+        {
+            "name": "Spirit Domain: Mirrored Soul",
+            "tradition": "Aspect",
+            "level": "10th",
+            "description": "This ability merges the souls of the target and the Geomancer, recognizing them as partially identical entities.\nFor the duration of this Aspect, whenever the Geomancer takes physical or magical damage from others, the target takes fixed damage equal to the greater of (HP reduced) or (Spirit Qi consumed x 2) points.",
+            "power_table": null,
+            "cost": "Spirit Qi 1 - 4",
+            "duration": "10 seconds (1 round)",
+            "type": "Curse"
+        },
+        {
+            "name": "Earthly Domain: Healing Earth",
+            "tradition": "Aspect",
+            "level": "1st",
+            "description": "This ability absorbs the vitality of the earth and heals wounds. The target regains double the amount of Earthly Qi consumed in HP.\nThis Aspect can only be used once per day.",
+            "power_table": null,
+            "cost": "Earthly Qi 1 - 4",
+            "duration": "Instant"
+        },
+        {
+            "name": "Spirit Domain: Dream Eater",
+            "tradition": "Aspect",
+            "level": "5th",
+            "description": "Curses the target, dealing (Spirit Qi consumed x 2) points of fixed damage to the target.",
+            "power_table": null,
+            "cost": "Spirit Qi 1 - 4",
+            "duration": "Instant",
+            "type": "Curse"
+        },
+        {
+            "name": "Heavenly Domain: Deflecting Skies",
+            "tradition": "Aspect",
+            "level": "1st",
+            "description": "Clouds shield the sky, making the target immune from the sun's influence.\nThe target is treated as unaffected by sunlight during the duration of the effect, whether outdoors or indoors. At the same time, it has [Lightning Immunity] for the duration of the effect.",
+            "power_table": null,
+            "cost": "Heavenly Qi 2",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Heavenly Domain: Karma",
+            "tradition": "Aspect",
+            "level": "5th",
+            "description": "Each time target deals damage, its karma strikes it back.\nFor the duration of the effect, if the target deals at least 1 applied physical or magical damage to another, the target itself receives (Heavenly Qi consumed) points of fixed damage for each character (section) it dealt damage.",
+            "power_table": null,
+            "cost": "Heavenly Qi 1 - 4",
+            "duration": "10 seconds (1 round)",
+            "type": "Curse"
+        },
+        {
+            "name": "Spirit Domain: Mana Siphon",
+            "tradition": "Aspect",
+            "level": "5th",
+            "description": "Inhibits the target from casting spells. For the duration of the effect, the target has all Magic Power scores reduced by (Spirit Qi consumed) points.",
+            "power_table": null,
+            "cost": "Spirit Qi 1 - 4",
+            "duration": "10 seconds (1 round)",
+            "type": "Curse"
+        },
+        {
+            "name": "Earthly Domain: Mountain Rapture",
+            "tradition": "Aspect",
+            "level": "5th",
+            "description": "The earth infuses the target with vitality and awakens it. If the target's HP is 0 or less, it recovers 10 HP. If the target is unconscious, it is awakened immediately.\nIf the target is not the Main Section of a character with multiple sections and is a disabled section (see CR III, p. 99), it is awakened in the same way.",
+            "power_table": null,
+            "cost": "Earthly Qi 2",
+            "duration": "Instant"
+        },
+        {
+            "name": "Earthly Domain: Footfalls",
+            "tradition": "Aspect",
+            "level": "10th",
+            "description": "This ability constantly deforms the terrain around the target's feet, making it difficult to move or act.\nWhile the effect is active, the target's movement is halved (rounded up) when moving on the ground. Additionally, the target receives a penalty on action checks equal to the amount of Earthly Qi consumed as a poor footing penalty. If the target is a character with multiple sections, this effect is applied to all of them.\nThis effect will not work if the target is not on the ground.",
+            "power_table": null,
+            "cost": "Earthly Qi 1 - 3",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Earthly Domain: Sand Shield",
+            "tradition": "Aspect",
+            "level": "5th",
+            "description": "Dust rises around the target, providing temporary armor.\nFor the duration of the effect, the target's Defense is increased by (Earthly Qi consumed x 2) points.",
+            "power_table": null,
+            "cost": "Earthly Qi 1 - 4",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Spirit Domain: Determination",
+            "tradition": "Aspect",
+            "level": "1st",
+            "description": "This ability fills the target with determination, allowing them to withstand impairing effects.\nThe target can choose one of the effects below, with a success value \"X\", which they are unwillingly subjected to. The success value \"X\" correlates to the amount consumed by Spirit Qi.\nSuccess Value of the Effect to be Removed\nThe target chooses the disadvantageous effect to be removed by this Aspect. The risks of Combat Feats or similar effects cannot be removed.\nEffects with a duration of \"10 minutes (60 rounds)\" or longer (including Permanent) cannot be canceled by this Aspect.",
+            "power_table": "<table class=\"powertable\">\n<tr>\n<td class=\"bbg\">Qi Points Consumed</td>\n<td class=\"bbg\">1</td>\n<td class=\"bbg\">2</td>\n<td class=\"bbg\">3</td>\n<td class=\"bbg\">4</td>\n</tr>\n<tr>\n<td>Success Value</td>\n<td>15 or less</td>\n<td>20 or less</td>\n<td>25 or less</td>\n<td>30 or less</td>\n</tr>\n</table>",
+            "cost": "Spirit Qi 1 - 4",
+            "duration": "Instant"
+        },
+        {
+            "name": "Heavenly Domain: Stigmata",
+            "tradition": "Aspect",
+            "level": "10th",
+            "description": "This Aspect analyzes the structure of the target and weakens it against a specific type of damage.\nFor the effect's duration, the target gains \"Weak Point: [specified type] damage +X points,\" where X is equal to the amount of Heavenly Qi consumed.\nThe Geomancer chooses the specific type of damage from \"Fire,\" \"Water/Ice,\" \"Wind,\" \"Earth,\" \"Lightning,\" and \"Energy\" each time the effect occurs.",
+            "power_table": null,
+            "cost": "Heavenly Qi 1 - 4",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Spirit Domain: Terror",
+            "tradition": "Aspect",
+            "level": "1st",
+            "description": "This Aspect makes the Geomancer seem powerful and frightening.\nThe target's physical and magical damage to the Geomancer is reduced by (Spirit Qi consumed x 2) points for the duration of the effect.",
+            "power_table": null,
+            "cost": "Spirit Qi 1 - 4",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Spirit Domain: Sundered Soul",
+            "tradition": "Aspect",
+            "level": "5th",
+            "description": "The target is cursed, which makes it less susceptible to healing. Whenever a recovery effect is applied to the target's HP or MP, their recovery is reduced by (Spirit Qi consumed x 2) points (minimum 0).",
+            "power_table": null,
+            "cost": "Spirit Qi 1 - 4",
+            "duration": "10 seconds (1 round)",
+            "type": "Curse"
+        },
+        {
+            "name": "Earthly Domain: Liquidation",
+            "tradition": "Aspect",
+            "level": "1st",
+            "description": "This technique causes water to roll up around the target, allowing it to use its ability to swim.\nBy using 1 point of Earthly Qi, the target can be treated as if it were in the water for the duration of the effect, but this movement is limited to within the Geomancer's Domain Range. The target does not incur any penalties, such as being unable to breathe or speak or limitations on movement or actions.\nIf used with 2 points of Earthly Qi, the target gains a +1 bonus to action checks if it has [ Sword's Grace/Gentle Water ], [Underwater Aptitude], or any other ability that removes penalties for being underwater.",
+            "power_table": null,
+            "cost": "Earthly Qi 1 - 2",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Heavenly Domain: Way of the North Star",
+            "tradition": "Aspect",
+            "level": "10th",
+            "description": "Seven stars guide the target.\nIf the target performs a Skill Check, Power Table roll, or a damage decision during the effect's duration, and the result is 7, the target's HP and MP are restored by (Heavenly Qi consumed) points each time this occurs.\nThis effect only applies in combat.",
+            "power_table": null,
+            "cost": "Heavenly Qi 1 - 4",
+            "duration": "10 seconds (1 round)"
+        },
+        {
+            "name": "Earthly Domain: Mirage",
+            "tradition": "Aspect",
+            "level": "10th",
+            "description": "A mirage obscures the target's outline.\nThe target can reduce the physical and magical damage of a specific type by (Earthly Qi consumed x 2) points for the duration of the effect. The Geomancer chooses the specific type from \"Fire,\" \"Water/Ice,\" \"Wind,\" \"Earth,\" \"Lightning,\" and \"Energy\" each time the effect occurs.",
+            "power_table": null,
+            "cost": "Earthly Qi 1 - 4",
+            "duration": "10 seconds (1 round)"
+        }
+    ]
+}
