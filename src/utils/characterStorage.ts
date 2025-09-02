@@ -10,6 +10,7 @@ export function defaultCharacter(): Character {
     id: uuidv4(),
     name: "",
     feature_ids: [],
+    //////////////////////
     alchemist_level: 0,
     bard_level: 0,
     dark_hunter_level: 0,
@@ -17,6 +18,7 @@ export function defaultCharacter(): Character {
     geomancer_level: 0,
     tactician_level: 0,
     rider_level: 0,
+    /////////////////////
     ranger_level: 0,
     sage_level: 0,
     scout_level: 0,
@@ -27,6 +29,24 @@ export function defaultCharacter(): Character {
     marksman_level: 0,
   };
 }
+
+
+export function getActiveClasses(character: Character | null): string[] {
+  if (!character) return []; // fixed the check
+
+  return (Object.entries(character) as [keyof Character, any][])
+    .filter(([_, value]) => typeof value === "number" && value > 0)
+    .map(([key]) => key.replace("_level", "")).filter((className) => [
+      "alchemist",
+      "bard",
+      "dark_hunter",
+      "enhancer",
+      "geomancer",
+      "tactician",
+      "rider"
+    ].includes(className));
+}
+
 
 // Get all characters
 export function getAllCharacters(): Character[] {

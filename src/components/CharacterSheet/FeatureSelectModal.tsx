@@ -28,8 +28,7 @@ export function FeatureSelectModal({
   // fetch available features
   const features = getAvailableFeaturesByClassAndLevel(
     className,
-    classLevel,
-    character.feature_ids
+    classLevel
   );
 
   const data = features.map((f) => ({
