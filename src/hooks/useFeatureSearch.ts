@@ -1,18 +1,8 @@
 import { useDebouncedValue } from "@mantine/hooks";
 import Fuse from "fuse.js";
 import { useMemo, useState } from "react";
-import aspectsData from "../data/aspects/aspects.json";
-import evocationsData from "../data/evocations/evocations.json";
-import finalesData from "../data/finales/finales.json";
-import classFeaturesData from "../data/feats/feat-automatic.json";
-import selectedFeaturesData from "../data/feats/feats.json";
-import maneuversData from "../data/maneuvers/maneuvers.json";
-import spellSongsData from "../data/spellsongs/spellsongs.json"
-import stuntsData from "../data/stunts/stunts.json";
-import strategemsData from "../data/stratagems/stratagems.json";
-import techniquesData from "../data/techniques/techniques.json";
-import weavingsData from "../data/weavings/weavings.json";
 import { FeatureName } from "../components/FeatureCard/FeatureCardConfigs";
+import { getAllFeatures } from "../utils/characterFeatureQuery";
 
 type TagQuery =
   | { name: string }
@@ -50,31 +40,8 @@ const useFeatureSearch = () => {
       // },
       keys,
     };
-    function extractAndCombineDynamic(...jsonObjects: Record<string, unknown[]>[]): unknown[] {
-      return jsonObjects.flatMap(obj =>
-        Object.entries(obj).flatMap(([key, arr]) =>
-          (arr as Record<string, unknown>[]).map(item => ({
-            ...item,
-            feature_name: key // removes plural "s" (e.g., "evocations" -> "evocation")
-          }))
-        )
-      );
-    }
 
-    const combined = extractAndCombineDynamic(
-      aspectsData,
-      evocationsData,
-      finalesData,
-      classFeaturesData,
-      selectedFeaturesData,
-      maneuversData,
-      spellSongsData,
-      stuntsData,
-      strategemsData,
-      techniquesData,
-      weavingsData
-    );
-    return new Fuse(combined, fuseOptions);
+    return new Fuse(getAllFeatures(), fuseOptions);
 
   }, [keys]);
   const [tags, setTags] = useState<string[]>(["Technique"]);

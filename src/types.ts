@@ -48,6 +48,7 @@ export interface Monster {
   uniqueskills: MonsterSkill[];
   combatstyles: CombatStyle[];
   loottable: LootResult[];
+  id: number;
 }
 
 export interface MonsterData {
@@ -117,6 +118,7 @@ export interface Spell {
   rangearea?: string;
   fairy_magic_type?: string;
   divinity?: string;
+  id: number;
 };
 
 
@@ -150,6 +152,7 @@ export interface Stunt {
   prerequisite: string;
   compatible: string;
   area: string;
+  id: number;
 }
 
 export interface Aspect {
@@ -161,6 +164,7 @@ export interface Aspect {
   cost?: string;
   duration?: string;
   type?: string;
+  id: number;
 }
 
 export interface Evocation {
@@ -175,6 +179,7 @@ export interface Evocation {
   rangearea?: string;
   duration?: string;
   resistance?: string;
+  id: number;
 }
 
 
@@ -183,6 +188,7 @@ export interface ClassFeature {
   description: string;
   gain?: string; // e.g., "Grappler Level 7"
   use?: string;  // e.g., "-"
+  id: number;
 }
 
 export interface SelectedFeature {
@@ -190,6 +196,7 @@ export interface SelectedFeature {
   description: string;
   prerequisite?: string;
   use?: string;
+  id: number;
 }
 
 
@@ -202,6 +209,7 @@ export interface Finale {
   type?: string;
   power_table?: string | null;
   description: string;
+  id: number;
 }
 
 
@@ -214,6 +222,7 @@ export interface Maneuver {
   prerequisite?: string;
   conditions?: string;
   description: string;
+  id: number;
 }
 
 export interface Spellsong {
@@ -229,6 +238,7 @@ export interface Spellsong {
   flourish_value?: string;
   extra_rhythm?: string;
   description: string;
+  id: number;
 }
 
 export interface Stratagem {
@@ -240,6 +250,7 @@ export interface Stratagem {
   edge_cost?: string;
   edge_accumulation?: string;
   description: string;
+  id: number;
 }
 
 
@@ -260,6 +271,7 @@ export interface Technique {
   attack?: TechniqueAttack;
   power_table?: string | null;
   duration?: string;
+  id: number;
 }
 
 export interface EssenceWeaving {
@@ -275,6 +287,21 @@ export interface EssenceWeaving {
   duration?: string;
   resistance?: string;
   summary?: string;
+  id: number;
+}
+
+export interface FeatureTypeMap {
+  stunts: Stunt;
+  aspects: Aspect;
+  evocations: Evocation;
+  class_features: ClassFeature;
+  selected_features: SelectedFeature;
+  finales: Finale;
+  maneuvers: Maneuver;
+  spellsongs: Spellsong;
+  stratagems: Stratagem;
+  techniques: Technique;
+  essence_weavings: EssenceWeaving;
 }
 
 export interface FieldConfig<T> {
@@ -290,4 +317,25 @@ export interface FieldConfig<T> {
 
 export interface FeatureCardConfig<T> {
   fields: FieldConfig<T>[];
+}
+
+export interface Character {
+  id: string;
+  name: string;
+  alchemist_level: number;
+  bard_level: number;
+  dark_hunter_level: number;
+  enhancer_level: number;
+  geomancer_level: number;
+  tactician_level: number;
+  rider_level: number;
+  ranger_level: number;
+  sage_level: number;
+  scout_level: number;
+  battle_dancer_level: number;
+  fencer_level: number;
+  fighter_level: number;
+  grappler_level: number;
+  marksman_level: number;
+  feature_ids: number[]
 }
