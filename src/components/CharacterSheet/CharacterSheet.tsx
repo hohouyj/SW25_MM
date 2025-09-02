@@ -58,6 +58,7 @@ export default function CharacterSheet() {
         <>
             <Paper shadow="sm" p="md" withBorder radius="md">
                 <Title order={2}>{character.name}</Title>
+                
                 <SimpleGrid
                     cols={{ base: 1, sm: 2, md: 3 }}
                     spacing="lg"
