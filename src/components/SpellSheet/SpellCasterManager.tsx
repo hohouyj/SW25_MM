@@ -225,7 +225,7 @@ export default function SpellCasterManager() {
                         ].map((field) => (
                             <Grid.Col span={6} key={field}>
                                 <NumberInput
-                                    label={field.replace(/_/g, " ")}
+                                    label={field.replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}
                                     min={0}
                                     max={15}
                                     {...form.getInputProps(field)}

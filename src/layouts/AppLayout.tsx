@@ -11,6 +11,7 @@ export default function AppLayout() {
     { label: 'Spells', to: '/spells' },
     { label: 'Spell Sheet', to: '/spellsheet' },
     { label: 'Features', to: '/features' },
+    { label: 'Character Sheet', to: '/charactersheet' },
   ];
 
   return (
