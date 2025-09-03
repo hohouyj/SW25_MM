@@ -30,6 +30,13 @@ export function defaultCharacter(): Character {
   };
 }
 
+export function getAdventurerLevel(character: Character): number {
+   const levels = Object.entries(character)
+    .filter(([key]) => key.endsWith("_level"))
+    .map(([_, value]) => value as number);
+
+  return Math.max(...levels);
+}
 
 export function getActiveClasses(character: Character | null): string[] {
   if (!character) return []; // fixed the check
@@ -45,6 +52,26 @@ export function getActiveClasses(character: Character | null): string[] {
       "tactician",
       "rider"
     ].includes(className));
+}
+
+export function getPassiveClasses(character: Character | null): string[] {
+  if (!character) return [];
+
+  const passiveClasses = [
+    "ranger",
+    "sage",
+    "scout",
+    "battle_dancer",
+    "fencer",
+    "fighter",
+    "grappler",
+    "marksman",
+  ] as const;
+
+  return Object.entries(character)
+    .filter(([key, value]) => key.endsWith("_level") && typeof value === "number" && value > 0)
+    .map(([key]) => key.replace("_level", ""))
+    .filter((className) => passiveClasses.includes(className as typeof passiveClasses[number]));
 }
 
 

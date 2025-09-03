@@ -47,18 +47,24 @@ export const getAvailableSpells = (spellCaster: SpellCaster): Spell[] => {
 };
 
 export function getUniqueSortedOptions<K extends keyof Spell>(
-    data: Spell[],
-    key: K,
-    sortFunc?: ((a: string,b: string) => number) | undefined
+  data: Spell[],
+  key: K,
+  sortFunc?: (a: string, b: string) => number
 ): string[] {
-    return Array.from(
-        new Set(
-            data
-                .map((item) => item[key])
-                .filter((v): v is string => typeof v === 'string' && v.trim() !== '')
-        )
-    ).sort(sortFunc);
+  const uniqueValues = Array.from(
+    new Set(
+      data
+        .map((item) => {
+          const val = item[key] as unknown;
+          return typeof val === 'string' ? val : undefined;
+        })
+        .filter((v): v is string => typeof v === 'string' && v.trim() !== '')
+    )
+  );
+
+  return uniqueValues.sort(sortFunc);
 }
+
 
 export const binSpellsByTradition = (filteredSpells: Spell[]): SpellBins => {
     const bins: SpellBins = {};

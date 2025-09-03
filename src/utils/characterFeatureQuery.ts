@@ -15,7 +15,7 @@ import { FeatureTypeMap, ClassFeature } from "../types";
 // Helper to add feature_name
 type WithFeatureName<K extends keyof FeatureTypeMap> = FeatureTypeMap[K] & { feature_name: K };
 
-type CombinedFeature =
+export type CombinedFeature =
   | WithFeatureName<'aspects'>
   | WithFeatureName<'evocations'>
   | WithFeatureName<'finales'>
@@ -57,6 +57,27 @@ function extractAndCombineDynamic<
   );
 }
 
+const removeNames = [
+  "Cheat Cast I",
+  "Cheat Cast II",
+  "Crude Take",
+  "Desperate Strike I",
+  "Desperate Strike II",
+  "Desperate Strike III",
+  "Enhanced Resistance I",
+  "Enhanced Resistance II",
+  "Follow-Up",
+  "Herald Strike",
+  "Plunder",
+  "Quick Cast",
+  "Shadow Step I",
+  "Shadow Step II",
+  "Shield Bash I",
+  "Shield Bash II",
+  "Wild Strike I",
+  "Wild Strike II",
+];
+
 const combined = extractAndCombineDynamic(
   aspectsData,
   evocationsData,
@@ -80,24 +101,69 @@ export function getFeaturesById<T extends CombinedFeature>(ids: number[] = []): 
   return combined.filter((item): item is T => idSet.has(item.id));
 }
 
+export function getAllFeatureIdsByClassAndLevel(
+  className: string,
+  classLevel: number = 0
+): number[] {
+  let minorClassFeatures: any[]; // type later
+
+  switch (className) {
+    case "alchemist":
+      minorClassFeatures = extractAndCombineDynamic(evocationsData);
+      break;
+    case "bard":
+      minorClassFeatures = extractAndCombineDynamic(spellSongsData, finalesData);
+      break;
+    case "dark_hunter":
+      minorClassFeatures = extractAndCombineDynamic(weavingsData);
+      break;
+    case "enhancer":
+      minorClassFeatures = extractAndCombineDynamic(techniquesData);
+      break;
+    case "geomancer":
+      minorClassFeatures = extractAndCombineDynamic(aspectsData);
+      break;
+    case "tactician":
+      minorClassFeatures = extractAndCombineDynamic(strategemsData, maneuversData);
+      break;
+    case "rider":
+      minorClassFeatures = extractAndCombineDynamic(stuntsData);
+      break;
+    default:
+      minorClassFeatures = [];
+  }
+
+  return minorClassFeatures
+    .filter((item) => classLevel >= Number(item.level ?? 0))
+    .map((item) => item.id);
+}
+
 export function getAutoFeaturesByLevel(
-  featureName: string,
+  className: string,
   classLevel: number
 ): ClassFeature[] {
-  return classFeaturesData.class_features.filter((item) => {
+  return classFeaturesData.class_features.filter(f => !removeNames.includes(f.name)).filter((item) => {
     const levelMatch = item.gain.match(/\d+/);
     const featureLevel = levelMatch ? Number(levelMatch[0]) : 0;
     const normalizedFeatureGain = item.gain.toLowerCase().replace(/\s+/g, '_');
-    return normalizedFeatureGain.includes(featureName) && classLevel >= featureLevel;
+    return normalizedFeatureGain.includes(className) && classLevel >= featureLevel;
   });
 }
 
 export function getSelectableFeaturesByLevel(level: number): ClassFeature[] {
-  return selectedFeaturesData.selected_features.filter((item) => {
+  return extractAndCombineDynamic(selectedFeaturesData).filter((item) => {
     const level_match = item.prerequisite?.match(/\d+/) ?? "0";
     const feature_level: string = level_match?.[0] ?? "0";
     return level > Number(feature_level)
   });
+}
+
+export function getSelectableFeatureIdsByLevel(level: number): number[] {
+  return extractAndCombineDynamic(selectedFeaturesData).filter((item) => {
+    const level_match = item.prerequisite?.match(/\d+/) ?? "0";
+    const feature_level: string = level_match?.[0] ?? "0";
+    return level > Number(feature_level)
+  }).map((item) => item.id);
 }
 
 export function getAvailableFeatureIdsByClassAndLevel(

@@ -20,8 +20,8 @@ export function useSpellFilter(spells: Spell[]) {
     duration: null,
   });
 
-  const updateFilters = useCallback((key: KeyOfSpellWithSearch) =>  (value: string | null) => {
-    setFilters((prev) => ({...prev, [key]: value})
+  const updateFilters = useCallback((key: KeyOfSpellWithSearch) => (value: string | null) => {
+    setFilters((prev) => ({ ...prev, [key]: value })
     )
   }, []);
 
@@ -62,24 +62,31 @@ export function useSpellFilter(spells: Spell[]) {
     return spells.filter((spell) => spellMatchesAllFilters(spell));
   }, [spells, filters]);
 
+
+
   const getUniqueSortedOptions = useCallback(
     <K extends keyof Spell>(
       data: Spell[],
       key: K,
-      sortFunc?: ((a: string, b: string) => number) | undefined
+      sortFunc?: (a: string, b: string) => number
     ): string[] => {
-      return Array.from(
+      const uniqueValues = Array.from(
         new Set(
           data
-            .map((item) => item[key])
-            .filter(
-              (v): v is string => typeof v === "string" && v.trim() !== ""
-            )
+            .map((item) => {
+              const val = item[key] as unknown;
+              return typeof val === "string" ? val : undefined;
+            })
+            .filter((v): v is string => typeof v === "string" && v.trim() !== "")
         )
-      ).sort(sortFunc);
+      );
+
+      return uniqueValues.sort(sortFunc);
     },
     []
   );
+
+
 
   const extractFirstNumber = useCallback((str: string | null | undefined): number => {
     if (!str) return Infinity;

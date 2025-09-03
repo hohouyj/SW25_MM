@@ -36,13 +36,6 @@
       "id": 1924
     },
     {
-      "name": "Bard (Minor)",
-      "description": "Bards play musical instruments, sing songs, and produce various supportive or hindering effects on nearby listeners. Bard Spellsongs increase Rhythm, which they can use to unleash spectacular Finales and change the tide of battle.\nWeapon Restrictions: None\nArmor Restrictions: None\nShield Restrictions: None\nOther Requirements: Bards must be able to play an instrument to use Spellsongs and Finales. Some Spellsongs require singing as well. They may only take a Limited Move on the same turn as using a Spellsong or Finale.\nClass Features: Bards learn one Spellsong or Finale per Bard Class level (which can be increased with the [Additional Songs] feat). Each Bard Class level also allows them to speak, but not read, one new language.\nSkill Packages:\nSpecial Resources: Bards gain the unique statistic Bardic Power, which plays a role similar to Magic Power in Wizard-type Classes. Bardic Power is calculated as Bard Class Level + Spirit Modifier.\nBards accumulate a resource called Rhythm by playing Spellsongs. These three types of Rhythm, Uplifting (⮭), Calming (⮯), and Enchanting (♡), are used to perform Finales.\nSpellsongs and Finales have a range equal to (Bard Class Level x 10)m, centered on the Bard. In Simplified Combat, Spellsongs and Finales have a range of 2 Areas at Bard Class Level 1, and the entire battlefield for Bard Class Level 2+.\nSource: CR II, p. 100; ET, p. 44; MA, p. 163\nBard Spellsongs List\nBard Finales List\nSpecial Instruments List\nBard Class Combat Feats",
-      "minor_class": "",
-      "other-type_class": "",
-      "id": 1925
-    },
-    {
       "name": "Archer's Grace",
       "description": "Master may calculate Evasion using their Marksman Class Level + Agility Modifier.",
       "prerequisite": "Marksman Level 7+",
@@ -148,13 +141,6 @@
       "id": 1940
     },
     {
-      "name": "Geomancer (Minor)",
-      "description": "The Geomancer class utilizes the power of world creation by harnessing the Qi (life force) that fills the world. They can exert various effects around them, making them the Masters of the Land.\nGeomancers' effects are called Aspects, broadly categorized into those that deal fixed damage, those that give disadvantages, those that heal, and those that give advantages.\nWeapon Restrictions: None\nArmor Restrictions: None\nShield Restrictions: None\nOther Requirements: To use Aspects, a Geomancer must deploy a Geograph. While the Geograph is deployed, a Geomancer can only make a Limited Move on the same turn as Aspects are dispatched.\nClass Features: Geomancers learn one Aspect per Geomancer Class level.\nSkill Packages:\nSpecial Resources: While a Geomancer has a Geograph deployed, they earn one point of all types of Qi every 10 seconds. The three types of Qi are Heavenly Qi, Earthly Qi, and Spirit Qi. The ultimate amount of Qi which can be stored depends on the Geograph. Gathered Qi points are then spent to create Aspects. The target of each active Aspect is determined randomly each turn.\nSource: MA, p. 18; MA, p. 49\nGeomancer Aspects List\nGeomancer Class Combat Feats",
-      "minor_class": "",
-      "other-type_class": "",
-      "id": 1941
-    },
-    {
       "name": "Power Strike III",
       "description": "Application: 1 melee attack\nRisk: Evasion check -2\nThis feat is declared at the time of a melee attack and is valid for one attack.\nIf the declared attack hits, the damage is increased by 20 points. As a risk, any Evasion check is modified by a -2 penalty.\nWhen attacking multiple characters at the same time, one of the hit characters should be chosen randomly. The damage to that one character will be increased by 20 points. This target selection should be made before determining damage.",
       "prerequisite": "[ Power Strike II ], Fighter Level 15+",
@@ -230,13 +216,6 @@
       "prerequisite": "Grappler/Battle Dancer Level 9+",
       "use": "Grappler or Battle Dancer Class",
       "id": 1952
-    },
-    {
-      "name": "Enhancer (Minor)",
-      "description": "Enhancers are a very physical class who use their body and mana to create advantages in battle. It is not a class that makes use of weapons, but uses nonmagical Techniques with associated special effects.\nWeapon Restrictions: None\nArmor Restrictions: None\nShield Restrictions: None\nOther Requirements: Enhancers must be able to breathe freely to use Techniques (vocalization is not required). They may not take a Full Move on the same turn as using a Technique. All Techniques cost a base 3MP to use, but are not magical.\nClass Features: Enhancers learn one Technique per Enhancer Class level.\nSource: CR II, p. 97; ET, p. 42; MA, p. 159\nEnhancer Techniques List\nEnhancer Class Combat Feats",
-      "minor_class": "",
-      "other-type_class": "",
-      "id": 1953
     },
     {
       "name": "Tail Swing I",
@@ -594,13 +573,6 @@
       "id": 2004
     },
     {
-      "name": "Fighter (Major)",
-      "description": "A warrior who stands on the frontline, fighting enemies with weapons. Provided that you meet the Minimum Strength and Rank proficiency, you can wield almost every melee and thrown weapon, with no particular limitations on armor or shields.\nWeapon Restrictions: None\nArmor Restrictions: None\nShield Restrictions: None\nSource: CR I, p. 87; ET, p. 18\nFighter Class Combat Feats",
-      "major_class": "",
-      "warrior-type_class": "",
-      "id": 2005
-    },
-    {
       "name": "Violentcast I",
       "description": "Application: 1 spell cast\nRisk: None\nThis feat can be declared at the time of a spell casting, and is valid for only one casting.\nIf the spell only deals damage to the target, the user gains a +2 bonus to the Success Value of the Spellcasting check. This feat only works for spells that deal damage and have a duration of \"Instant.\"\nIt is not effective for spells with effects other than damage or for spells that do not deal damage. However, it works for spells that increase damage depending on the target's classification, or spells that deal damage only under specific conditions (such as casting [Cremation] or [Cure Wounds] on Undead characters).",
       "prerequisite": "None",
@@ -620,13 +592,6 @@
       "prerequisite": "None",
       "use": "-",
       "id": 2008
-    },
-    {
-      "name": "Battle Dancer (Major)",
-      "description": "The Battle Dancer class is a unique specialization within the Warrior category. Unlike other warriors, Battle Dancers eschew heavy armor and instead rely on nimble movements resembling a dance to manipulate their weapons.\nAs masters of attack, Battle Dancers employ a wide array of Combat Feats and utilize multiple attacks in combat. However, due to the class's rarity and the high casualty rate resulting from its low defense, few adventurers have truly mastered the art of the Battle Dancer.\nWeapon Restrictions: None; may also equip Wrestling weapons\nArmor Restrictions: Only items marked \"Grapplers may equip\" or \"Grapplers only\"\nShield Restrictions: May not equip\nClass Features: At Level 1, Battle Dancers receive one bonus Active Combat Feat from the following list: [Decoy Attack I], [Repeated Strike I], [Aimed Attack I], [Power Strike I], [Taunting Strike I], [Lethal Strike I], [Mana Strike], [Shadow Step I] (Vagrants only), [Desperate Strike I] (Vagrants only), [Herald Strike] (Vagrants only), and [Wild Strike I] (Vagrants only). This Combat Feat only applies to the Battle Dancer Class and cannot be \"shared\" with other classes.\nSource: BM, p. 12; BM, p. 92\nBattle Dancer Combat Feats",
-      "major_class": "",
-      "warrior-type_class": "",
-      "id": 2009
     },
     {
       "name": "Additional Songs II",
@@ -697,13 +662,6 @@
       "prerequisite": "Alchemist Level 5+",
       "use": "Alchemist class",
       "id": 2019
-    },
-    {
-      "name": "Fencer (Minor)",
-      "description": "Although inferior to Fighters and Grapplers when comparing raw offense and defense, the Fencer comes with varied attacks and the potential to unleash incredible one-hit damage. The Fencer's Strength Score is halved (rounding up) to determine which Minimum Strength requirements they meet when equipping weapons, armors, and shields. However, Fencers benefit from an increased chance of generating critical damage (see CR I p. 136) with any weapon they wield.\nThe Fencer's higher critical chance comes with the potential to unleash incredible one-hit damage. As a Minor class, the Fencer's faster growth rate is another benefit when advancing alongside other classes.\nWeapon Restrictions: 1/2 (round up) Strength Score for Minimum Strength requirement\nArmor Restrictions: 1/2 (round up) Strength Score for Minimum Strength requirement\nShield Restrictions: 1/2 (round up) Strength Score for Minimum Strength requirement\nClass Features: Weapons wielded by a Fencer receive -1 to their normal Critical Threshold (minimum 8).\nSource: CR I, p. 88; ET, p. 22\nFencer Class Combat Feats",
-      "minor_class": "",
-      "warrior-type_combat_class": "",
-      "id": 2020
     },
     {
       "name": "Armor Piercer I",
