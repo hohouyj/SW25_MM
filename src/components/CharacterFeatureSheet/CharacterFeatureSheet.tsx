@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { getActiveClasses, getAdventurerLevel, getCharacter, getPassiveClasses, updateCharacter } from "../../utils/characterStorage";
 import { useMemo, useState } from "react";
-import { Button, Paper, Title, Box, SimpleGrid, Text, Flex } from "@mantine/core";
+import { Button, Paper, Title, Box, SimpleGrid, Text, Flex, ActionIcon } from "@mantine/core";
 import { useForm } from "@mantine/form";
 import { Character } from "../../types";
 import { notifications } from "@mantine/notifications";
@@ -10,8 +10,10 @@ import { getConfigForfeature } from "../FeatureCard/FeatureCardConfigs";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import { useDisclosure } from "@mantine/hooks";
 import { FeatureSelectModal } from "./FeatureSelectModal";
+import { IconPencil } from "@tabler/icons-react";
 
-export default function CharacterSheet() {
+export default function CharacterFeatureSheet() {
+    const iconSize = 20;
     const [modalOpened, { open, close }] = useDisclosure(false);
     const [modalClassName, setModalClassName] = useState("Bard")
     const [expanded, setExpanded] = useState<string | number | null>(null);
@@ -24,7 +26,7 @@ export default function CharacterSheet() {
     }
 
     function getClassLevel(className: string, character: Character) {
-        if(className === "selected_features") return getAdventurerLevel(character)
+        if (className === "selected_features") return getAdventurerLevel(character)
         const classLevelKey = `${className}_level` as keyof Character;
         return character[classLevelKey] as number;
     }
@@ -35,7 +37,6 @@ export default function CharacterSheet() {
 
     const activeClasses = getActiveClasses(character)
     const passiveClasses = getPassiveClasses(character)
-
 
     const form = useForm<Character>({
         initialValues: character as Character,
@@ -55,9 +56,6 @@ export default function CharacterSheet() {
                 const classFeatureIds = getSelectableFeatureIdsByLevel(classLevel);
                 const preservedIds = prev.feature_ids.filter((id) => !classFeatureIds.includes(id));
                 const updated = { ...prev, feature_ids: [...preservedIds, ...selected.map(Number)], };
-                console.log("CHARACTERAKHGBfsjdhagbfjkslob")
-                console.log(classFeatureIds)
-                console.log(preservedIds)
                 updateCharacter(updated);
                 return updated;
             });
@@ -75,21 +73,28 @@ export default function CharacterSheet() {
         }
     };
 
-
-
     if (!character) {
         return <Title order={3}>Character not found</Title>;
     }
 
     return (
         <>
-            <Paper shadow="sm" p="md" withBorder radius="md">
-                <Title order={1} mb="sm">{character.name}</Title>
+            <Flex align="center" mb="sm">
+                <Title order={2}>Adventurer {getAdventurerLevel(character)}</Title>
 
-
-                <Title order={2} mb="sm">Adventurer {getAdventurerLevel(character)}</Title>
-                <Flex wrap="wrap" align="center" justify="center" gap="md">
-                    {
+                <ActionIcon
+                    variant="subtle"
+                    size="sm"
+                    onClick={() => handleEdit(character, "selected_features")}
+                >
+                    <IconPencil size={iconSize} />
+                </ActionIcon>
+            </Flex>
+            <Flex wrap="wrap" align="center" justify="center" gap="md">
+                {
+                    characterFeatures.filter(f => f.feature_name === "selected_features").length === 0 ? (
+                        <Text>No Features Selected</Text>
+                    ) : (
                         characterFeatures.filter(
                             (feature) => "selected_features" === feature.feature_name
                         ).map(
@@ -114,7 +119,7 @@ export default function CharacterSheet() {
                                         {isExpanded ? (
                                             <FeatureCard data={feature} config={getConfigForfeature(feature.feature_name)} key={feature.name} />)
                                             : (
-                                                <Paper withBorder p="sm" radius="md" style={{ cursor: 'pointer' }}>
+                                                <Paper withBorder p="sm" radius="md">
                                                     <Text fw={500}>
                                                         {feature.name}
                                                     </Text>
@@ -124,73 +129,79 @@ export default function CharacterSheet() {
                                 )
                             }
                         )
-
-                    }
-                    {
-                        <Button fullWidth onClick={() => handleEdit(character, "selected_features")}>
-                            Edit Adventurer Features
-                        </Button>
-                    }
-                </Flex>
-
-                <SimpleGrid
-                    cols={{ base: 1, sm: 2, md: 3 }}
-                    spacing="lg"
-                    verticalSpacing="md"
-                >
-
-
-                    {passiveClasses.sort((className) => getClassLevel(className, character)).map(
-                        (className) => {
-                            const classLevelKey = `${className}_level` as keyof Character;
-                            const classLevel = character[classLevelKey] as number;
-                            const autoClassFeatures = getAutoFeaturesByLevel(className, classLevel)
-                            if (autoClassFeatures.length == 0) return
-                            return <Box>
-                                <Title order={2} mb="sm">{getDisplayName(className)+" "+classLevel}</Title>
-                                {autoClassFeatures.map((feature) => {
-                                    const isExpanded = expanded === feature.id;
-
-                                    return (
-                                        <Box key={feature.id} mb="sm" pos="relative">
-                                            <Button
-                                                size="xs"
-                                                variant="subtle"
-                                                style={{ position: 'absolute', top: 8, right: 8, zIndex: 1 }}
-                                                onClick={() =>
-                                                    setExpanded(isExpanded ? null : feature.id)
-                                                }
-                                            >
-                                                {isExpanded ? 'Close' : 'Open'}
-                                            </Button>
-
-                                            {isExpanded ? (
-                                                <FeatureCard data={feature} config={getConfigForfeature("class_features")} key={feature.name} />)
-                                                : (
-                                                    <Paper withBorder p="sm" radius="md" style={{ cursor: 'pointer' }}>
-                                                        <Text fw={500}>
-                                                            {feature.name}
-                                                        </Text>
-                                                    </Paper>
-                                                )}
-                                        </Box>
-                                    )
-                                })
-                                }
-                            </Box>
-                        }
                     )}
-                </SimpleGrid>
-                <SimpleGrid
-                    cols={{ base: 1, sm: 2, md: 3 }}
-                    spacing="lg"
-                    verticalSpacing="md"
-                >
-                    {activeClasses.sort((className) => getClassLevel(className, character)).map((className) => {
-                        const classFeatures = characterFeatures.filter((feature) => getFeaturesByClassName(className).includes(feature.feature_name))
+            </Flex>
+
+            <SimpleGrid
+                cols={{ base: 1, sm: 2, md: 3 }}
+                spacing="lg"
+                verticalSpacing="xs"
+            >
+                {passiveClasses.sort((className) => getClassLevel(className, character)).map(
+                    (className) => {
+                        const classLevelKey = `${className}_level` as keyof Character;
+                        const classLevel = character[classLevelKey] as number;
+                        const autoClassFeatures = getAutoFeaturesByLevel(className, classLevel)
+                        if (autoClassFeatures.length == 0) return
                         return <Box>
-                            <Title order={2} mb="sm">{getDisplayName(className)+ " "+getClassLevel(className, character)}</Title>
-                            {classFeatures.map((feature) => {
+                            <Title order={2} mb="sm" >{getDisplayName(className) + " " + classLevel}</Title>
+                            {autoClassFeatures.map((feature) => {
+                                const isExpanded = expanded === feature.id;
+
+                                return (
+                                    <Box key={feature.id} mb="sm" pos="relative">
+                                        <Button
+                                            size="xs"
+                                            variant="subtle"
+                                            style={{ position: 'absolute', top: 8, right: 8, zIndex: 1 }}
+                                            onClick={() =>
+                                                setExpanded(isExpanded ? null : feature.id)
+                                            }
+                                        >
+                                            {isExpanded ? 'Close' : 'Open'}
+                                        </Button>
+
+                                        {isExpanded ? (
+                                            <FeatureCard data={feature} config={getConfigForfeature("class_features")} key={feature.name} />)
+                                            : (
+                                                <Paper withBorder p="sm" radius="md">
+                                                    <Text fw={500}>
+                                                        {feature.name}
+                                                    </Text>
+                                                </Paper>
+                                            )}
+                                    </Box>
+                                )
+                            })
+                            }
+                        </Box>
+                    }
+                )}
+            </SimpleGrid>
+
+            <SimpleGrid
+                cols={{ base: 1, sm: 2, md: 3 }}
+                spacing="lg"
+                verticalSpacing="md"
+            >
+                {activeClasses.sort((className) => getClassLevel(className, character)).map((className) => {
+                    const classFeatures = characterFeatures.filter((feature) => getFeaturesByClassName(className).includes(feature.feature_name))
+                    return <Box>
+                        <Flex align="center" mb="sm">
+                            <Title order={2} mb="sm" style={{ margin: 0 }}>{getDisplayName(className) + " " + getClassLevel(className, character)}</Title>
+
+                            <ActionIcon
+                                variant="subtle"
+                                size="md"
+                                onClick={() => handleEdit(character, className)}
+                            >
+                                <IconPencil size={iconSize} />
+                            </ActionIcon>
+                        </Flex>
+                        {
+                            classFeatures.length === 0 ? (
+                                <Text>No Features Selected</Text>
+                            ) : (classFeatures.map((feature) => {
                                 const isExpanded = expanded === feature.id;
 
                                 return (
@@ -209,7 +220,7 @@ export default function CharacterSheet() {
                                         {isExpanded ? (
                                             <FeatureCard data={feature} config={getConfigForfeature(feature.feature_name)} key={feature.name} />)
                                             : (
-                                                <Paper withBorder p="sm" radius="md" style={{ cursor: 'pointer' }}>
+                                                <Paper withBorder p="sm" radius="md">
                                                     <Text fw={500}>
                                                         {feature.name}
                                                     </Text>
@@ -218,16 +229,11 @@ export default function CharacterSheet() {
                                     </Box>
                                 )
                             })
-                            }
-                            {/* {classFeatures.length < getClassLevel(className, character) && */
-                                <Button fullWidth onClick={() => handleEdit(character, className)}>
-                                    Edit {getDisplayName(className)} Features
-                                </Button>
-                            }
-                        </Box>
-                    })
-                    }</SimpleGrid>
-            </Paper>
+                            )}
+                    </Box>
+                })}
+            </SimpleGrid>
+
             <FeatureSelectModal
                 key={`${character.id}-${modalClassName}`}
                 opened={modalOpened}

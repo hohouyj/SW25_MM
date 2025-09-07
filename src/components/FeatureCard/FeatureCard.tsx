@@ -30,7 +30,7 @@ export default function FeatureCard<T>({ data, config }: FeatureCardProps<T>) {
     );
 
     return (
-        <Card shadow="sm" padding="md" radius="md" withBorder>
+        <Card shadow="sm" padding="md" withBorder>
             <Stack gap="xs">
                 {/* Header */}
                 <Group justify="left" wrap="wrap">

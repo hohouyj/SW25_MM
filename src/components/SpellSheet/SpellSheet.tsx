@@ -2,17 +2,17 @@ import { Box, Button, Paper, SimpleGrid, Text, Title } from "@mantine/core";
 import { useMemo, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useSpellFilter } from "../../hooks/useSpellFilter";
-import { defaultSpellCaster, getSpellCaster } from "../../utils/spellCasterStorage";
 import { binSpellsByTradition, getAvailableSpells } from "../../utils/spellFilter";
 import SpellFilter from "./SpellFilter";
 import FeatureCard from "../FeatureCard/FeatureCard";
 import { spellConfig } from "../FeatureCard/FeatureCardConfigs";
+import { defaultCharacter, getCharacter } from "../../utils/characterStorage";
 
 export default function SpellSheet() {
     const [expandedSpellId, setExpandedSpellId] = useState<string | number | null>(null);
     const { id } = useParams();
     const spellCaster = useMemo(
-        () => (id ? getSpellCaster(id) : defaultSpellCaster()),
+        () => (id ? getCharacter(id) : defaultCharacter()),
         [id]
     );
     const availableSpells = useMemo(

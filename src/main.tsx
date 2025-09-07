@@ -5,16 +5,14 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { createBrowserRouter, Navigate, RouterProvider } from "react-router-dom";
 import MonsterView from "./components/MonstersView/MonsterView.tsx";
-import SpellCasterManager from "./components/SpellSheet/SpellCasterManager.tsx";
-import SpellSheet from "./components/SpellSheet/SpellSheet.tsx";
 import SpellView from "./components/SpellView/SpellView.tsx";
 import AppLayout from "./layouts/AppLayout.tsx";
 
 import '@mantine/core/styles.css';
 import '@mantine/notifications/styles.css';
 import FeatureView from "./components/FeatureView/FeatureView.tsx";
-import CharacterManager from "./components/CharacterSheet/CharacterManager.tsx";
-import CharacterSheet from "./components/CharacterSheet/CharacterSheet.tsx";
+import CharacterManager from "./components/CharacterFeatureSheet/CharacterFeatureManager.tsx";
+import { CharacterSheet } from "./components/CharacterSheet.tsx";
 
 const router = createBrowserRouter([
   {
@@ -32,14 +30,6 @@ const router = createBrowserRouter([
       {
         path: "spells",
         element: <SpellView />,
-      },
-      {
-        path: "spellsheet",
-        element: <SpellCasterManager />,
-      },
-      {
-        path: "spellsheet/:id",
-        element: <SpellSheet />
       },
       {
         path: "features",

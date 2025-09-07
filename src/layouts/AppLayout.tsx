@@ -9,9 +9,8 @@ export default function AppLayout() {
     // { label: 'Home', to: '/home' },
     { label: 'Monsters', to: '/monsters' },
     { label: 'Spells', to: '/spells' },
-    { label: 'Spell Sheet', to: '/spellsheet' },
     { label: 'Features', to: '/features' },
-    { label: 'Character Sheet', to: '/charactersheet' },
+    { label: 'Characters', to: '/charactersheet' },
   ];
 
   return (
