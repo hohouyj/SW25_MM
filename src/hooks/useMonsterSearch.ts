@@ -78,10 +78,6 @@ const useMonsterSearch = () => {
       }
     });
 
-    console.log({
-      $and: [...conditions],
-    })
-
     return {
       $and: [...conditions],
     };
@@ -91,7 +87,6 @@ const useMonsterSearch = () => {
     const newTags = [...tags];
     const tagIndex = newTags.indexOf(tag, 0);
     newTags.splice(tagIndex, 1);
-    console.log(newTags);
     setTags(newTags);
   };
 

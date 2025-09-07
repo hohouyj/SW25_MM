@@ -250,7 +250,5 @@ const featureMap: Record<FeatureName, FeatureCardConfig<any>> = {
  * @param feature - e.g. "spell", "technique", "finale"
  */
 export function getConfigForfeature(feature: FeatureName): FeatureCardConfig<any> {
-  console.log(feature)
-  console.log(featureMap[feature])
   return featureMap[feature];
 }

@@ -30,7 +30,6 @@ export function FeatureSelectModal({
   let features = getAvailableFeaturesByClassAndLevel(className, classLevel);
 
   if(className === "selected_features"){
-    console.log("selected_features")
     classLevel = getAdventurerLevel(character)
     maxFeatures = Math.floor((classLevel+1)/2)
     features = getSelectableFeaturesByLevel(classLevel)
@@ -61,7 +60,6 @@ export function FeatureSelectModal({
         }
         value={selected}
         onChange={(values) => {
-          console.log(selected)
           if (values.length <= maxFeatures) {
             setSelected(values);
           }
