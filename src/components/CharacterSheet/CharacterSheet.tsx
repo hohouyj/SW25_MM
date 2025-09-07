@@ -24,6 +24,7 @@ export default function CharacterSheet() {
     }
 
     function getClassLevel(className: string, character: Character) {
+        if(className === "selected_features") return getAdventurerLevel(character)
         const classLevelKey = `${className}_level` as keyof Character;
         return character[classLevelKey] as number;
     }
@@ -54,6 +55,9 @@ export default function CharacterSheet() {
                 const classFeatureIds = getSelectableFeatureIdsByLevel(classLevel);
                 const preservedIds = prev.feature_ids.filter((id) => !classFeatureIds.includes(id));
                 const updated = { ...prev, feature_ids: [...preservedIds, ...selected.map(Number)], };
+                console.log("CHARACTERAKHGBfsjdhagbfjkslob")
+                console.log(classFeatureIds)
+                console.log(preservedIds)
                 updateCharacter(updated);
                 return updated;
             });
@@ -90,7 +94,6 @@ export default function CharacterSheet() {
                             (feature) => "selected_features" === feature.feature_name
                         ).map(
                             (feature) => {
-                                console.log(characterFeatures)
                                 const isExpanded = expanded === feature.id;
                                 return (
                                     <Box key={feature.id}
@@ -142,7 +145,6 @@ export default function CharacterSheet() {
                             const classLevelKey = `${className}_level` as keyof Character;
                             const classLevel = character[classLevelKey] as number;
                             const autoClassFeatures = getAutoFeaturesByLevel(className, classLevel)
-                            console.log(className, autoClassFeatures)
                             if (autoClassFeatures.length == 0) return
                             return <Box>
                                 <Title order={2} mb="sm">{getDisplayName(className)+" "+classLevel}</Title>

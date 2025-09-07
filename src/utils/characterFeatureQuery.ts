@@ -154,16 +154,12 @@ export function getSelectableFeaturesByLevel(level: number): ClassFeature[] {
   return extractAndCombineDynamic(selectedFeaturesData).filter((item) => {
     const level_match = item.prerequisite?.match(/\d+/) ?? "0";
     const feature_level: string = level_match?.[0] ?? "0";
-    return level > Number(feature_level)
+    return level >= Number(feature_level)
   });
 }
 
 export function getSelectableFeatureIdsByLevel(level: number): number[] {
-  return extractAndCombineDynamic(selectedFeaturesData).filter((item) => {
-    const level_match = item.prerequisite?.match(/\d+/) ?? "0";
-    const feature_level: string = level_match?.[0] ?? "0";
-    return level > Number(feature_level)
-  }).map((item) => item.id);
+  return getSelectableFeaturesByLevel(level).map((item) => item.id);
 }
 
 export function getAvailableFeatureIdsByClassAndLevel(
