@@ -7,27 +7,38 @@ const STORAGE_KEY = "characters";
 // Default character
 export function defaultCharacter(): Character {
   return {
-    id: uuidv4(),
-    name: "",
-    feature_ids: [],
-    //////////////////////
-    alchemist_level: 0,
-    bard_level: 0,
-    dark_hunter_level: 0,
-    enhancer_level: 0,
-    geomancer_level: 0,
-    tactician_level: 0,
-    rider_level: 0,
-    /////////////////////
-    ranger_level: 0,
-    sage_level: 0,
-    scout_level: 0,
-    battle_dancer_level: 0,
-    fencer_level: 0,
-    fighter_level: 0,
-    grappler_level: 0,
-    marksman_level: 0,
-  };
+  id: uuidv4(),
+  name: "",
+  feature_ids: [],
+  //////////////////////
+  alchemist_level: 0,
+  bard_level: 0,
+  dark_hunter_level: 0,
+  enhancer_level: 0,
+  geomancer_level: 0,
+  tactician_level: 0,
+  rider_level: 0,
+  ranger_level: 0,
+  sage_level: 0,
+  scout_level: 0,
+  battle_dancer_level: 0,
+  fencer_level: 0,
+  fighter_level: 0,
+  grappler_level: 0,
+  marksman_level: 0,
+  /////////////////////
+  abyssal_magic_level: 0,
+  deep_magic_level: 0,
+  divine_level: 0,
+  divinity: null,
+  fairy_magic_level: 0,
+  magitech_level: 0,
+  nature_level: 0,
+  spiritualism_level: 0,
+  summoning_arts_level: 0,
+  truespeech_level: 0,
+  fairy_magic_types: []
+};
 }
 
 export function getAdventurerLevel(character: Character): number {
