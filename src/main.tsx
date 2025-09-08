@@ -11,8 +11,8 @@ import AppLayout from "./layouts/AppLayout.tsx";
 import '@mantine/core/styles.css';
 import '@mantine/notifications/styles.css';
 import FeatureView from "./components/FeatureView/FeatureView.tsx";
-import CharacterManager from "./components/CharacterFeatureSheet/CharacterFeatureManager.tsx";
-import { CharacterSheet } from "./components/CharacterSheet.tsx";
+import CharacterManager from "./components/Character/CharacterManager.tsx";
+import { CharacterSheet } from "./components/Character/CharacterSheet.tsx";
 
 const router = createBrowserRouter([
   {
@@ -36,7 +36,7 @@ const router = createBrowserRouter([
         element: <FeatureView />
       },
       {
-        path: "charactersheet",
+        path: "characters",
         element: <CharacterManager />
       },
       {

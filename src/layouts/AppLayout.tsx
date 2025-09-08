@@ -10,12 +10,15 @@ export default function AppLayout() {
     { label: 'Monsters', to: '/monsters' },
     { label: 'Spells', to: '/spells' },
     { label: 'Features', to: '/features' },
-    { label: 'Characters', to: '/charactersheet' },
+    { label: 'Characters', to: '/characters' },
   ];
 
+  const showNav = links.some((link) => location.pathname === link.to);
+
   return (
-    <AppShell header={{ height: 60 }} padding="md">
-      <AppShellHeader>
+    <AppShell header={showNav ? { height: 60 } : undefined} padding="md">
+      {showNav && (<AppShellHeader>
+
         <Box px="md" h="100%" display="flex" style={{ display: 'flex', alignItems: 'center' }}>
           <Group gap="md">
             {links.map((link) => (
@@ -32,7 +35,7 @@ export default function AppLayout() {
             ))}
           </Group>
         </Box>
-      </AppShellHeader>
+      </AppShellHeader>)}
 
       <AppShellMain>
         <Outlet />

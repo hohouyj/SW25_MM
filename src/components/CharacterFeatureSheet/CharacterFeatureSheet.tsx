@@ -74,21 +74,22 @@ export default function CharacterFeatureSheet() {
     };
 
     if (!character) {
-        return <Title order={3}>Character not found</Title>;
+        return <Title>Character not found</Title>;
     }
 
     return (
         <>
-            <Flex align="center" mb="sm">
-                <Title order={2}>Adventurer {getAdventurerLevel(character)}</Title>
+            <Flex align="center" gap="xs" >
+                <Title order={4} mb="md">Adventurer {getAdventurerLevel(character)}
 
-                <ActionIcon
-                    variant="subtle"
-                    size="sm"
-                    onClick={() => handleEdit(character, "selected_features")}
-                >
-                    <IconPencil size={iconSize} />
-                </ActionIcon>
+                    <ActionIcon
+                        variant="subtle"
+                        size="sm"
+                        onClick={() => handleEdit(character, "selected_features")}
+                    >
+                        <IconPencil size={iconSize} />
+                    </ActionIcon>
+                </Title>
             </Flex>
             <Flex wrap="wrap" align="center" justify="center" gap="md">
                 {
@@ -144,7 +145,7 @@ export default function CharacterFeatureSheet() {
                         const autoClassFeatures = getAutoFeaturesByLevel(className, classLevel)
                         if (autoClassFeatures.length == 0) return
                         return <Box>
-                            <Title order={2} mb="sm" >{getDisplayName(className) + " " + classLevel}</Title>
+                            <Title order={4} mb="sm" >{getDisplayName(className) + " " + classLevel}</Title>
                             {autoClassFeatures.map((feature) => {
                                 const isExpanded = expanded === feature.id;
 
@@ -188,15 +189,17 @@ export default function CharacterFeatureSheet() {
                     const classFeatures = characterFeatures.filter((feature) => getFeaturesByClassName(className).includes(feature.feature_name))
                     return <Box>
                         <Flex align="center" mb="sm">
-                            <Title order={2} mb="sm" style={{ margin: 0 }}>{getDisplayName(className) + " " + getClassLevel(className, character)}</Title>
+                            <Title order={4} mb="sm">{getDisplayName(className) + " " + getClassLevel(className, character)}
 
-                            <ActionIcon
-                                variant="subtle"
-                                size="md"
-                                onClick={() => handleEdit(character, className)}
-                            >
-                                <IconPencil size={iconSize} />
-                            </ActionIcon>
+
+                                <ActionIcon
+                                    variant="subtle"
+                                    size="md"
+                                    onClick={() => handleEdit(character, className)}
+                                >
+                                    <IconPencil size={iconSize} />
+                                </ActionIcon>
+                            </Title>
                         </Flex>
                         {
                             classFeatures.length === 0 ? (

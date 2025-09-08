@@ -27,7 +27,7 @@ import {
 } from "../../utils/characterStorage";
 import { useNavigate } from "react-router-dom";
 
-export default function CharacterFeatureManager() {
+export default function CharacterManager() {
     const [characters, setCharacters] = useState<Character[]>([]);
     const [modalOpened, { open, close }] = useDisclosure(false);
     const [isEditing, setIsEditing] = useState(false);
@@ -85,21 +85,34 @@ export default function CharacterFeatureManager() {
         "fighter_level",
         "grappler_level",
         "marksman_level",
-        "abyssal_magic_level",
-        "deep_magic_level",
-        "divine_level",
-        "fairy_magic_level",
-        "magitech_level",
-        "nature_level",
-        "spiritualism_level",
-        "summoning_arts_level",
-        "truespeech_level",
+        "abyssal_magic_level", // abyss gazer
+        //"deep_magic_level", // min(conjurer level, sorcerer level)
+        "divine_level", // priest
+        "fairy_magic_level", // fairy tamer
+        "magitech_level", // artificer
+        "nature_level", // druid
+        "spiritualism_level", // conjurer
+        "summoning_arts_level", // warlock
+        "truespeech_level", // sorcerer
     ] as const;
+
+    const LEVEL_LABELS: Record<string, string> = {
+        abyssal_magic_level: "Abyss Gazer",
+        deep_magic_level: "Deep Magic (min of Conjurer, Sorcerer)",
+        divine_level: "Priest",
+        fairy_magic_level: "Fairy Tamer",
+        magitech_level: "Artificer",
+        nature_level: "Druid",
+        spiritualism_level: "Conjurer",
+        summoning_arts_level: "Warlock",
+        truespeech_level: "Sorcerer",
+    };
+
     const CLASS_OPTIONS = LEVEL_KEYS.map((key) => ({
         value: key,
-        label: key
-            .replace(/_/g, " ")
-            .replace(/\b\w/g, (c) => c.toUpperCase()),
+        label:
+            LEVEL_LABELS[key] ??
+            key.replace(/_level/g, "").replace(/_/g, " ").replace(/\b\w/g, (c) => c.toUpperCase()),
     }));
 
     const form = useForm<Character>({
@@ -116,6 +129,12 @@ export default function CharacterFeatureManager() {
             setSelectedClasses(active);
         }
     }, [modalOpened, form.values.id]);
+
+    useEffect(() => {
+        const conjurer = form.values.spiritualism_level; // conjurer
+        const sorcerer = form.values.truespeech_level;   // sorcerer
+        form.setFieldValue("deep_magic_level", Math.min(conjurer, sorcerer));
+    }, [form.values.spiritualism_level, form.values.truespeech_level]);
 
     const handleSave = (values: Character) => {
         if (isEditing) {
